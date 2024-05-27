@@ -1,14 +1,15 @@
 \usepackage[
-  style=nature,%
   %style=science, article-title=true,%
+  style=nature,
   natbib=true,%
   clearlang=true,%
   backend=biber,%
 ]{biblatex}
 
+
 \ExecuteBibliographyOptions{%
   %--- Backend --- --- ---
-  bibwarn=true, %
+  bibwarn=false, %
   bibencoding=auto, % (ascii, inputenc, <encoding>)
   %--- Sorting --- --- ---
   sorting=none, % Sort by name, title, year.
@@ -62,9 +63,9 @@
   arxiv=abs, % (ps, pdf, format)	
   %--- Style Options --- --- ---	
   % The following options are provided by the standard styles
-  isbn=false,%
-  url=false,%
-  doi=false,%
+  isbn=true,%
+  url=true,%
+  doi=true,%
   eprint=false,%	
 }%	
 

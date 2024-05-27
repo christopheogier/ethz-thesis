@@ -13,11 +13,12 @@
 
 \input{preamble/general}
 \usepackage[final]{pdfpages}
+\newcommand{\todo}[1]{\textcolor{red}{[ToDo: #1]}}
 
 % Bibliography
-\addbibresource[label=ownpubs]{ownpubs.bib}
-\addbibresource{bibliography.bib}
-\addbibresource{misc.bib}
+% \addbibresource[label=ownpubs]{ownpubs.bib}
+% \addbibresource{bibliography.bib}
+% \addbibresource{misc.bib}
 
 \begin{document}
 \frenchspacing
@@ -29,14 +30,15 @@
 %
 % Cover
 %
-% Uncomment and adapt these lines if you want to include a cover PDF.
-%
-\includepdf[pages={1,{}}]{cover/crop/cover_front.pdf}
-\cleardoublepage\setcounter{page}{1}
+% Uncomment and adapt these lines if you want to include a cover PDF:
+%\includepdf[pages={1,{}}]{cover/crop/cover_front.pdf}
+%\cleardoublepage\setcounter{page}{1}
 
 %
 % Frontmatter
 %
+
+
 
 \include{frontbackmatter/dirtytitlepage}
 \include{frontbackmatter/titlepage}
@@ -55,11 +57,20 @@
 \include{\dir/main}
 
 \cleardoublepage%
-\def\dir{chapters/sample-chapter}
+\def\dir{chapters/chapter_plainemorte}
 \include{\dir/main}
 
-% Include some blind text
-\Blinddocument
+\cleardoublepage%
+\def\dir{chapters/chapter_WPOFs}
+\include{\dir/main}
+
+\cleardoublepage%
+\def\dir{chapters/chapter_gprmax}
+\include{\dir/main}
+
+\cleardoublepage%
+\def\dir{chapters/Discussion}
+\include{\dir/main}
 
 \cleardoublepage%
 \def\dir{chapters/conclusion_outlook}
@@ -70,7 +81,9 @@
 \def\dir{chapters/appendix}
 \include{\dir/main}
 
-\cleardoublepage\include{frontbackmatter/bibliography}
+%\cleardoublepage\include{frontbackmatter/bibliography}
+\bibliographystyle{abbrvnat} % Specify the bibliography style
+\bibliography{bibliography.bib} % Specify the name of your .bib file
 
 \bookmarksetup{startatroot}
 %\pagenumbering{gobble}

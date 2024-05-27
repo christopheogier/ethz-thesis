@@ -1,0 +1,648 @@
+\chapter{Drainage of an ice-dammed lake through a supraglacial stream: hydraulics and thermodynamics}
+\label{ch:chapter_plainemorte}
+
+% \dictum[James C. Maxwell]{%
+%   The true logic of this world is in the calculus of probabilities. }%
+% \vskip 1em
+
+This chapter is published by The Cryosphere (European Geosciences Union publishing
+group) as:\\
+Ogier, C., Werder, M. A., Huss, M., Kull, I., Hodel, D., and Farinotti, D.: Drainage of an ice-dammed lake through a supraglacial stream: hydraulics and thermodynamics, The Cryosphere, 15, 5133–5150, https://doi.org/10.5194/tc-15-5133-2021, 2021. In this study I conducted the field campaign, did the data analysis, produced the figures, and co-wrote the article with Mauro Werder.
+
+
+\section{Background}
+
+Lac des Faverges, located at Glacier de la Plaine Morte in Switzerland, has been draining subglacially every summer from 2011 to 2018. Over time, the volume and peak discharge of these drainage events have increased, posing significant hazards to the downstream population. Notably, the 2018 drainage event caused substantial inundations in the village of Lenk, necessitating evacuations and resulting in considerable damage to houses and infrastructure \citep{GemeindeLenk2019}. To mitigate the risks, the local authorities decided to implement measures to artificially lower the lake level. In 2019, an artificial supraglacial channel was dug to initiate the lake drainage at the glacier surface. This intervention aimed to control the drainage process and reduce the hazard potential. 
+
+The unique situation in 2019, where the lake initially drained through an artificial channel and later partially drained subglacially, provided an opportunity to conduct extensive field measurements. During the 48 days of the lake drainage, I design and maintain a monitoring network to measure lake level, discharge, water temperature, and channel geometry with high spatial and temporal resolution. This data collection allowed us to capture key physical parameters involved in the supraglacial drainage of an ice-dammed lake and to answer the research questions addressed in SECTION XX IN INTRO.
+
+\section{Abstract}
+
+The glacier-dammed Lac des Faverges, located on Glacier de la Plaine Morte (Swiss Alps), drained annually as a glacier lake outburst flood since 2011. In 2018, the lake volume reached more than 2$\times$10$^6$\,m$^3$ and the resulting flood caused damages to the infrastructure downstream. In 2019, a supraglacial channel was dug to artificially initiate a surface lake drainage, thus limiting the lake water volume and the corresponding hazard. The peak in lake discharge was successfully reduced by over 90\,\% compared to 2018. We conducted extensive field measurements of the lake-channel system during the 48-days drainage event of 2019 to characterize its hydraulics and thermodynamics. The derived Darcy-Weisbach friction factor, which characterizes the water flow resistance in the channel, ranges from 0.17 to 0.48. This broad range emphasizes the factor’s variability, and questions the choice of a constant friction factor in glacio-hydrological models. For the Nusselt number, which relates the channel-wall melt to the water temperature, we show that the classic, empirical Dittus-Boelter equation with the standard coefficients is not adequately representing our measurements, and we propose a suitable pair of coefficients to fit our observations. This hints at the need to continue the research into how heat transfer at the ice/water interface is described in the context of glacial hydraulics.
+
+\section{Introduction}
+
+Glacier-dammed lakes are often unstable as ice dams are prone to rapidly fail which leads to partial or total drainage of the impounded lake through supraglacial, englacial and subglacial conduits \citep{Roberts2005}. The sudden release of the water impacts glacier dynamics \citep{Roethlisberger1972} and may lead to extreme peak discharge at the outlet \citep{Bjoernsson1992}. Lake dam failure can occur via three main mechanisms, or a combination thereof, which are the following: (i) high water pressure beneath the dam leads to its flotation \citep{Bjornsson2010}, (ii) the lake water leaks through the dam via e.g. pre-existing veins, channels form and then progressively enlarge \citep{Nye1976}, or (iii) the lake water overspills the dam and forms a breach due to ice erosion \citep{Walder&Costa1996,Raymond&Nolan2000,Mayer&Schuler2005}. The last process is less well-documented than the former two, and is more common for cold-based glaciers rather than temperate ones \citep{Bjornsson2010}. Enlargement of pre-existing veins and conduits (process ii) is possible due to frictional heating (i.e thermal energy dissipation in the waterflow due to potential energy release) and/or due to sensible heat fluxes (i.e advection of warm water from the lake).
+In general, both processes (ii) and (iii) lead to progressively rising discharge, whereas process (i) often results in a very fast drainage onset and high discharge. These fast lake drainages, so-called glacial lake outburst floods (GLOFs) or `jokulhlaups`, are a serious threat in populated areas and have caused major destruction in the past \citep[e.g.][]{Haeberli1983,Richardson&Reynolds2000,Bjoernsson2002, Ancey&al2019}.
+
+In the frame of hazard mitigation, glacier-dammed lakes have sometimes been drained artificially. In 1892, for example, an outburst event at Glacier de Tête Rousse (France) devastated the village of Saint Gervais les Bains and caused 175 fatalities. To prevent further hazardous events, a tunnel in rock and ice was dug in 1904 to empty the subglacial lake \citep{Vincent&al2010b}. This tunnel has been maintained until today but water did no longer run through it. In 2010, a subglacial water-filled cavity of 55,000\,m$^3$ was discovered at the same glacier through geophysical surveys, and was artificially drained using submersible pumps \citep{Vincent&al2012}. In some other cases, a channel was dug inside the ice or at the glacier surface to evacuate the lake water. The earliest of such examples, is from Glacier de Gi\'etro (Switzerland) in 1818, when a channel was dug through the ice dam to empty a lake (maximum volume of about $25\times10^6$\,m$^3$) impounded by an advancing glacier. Due to high channel erosion, however, large parts of the ice dam collapsed, releasing the remaining water in very short time, leading to 40 fatalities. The discharge peak reconstructed by \cite{Ancey&al2019} was about 14,500\,m$^3$s$^{-1}$. In 2005, the 0.7$\times10^6$\,m$^3$ ice-dammed lake on Glacier de Rochemelon (French Alps) were also drained artificially. This was done by combining a siphon method and a surface channel of 100\,m length \citep{Vincent&al2010}. The dangerous lake was emptied with success, with a peak discharge of merely 1.5\,m$^3$s$^{-1}$.
+
+In the present paper we focus on glacier lake drainage through a surface channel. When it comes to this sort of intervention for hazard mitigation, it is vital to know whether the drainage will be stable or unstable, i.e. whether the discharge will rise rapidly or not. \cite{Raymond&Nolan2000} introduced the concept of stable and unstable drainage based on observations from Black Rapids Glacier (Alaska) and identified a set of parameters that are of particular interest. In a stable drainage regime, for example, the lowering rate of the lake level is higher or equal to the channel incision rate and, thus, the lake discharge decreases with time. Conversely, in an unstable drainage regime the channel erosion is higher than the lake level lowering. The lake discharge hence increases with time and the lake is emptied completely and rapidly. \cite{Vincent&al2010} used the \cite{Raymond&Nolan2000} approach to reconstruct the drainage of the ice-marginal Lac de Rochemelon. They based their analysis on extensive field measurements carried out during the artificial drainage. They were able to conduct a sensitivity analysis on the relevant parameters that control the lake discharge, such as water temperature and lake area. However, some of their parameters were only inferred \textit{at post} from the field observations, and the analysis was thus not able to predict the peak discharge in advance.
+
+Since then, other studies have tried to model channelized surface drainage in order to focus on the physical processes at play. \cite{Jarosch&Gudmundsson2012}, for example, provided explicit numerical simulations of such drainage by including the effects of ice dynamics to the pre-existent open-channel flow models. This enabled the shape and evolution of the channel to be purely driven by ice physical and hydraulical processes, and not to be pre-defined as in earlier studies \citep[e.g.][]{Raymond&Nolan2000,Walder&Costa1996}. Channel slope, water flux and temperature were shown to be the main parameters controlling channel incision, which in turn dictates the discharge at the lake outlet. \cite{Kingslake&al2015} built upon the work of \cite{Raymond&Nolan2000}, and formulated a more generally applicable model by including considerations of sub-critical flow at the lake outlet. Although these studies represent the state-of-the-art in supraglacial lake drainage modelling, they have never been validated against independent field observations \citep{Pitcher&Smith2019}. This calls for corresponding datasets to be acquired, as the question about whether such models are able to correctly simulate supraglacial lake drainage in the context of hazard mitigation remains open.
+
+In this paper, we focus on the collection and interpretation of such a dataset, acquired for the hazardous Lac des Faverges at Glacier de la Plaine Morte (Switzerland). This ice-marginal lake drained subglacially every summer from 2011 to 2018 with increasing volume and peak discharge over time \citep{Huss&al2013b,Lindner&al2020}. A monitoring and early warning system was set up in 2012. The drainage event of 2018 caused inundations in the village of Lenk, north of the glacier. Parts of the village needed to be evacuated and damages to houses and infrastructure were substantial. The community thus decided to design measures to artificially lower the lake level to reduce the hazard potential. In 2019, the lake initially drained through an artificial, supraglacial channel  (Figure~\ref{fig:study_area}). Later during the summer, half of the lake volume drained subglacially again but without causing damage. We took advantage of this particular situation to carry out extensive field measurement during the 48 days of the lake drainage. In particular, we monitored lake level, discharge, water temperature and channel geometry evolution with high spatial and temporal resolution. This allows us to describe the applied flood risk mitigation strategy in detail, and to determine some of the most important physical parameters involved in the supraglacial drainage of an ice-dammed lake. We anticipate that this work will support further modelling studies and, thus, also help in the planning of future hazard mitigation measures.
+
+
+\section{Study area}
+
+\subsection{Previous GLOFs of Lac des Faverges}
+
+Glacier de la Plaine Morte is located in the Bernese Alps (46°23'N, 7°30'E), Switzerland. It is the largest plateau glacier in the European Alps (7.1 km$^2$ in 2019), with 90\% of its surface spanning an elevation range of only 2650--2800 m a.s.l. The ice-marginal Lac des Faverges is located in the upper reaches of the glacier, at its south-eastern margin (Figure~\ref{fig:study_area}a). According to aerial imagery of the Swiss Federal Office of Topography, the lake started forming in the 1970s, and now fills annually during the melt season. Because of the rapid ice loss over the last years, the basin enlarged, thus increasing the potential lake volume too \citep{Huss&al2013b}. Simultaneously, the maximum lake level lowered due to a significant reduction in ice surface elevation and since 2012, the lake water no longer overspill a sediment ridge to the south. Instead of draining superficially towards the Rhone basin, the lake water now drains englacially northwards, into the Rhine basin. The glacier lake outburst floods of Lac des Faverges have occurred annually since 2011 \citep{Lindner&al2020} and represent a serious concern for Lenk, a 2300-inhabitants village 10\,km downstream of the glacier snout \citep{HydrologicalYearbookofSwitzerland2019} . The lake level and temperature are monitored in detail since 2012 by Geopraevent AG (https://www.geopraevent.ch/) for early warning purposes, and daily images from an automatic camera are also available. An alarm is triggered when the rate of lake-level change reaches a given critical value. \cite{Huss&al2013b} projected the future evolution of Glacier de la Plaine Morte for the coming century, and also estimated the changes in the lake basin over the next decades. They concluded that a continuous increase in lake volume is likely, along with an increase in the potential flood hazard for the village of Lenk. In 2018, the lake discharge reached around 80\,m$^3$s$^{-1}$ causing damage to infrastructure for the first time \citep{GemeindeLenk2019}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{chapters/chapter_plainemorte/fig01.pdf}
+    \caption{(a) Map of Glacier de la Plaine Morte where the
+      ice-dammed Lac des Faverges lake is located. The lake area
+      displayed in (b) corresponds to the maximum lake size reached on
+      10 July 2019 (at a lake level of 2733.15 m a.s.l). The
+      supraglacial channel and the measurement stations P1 to P5 are
+      presented in (c) and (d). The longitudinal profile in (d) was
+      reconstructed from sparse elevation measurements of glacier
+      surface and channel bottom prior to supraglacial lake
+      drainage; the ice cave was not mapped and its representation is indicative only. The digital elevation model used in this figure was
+      created from post-drainage aerial images acquired by the Swiss
+      Federal Office of Topography on 3 September 2019 (see
+      Section~\ref{sec:methods} for more information).}
+    \label{fig:study_area}
+\end{figure}
+
+\subsection{The 2019 GLOF mitigation plan}
+
+In spring 2019, local authorities decided to limit the maximum lake volume by constructing a supra- and englacial channel to artificially drain the lake water in order to face the increasing threat by floods due to sudden lake drainage. This channel now connects the lake outlet to a permanent large moulin located $\sim$1.3\,km westward and about 20m lower in elevation (we will refer to this feature as to the "Moulin West" in the following, see Figure~\ref{fig:study_area}a). Past observations have shown that this moulin is in turn connected to the subglacial network, and that this connection often establishes relatively early during the melt season \citep{Finger&al2013}. In the middle of the channel there is a $\sim$100\,m long tunnel (labelled ``micro tunnel'' in Figure~\ref{fig:study_area}c), which is a remainder of the initial plan to drill a 40\,cm-diameter englacial tunnel, instead of a surface channel, for part of the distance (only a short section of the tunnel was completed, due to technical issues). The supraglacial channel was dug from the beginning of April until early July 2019. In a first stage, the 4-5 m deep snow cover had to be removed by snowcats. In a second stage, the solid and impermeable ice was cut and removed by an excavator. Because of these artificial interventions, the initial geometry of the channel is well known, with a width of 1\,m at the bottom, 4\,m to 7\,m depth from the ice surface, and a length of 1.3\,km (see Fig.~\ref{fig:study_area}d). During this second stage, water from ice- and snow-melt was present in the channel.
+
+The lake is connected via a preexisting ice-surface canyon and a subsequent natural ice cave to the artificial supraglacial channel (figure~\ref{fig:study_area}b). At the beginning of the canyon, where it connects to the lake, the water flows through an englacial siphon for about 30\,m.
+
+On 10 July 2019, at 11:00, the channel spillway elevation was lowered by an excavator to match the lake level and to artificially initiate the lake drainage. At that point, the spillway elevation was 2733.15\,m a.s.l., corresponding to a lake volume of $1.49\times10^6$\,m$^3\,\pm\,$ 0.11$\times10^6$\,m$^3$ and an area of 0.127 km$^2$. The lake water ran only into the first, upper part of the channel (Fig.~\ref{fig:study_area}c and d), and then infiltrated the glacier through a pre-existing moulin located within the micro-tunnel. A dye injection in the channel on 26 July 2019 revealed that the lake water exited the glacier outlet after about 2 hours, and that there was no significant lake water accumulation within the glacier.
+
+In the following, we limit our attention to the upper part of the channel through which the lake water flowed for 36 days in total (Figure~\ref{fig:study_area}c and 1d). This section (termed "channel" henceforth), was located between the cave outlet and the micro-tunnel entrance, was 540\,m long and had an average slope of 0.72\,\%. We designed our field campaign to monitor the hydraulic and thermodynamic properties of the water flow in the channel, and relate that to lake level and volume evolution.
+
+\section{Methods}
+\label{sec:methods}
+
+Two equations are of central importance to characterize the hydraulics and thermodynamics of the lake drainage through a supraglacial channel. The first is the Darcy-Weisbach equation \citep{Incropera&al2007} which relates the water flow through a channel to the hydraulic slope and to the channel cross-sectional geometry:
+%
+\begin{equation}
+  \label{eq:friction_factor}
+  \theta = \frac{f_D}{2g} \frac{v^2}{D_H},
+\end{equation}
+%
+where $g$ is the gravitational acceleration (m\,s$^{-2}$), $\theta$ is the hydraulic slope (dimensionless, expressed as water head drop per horizontal channel length), $D_H$ the hydraulic diameter (m), and $v$ the velocity averaged over the cross-section (m\,s$^{-1}$). The constant of proportionality is the Darcy-Weisbach friction factor $f_D$.
+
+The second equation characterises the thermodynamics, and relates the channel incision rate $m$ (m\,s$^{-1}$) to heat flux $q$ (W\,m$^{-2}$), where the latter can be related to the temperature difference between water and ice $\Delta T$ (K) via the dimensionless Nusselt number $\Nu$:
+%
+\begin{equation}
+  \label{eq:melt-rate}
+  m = \frac{q}{\rho_i L_f} =  \frac{1}{\rho_i L_f} \frac{k_w \,  \Nu \,  \Delta T}{\lambda}.
+\end{equation}
+%
+Here, $k_w$ is the thermal conductivity of water (W\,m$^{-1}$\,K$^{-1}$), $\rho_i$ is the ice density (kg\,m$^{-3}$), $L_f$ the latent heat of fusion (J\,kg$^{-1}$) and $\lambda$ (m) is the length scale over which the turbulent heat transfer occurs \citep{Incropera&al2007}.
+Note that $\Nu$ is not a constant but increases with discharge, and that the equations contain both physical constants (Table~\ref{table physical constants}) and factors (Table~\ref{table variable}) depending on the geometry ($\theta$, $D_H$), the hydraulics ($v$, $D_H$, $\theta$), or the thermodynamics ($T_w$). We will mirror this distinction in the description of the field measurements and the data processing.
+
+In the following, we will describe our approach to obtain all terms of those two equations, in particular by determining their dimensionless parameters $f_D$ and $\Nu$, with our field measurements and their suitable processing steps.
+
+
+\subsection{Field measurements}
+
+\subsubsection{Topography}
+
+Topography of the lake and channel is necessary to characterize the geometry of the channel, to determine the watershed contribution to lake filling, and to obtain the lake bathymetry in order to relate volume changes to lake surface elevation changes. To do so, we use Digital Elevation Models (DEMs) from the Swiss Federal Office of Topography (swisstopo). The latter were derived by using stereophotogrammetry, aerotriangulation, ground control points, and ADS100 Image strips (ground sampling distance of $\sim$0.1\,m) acquired during flights commissioned by the Swiss Federal Office of the Environment on 28 August 2018 and 3 September 2019 when the lake was empty (see code and data availability section for references). The lake volume for the years 2012 to 2017 were also calculated using swisstopo DEMs. The theoretical nominal error of the swisstopo DEMs is 2\,m but is likely to be lower in the present situation with good ground contrast. The main uncertainty in our estimate of lake volume is the poorly constrained ice-surface melt occurring in the lake basin between late August 2018 (date of DEM acquisition) and July 2019. This results in bare-ice melting in autumn 2018, and in bare-ice melting due to heat transfer from water to glacier-ice before the lake drainage. Since these melt processes are not quantified in the lake basin, we constrained the lake volume using DEMs from August 2018 ($1.38\times10^6$\,m$^3$) and September 2019 ($1.59\times10^6$\,m$^3$) as a lower and upper bound, respectively. We determine the volume to be the average of the two bounds, i.e. $1.49\times10^6$\,m$^3\,\pm\,$ 0.11$\times10^6$\,m$^3$. Note, for the subsequent calculation of lake outflow the bathymetry of the lake is required. For this, we use the 2018 DEM because ice-melt between 28 August 2018 to 10 July 2019 is expected to be significantly smaller than between 10 July 2019 to 3 September 2019.
+
+
+
+\subsubsection{Water pressure, temperature and conductivity in the channel}
+
+Most measurements were conducted at five locations (called "stations") along the channel, named P1 to P5 (Fig.~\ref{fig:study_area}c and \ref{fig:study_area}d). Stations P1 and P2 were marked with stakes drilled into the ice at the edge of the channel. At stations P3, P4 and P5 a cross-beam was installed between stakes drilled on either side of the channel.
+Coordinates and elevation of the stations' stakes were measured by differential Global Positioning System (GPS) with a vertical accuracy of $\pm$0.02\,m.
+
+At four stations (P1,P2,P3 and P5), autonomous and time-synchronized data loggers (DCX-22-CTD by Keller AG für Druckmesstechnik) were installed to continuously record water pressure, temperature and conductivity. The logging interval was set to 1\,s during tracer experiments and to 30\,s otherwise. The accuracy of temperature measurements are $\pm\,0.1^\circ$C at stations P1 and P2, and $\pm\,0.05^\circ$C at stations P3 and P5. We however note that this is a point measurement of the temperature with the sensor located at the floor of the channel, and that the bulk water temperature is therefore likely higher. The accuracy of the pressure measurements corresponds to a water column uncertainty of 0.005\,m. The accuracy of conductivity measurements is 5\,$\times$\,10$^{-5}$\,S\,m$^{-1}$ over the range 0\,S\,m$^{-1}$ to 0.2\,S\,m$^{-1}$, which covered all the observations.
+
+\subsubsection{Channel geometry}
+\label{subsubsection:channel_geometry}
+
+At the stations, channel bottom elevation was measured using measuring tape either by lowering it from the top to the channel bottom, or by abseiling with it into the channel. These measurements provide a longitudinal (i.e along the stream-flow direction) channel-elevation profile and were performed 11 times during the lake drainage. Estimated uncertainties are typically 0.1\,m to 0.5\,m in elevation and 1\,m in horizontal position. The best accuracy in elevation was obtained for cross-beam stations (0.1\,m). Channel width at the water flow surface was measured only infrequently at P3 and P5 due to complex accessibility, with an uncertainty of typically 0.1\,m.
+
+Higher temporal resolution of channel incision was obtained by measuring the clear diurnal melt-imprints left on the channel walls at P4 and P5 between 16 and 30 July 2019 (Fig.~\ref{fig:picture_channel}). We assume that the difference in elevation between two imprints represents the daily rate of channel floor erosion. This interpretation is supported by the observation that there were 14 marks over the 14-day observation period. We suppose that the deeper incised sections of the melt-imprints form during the afternoon, when relatively high water temperature and discharge yield to significant melt on the channel walls. Conversely, decreasing discharge and water stage during the night yields to less side-way melt on the wall section which then emerges from the water, thus producing the less deeply incised sections of the melt-imprints. We thus refer to these marks as daily water level cuts.
+Note that the channel geometry measurements described above give the temporal evolution of the channel, and thus the incision rates.
+
+
+\subsubsection{Hydraulics}
+
+To characterise the hydraulics of the channel we conducted measurements of discharge $Q$, the flow speed $v$, the stage $h$ (i.e water depth) in the channel, and the lake level $z_{\rm lake }$. In our notation, the variables used for an instantaneous measurement are marked with an index $i$ (e.g. $h_i$), to emphasize the difference with variables for continuous time series. Physical quantities for a spatial average between two stations are denoted with a bar (e.g. $\bar w$).
+Channel discharge $Q_i$ was measured using the salt dilution method \citep{Hubbard&Glasser2005} at stations P1,P2 and P3.
+We carried out 33 salt injections at 12 different days during the campaign. Conductivity was measured at the monitored stations downstream of the salt injection location, with stations P3, P2, and P1 situated far enough downstream to ensure the required complete mixing of the tracer.
+Discharge can then be calculated from the conductivity measurements, as described in Section~\ref{subsubsection:Hydraulics}.
+%
+The tracer experiments also provide information on travel time of the water between the stations equipped with conductivity sensors, and thus an average flow speed $\bar v_i$ between stations can be calculated.
+
+The water stage $h$ is measured via pressure measurements, which were corrected for atmospheric pressure variations. The measurements rely on the pressure transducer sinking to the bottom of the channel. This is ensured to be the case for all presented measurements, thanks to repeated visual inspection during field visits and because pressure transducers were weighted.  When pressures transducers were not at the bottom of the channel, times series were noisy and close to the atmospheric pressure value, and we discarded the data.
+
+The elevation of the lake level $z_{\rm lake }$ was measured by two pressure transducers operated by Geopraevent, with a logging interval of 10\,min. The position of the transducers was not always stable, probably due to icebergs shifting them; the resulting obvious shifts in the data were manually corrected. The absolute elevation of the lake level was measured at three instances during the drainage using a differential GPS.
+%
+
+\subsection{Data processing}
+
+
+\subsubsection{Lake input from precipitation, snow and ice melt}
+
+Water input $Q_{\rm in}$ into the lake, by snow- and ice-melt or liquid precipitation, was substantial during the period of lake drainage but could not be directly monitored due to its non-localized nature.
+%
+Instead, $Q_{\rm in}$ was estimated by using a distributed accumulation and temperature index melt-model driven by daily meteorological data \citep{Hock1999,Huss&al2015a}. The model has been calibrated using the seasonal mass balance data collected by the programme Glacier Monitoring in Switzerland  (GLAMOS). Seasonal mass balance is measured on Glacier de la Plaine Morte since 2009 using the direct glaciological method \citep{GlaciologicalReport2020}. We applied the model from September 2018 to September 2019 with a daily resolution to the watershed of the lake, and used it to estimate $Q_{\rm in}$ consisting of snowmelt from the glacierized and ice-free portion of the basin, bare-ice melt and liquid precipitation. The distributed mass balance model \citep[e.g.][]{Huss&al2021} was driven with meteorological observations from Montana (9\,km from the study site) and both melt factors as well as a precipitation correction factor have been calibrated to match seasonal mass balance observations on Plaine Morte in 2021. The location of the watershed over the gently-sloping glacier ice is inaccurately known, and was adjusted to match observed total lake volume on 10 July 2019 to the cumulative $Q_{\rm in}$ since the beginning of the melting season. The implicit assumption is, thus, that no water left the lake during that time span.
+
+
+\subsubsection{Hydraulics}
+\label{subsubsection:Hydraulics}
+
+The lake outflow $Q_{\rm out}$, which may consist of both supra- and subglacial runoff, was computed from lake level changes $\Delta z_{\rm lake }$ with a diurnal resolution ($\Delta t$) by considering (1) the lake surface area $A_{\rm lake}$ as a function of $z_{\rm lake }$ according to the DEM available for 28 August 2018, and (2) the recharge from melt $Q_{\rm in}$ at day $d$:
+%
+\begin{equation}
+  \label{eq:discharge_lake}
+Q_{\rm out,\it d} = Q_{\rm in, \it d} -A_{\rm lake,\it d}\frac{\Delta z_{\rm lake,\it d}}{\Delta t}.
+\end{equation}
+
+Instantaneous channel discharge ${Q}_i$ was determined at P3, P2 and P1 was from salt traces using the following steps. First, the natural background level of conductivity at these stations was removed for each injection, and the conductivity readings were converted into salt concentration using a calibration function derived from measurements conducted in laboratory. The function was derived by least-square regression of conductivity readings to salt concentration, for water temperature at 0°C and for concentration covering the entire range of observations. Second, salt concentrations were integrated over the time of the tracer passage, for each injection, and converted to discharge using the tracer dilution method \citep[e.g.][]{Hubbard&Glasser2005}.
+We aimed to obtain a continuous discharge time series $Q$ by using the direct measurements ${Q}_i$ to calibrate a stage-discharge relationship (or rating curve) at one station as follows
+%
+\begin{equation}\label{eq:stage/discharge}
+Q = a \, h^b,
+\end{equation}
+%
+where $a$ and $b$ are fitted parameters, and $h$ is the continuous time series of water stage at the selected station.  The stage-discharge relation was established at P3 due to the high quality of direct discharge measurements by salt dilution (see Appendix~\ref{sec:appendixB} for values), the most continuous and reliable water stage time series, and the reasonably small geometry changes in the cross-section. Least-square fitting yielded parameters $a$ = 4.78\,$\pm$0.95 and $b$ = 2.05\,$\pm$0.25. The latter is in the range of literature values for natural rivers \citep{Aydin&al2002, Aydin&al2006}. The resulting discharge was validated against 19 discharge measurements determined using salt dilution at different times and for stations not used in the calibration. This validation resulted in an root-mean-square-error of 0.11 m\,$^3$\,s$^{-1}$, which is in line with the uncertainty in $Q$ estimated from the standard error of parameters $a$ and $b$.
+
+A data gap in the channel's water stage time series between 13 and 24 July 2019 was filled using values based on daily lake discharge calculated using Eq.~(\ref{eq:discharge_lake}). To do so, we make the hypothesis that the channel is the only drainage path existing for the lake water, i.e. that there is no subglacial drainage occurring during that time period.
+
+The average hydraulic slope $\bar \theta_i$ over a channel segment of length $l$ is
+%
+\begin{equation}\label{eq:head_loss}
+\bar \theta_i = \frac{\Delta p_i}{l},
+\end{equation}
+%
+where $\Delta p_i$ is the difference of two hydraulic head measurements (i.e channel bottom elevation $z_i$ plus water stage $h_i$) at the beginning and at the end of the segment. We calculated $\bar \theta_i$, and subsequently derived quantities only for the segment P5-P3 because uncertainties in field measurements were the lowest for this part of the channel.
+
+The hydraulic diameter $D_H$ is given by
+%
+\begin{equation}\label{eq:hydraulic_diameter}
+D_H = \frac{4S}{P_w},
+\end{equation}
+%
+where $S$ (m$^2$) is the wetted cross-section area and $P_w$ (m) is the wetted perimeter. To determine the Darcy-Weisbach friction factor $f_D$ (see Eq.~\ref{eq:friction_factor}),  the hydraulic diameter over a channel segment at a given time, $\bar D_{H,i}$, needs to be determined. This is obtained by Eq.~\ref{eq:hydraulic_diameter} using $\bar S_i$ and $\bar P_{w,i}$. $\bar S_i$ is given by dividing the discharge $\hat Q_i$ by the velocity $\bar v_i$, known at the times of salt dilution experiments. The channel width $\bar w$ is assumed to be constant between P3 and P5 as well as constant in time, and we found a value of $\bar w = 2\,\pm\,0.5$\,m. In the following, we assume a rectangular cross-section, and define the mean wetted perimeter as $\bar P_{w,i} = 2\bar h_i + \bar w$. This assumption is motivated by the initial channel shape (i.e. the shape prior to drainage) and by visual inspections that revealed a cross-sectional shape which did not evolve substantially over time.
+
+The mean water stage $\bar h_i$ is calculated as $\bar h_i = \bar S_i/\bar w$. Alternatively, $\bar h_i$ can also be calculated as the mean of the water stage of two stations; both approaches lead to similar hydraulic diameters.
+
+Finally, the friction factor $f_D$ is calculated from Eq.~(\ref{eq:friction_factor}) with $\bar S_i$ and $\bar D_{H,i}$ between P5 and P3. Note that if we would consider the channel cross-section to be a semi-circle, we would write $D_H = 2\sqrt{S_i/\pi}$, and $f_D$ would be on average 11\% smaller.
+As an alternative to the Darcy-Weisbach friction factor, the Manning roughness law can be preferred to characterize the flow resistance \citep{Clarke2003}. The Manning roughness coefficient $n'$ (m$^{-1/3}$\,s) can be calculated from $f_D$ by $f_D = 8gn'^2/R_H^{1/3}$, where the hydraulic radius $R_H$ is equal to $D_H/4$.
+
+The Reynolds number $Re$ (dimensionless) is the ratio of inertial forces to viscous forces within a fluid, and quantifies the turbulent flow. It is calculated at the single cross-section P3 using $\bar w$, and both continuous discharge $Q$ and water stage $h$:
+ %
+\begin{equation}\label{eq:reynolds}
+Re = \frac{{v} D_H}{\nu}.
+\end{equation}
+ %
+Here, $v = Q / S$ , with $S = h \bar w$, whilst $D_H$ is calculated at P3 using Eq.~(\ref{eq:hydraulic_diameter}) and $\nu$ is the kinematic viscosity (m$^2$\,s$^{-1}$).
+
+\subsubsection{Thermodynamics}
+\label{subsubsection:thermo}
+
+The Nusselt number $\Nu$, i.e. the unknown parameter in Eq.~(\ref{eq:melt-rate}), is defined as the ratio between convective and conductive heat transfer across the water-ice interface:
+%
+\begin{equation}\label{eq:nusselt}
+  \Nu = \frac{h_t \, \lambda}{k_w},
+\end{equation}
+where $\lambda$ (m) is the length scale over which the convective heat transfer occurs,  $h_t$ is the convective heat transfer coefficient (W\,m$^{-2}$\,K$^{-1}$), and $k_w$ is the thermal conductivity of water (W\,m$^{-1}$\,K$^{-1}$).
+%
+For $\lambda$ we use the typical hydraulic diameter of the channel $D_H$, which is often used in glaciology \citep{Clarke2003,Sommers&Rajaram2020} and other fields \citep{Incropera&al2007,Shah&London1978}. Note that this choice of $\lambda$ is different to $P_w$, which was used by \cite{Walder&Costa1996} when simulating ice-dam breaches.
+
+Since the hydraulic diameter strongly depends on the channel width in the case of a broad channel, it is relatively poorly constrained in our study. We therefore define $\lambda$ as the typical, and constant, hydraulic diameter which we calculate using Eq.~(\ref{eq:hydraulic_diameter}). With $\bar h$ the typical water stage observed in the channel ($\bar h = 0.5\,\pm\,0.1$\,m) we obtain $P_w =3\,\pm\,0.54$\,m and $\bar D_H = 1.30 \pm 0.22$\,m. For comparison, $\bar D_{H,i}$ calculated above ranges between $1.0$\,m to $1.6$\,m, with a mean value of $1.26$\,m. We then use $\lambda = \bar D_H$ to obtain $\Nu$ in Eq.~(\ref{eq:nusselt}).
+
+In glaciological applications and elsewhere, $\Nu$ is usually calculated using an empirical relation, often the Dittus-Boelter equation \citep[e.g.][]{Clarke2003,Spring&Hutter1981,Nye1976}, or the Gnielinski correlation \citep[e.g.][]{Ancey&al2019}. These two equations parameterise $\Nu$ using the Reynolds ($\Re$) and Prandtl ($\Pr$) numbers, where the latter is the ratio of the dynamic viscosity to the thermal diffusivity of water ($\Pr = 13.5$ at 0$^\circ$C, \cite{Clarke2003}).
+The Dittus-Boelter equation reads
+\begin{equation}
+    \Nu = A\, \Pr^\alpha \Re^\beta,
+    \label{eq:DB}
+\end{equation}
+%
+where $A$, $\alpha$ and $\beta$ are empirical coefficients given in the literature  \citep{Incropera&al2007}.
+The Gnielinski correlation additionally uses $f_D$ and reads
+%
+\begin{equation}
+    \Nu =  \frac{\frac{f_D}{8}(\Re - 1000)\Pr}{1 + 12.7(\frac{f_D}{8})^\frac{1}{2}(\Pr^\frac{2}{3}-1)}.
+    \label{eq:Gnielinski}
+\end{equation}
+
+In addition to these two empirical relations, we present below two alternative methods to calculate $\Nu$ directly from our measurements (i.e. without using a parametrisation). We can thus compare our findings to the above empirical equations.
+%
+The first method, termed the {\it melt-rate method}, considers the melt rate and water temperature at one location as a function of time. $\Nu$ is then directly derived from Eq.~(\ref{eq:melt-rate}) with the vertical melt rate $m$ given by repeated channel floor elevation measurements and with the water temperature given by the continuous monitoring. The water temperature measurements are averaged over the time span between two channel elevation measurements, therefore, $\Nu$ obtained by using the melt-rate method is time-averaged as well.
+
+The second method, termed the {\it spatial-cooling rate method}, considers the water temperature at an instance in time and its decrease as a function of distance along the channel. The water temperature $T_w(x)$ decreases following an exponential law \citep[e.g.][]{Isenko&al2005}, which can be derived from energy conservation (see Appendix~\ref{sec:appendixA}) and can be written as
+%
+\begin{equation}\label{eq:exponential_law_temperature}
+T_w(x) = T_0\,\mathrm{e}^{-\frac{x}{x_0}},
+\end{equation}
+%
+where $x$ is the distance (m) from the origin (in our case P5, the uppermost monitoring station), $T_0$ is the temperature at this location (°C), and $x_0$ is the e-folding length (m). Physically, $x_0$ is the distance over which the temperature decreases by a factor $\mathrm{e}$ and can be expressed in terms of $\Nu$, $Q$, and the wetted perimeter $\bar P_w$ as
+%
+\begin{equation}\label{eq:x_0}
+x_0 = \frac{Q\, c_w \rho_w \lambda}{\Nu\, k_w \, \bar P_w},
+\end{equation}
+%
+where $c_w$ is the specific heat capacity of water (J\,K$^{-1}$\,kg$^{-1}$).  We obtain $x_0$ from a least-square fit of Eq.~(\ref{eq:exponential_law_temperature}) to the hourly-averaged temperature at stations P5, P3, P2 and P1 and, thus, $\Nu$ can be calculated.
+
+
+
+\subsubsection{Uncertainty propagation}
+
+In this study, uncertainties of field measurements come from the sensors' sensitivity and limitations of the measurement procedures. Both uncertainties are quantified and propagated through the equations by using a Monte-Carlo approach \citep{Carlson2020}. Since this allows us to propagate errors faithfully also through non-linear functions, results are systematically presented with their standard deviation.
+
+
+\begin{table}[H]
+\centering
+\caption{Physical constants used in this work.  If not specified, constant refers to the property of water at at 0°C.}
+\begin{tabular}{l c r l}
+\hline
+\textbf{Physical constants} & \textbf{Var.} & \textbf{Value} & \textbf{Units}\\
+\hline
+Density of ice &  $\rho_i$ & 900& kg\,m$^{-3}$ \\
+Latent heat of fusion & $L_f$ & 333$\times10^3$ & J\,kg$^{-1}$\\
+Density &  $\rho_w$ & 1000 & kg\,m$^{-3}$ \\
+Specific heat capacity & $C_w$ & 4.18$\times10^3$ & J\,K$^{-1}$\,kg$^{-1}$\\
+Thermal conductivity & $k_w$ & 0.57 & W\,m$^{-1}$\,K$^{-1}$\\
+Kinematic viscosity  & $\nu$ & 1.8$\times10^{-6}$ & m$^2$\,s$^{-1}$\\
+Prandtl number & $Pr$ & 13.5 & -\\
+
+\hline
+\end{tabular}
+\label{table physical constants}
+\end{table}
+
+
+
+\begin{table}[H]
+  \makeatletter
+  \if@twocolumn
+  \else
+  \renewcommand{\arraystretch}{0.65}
+  \fi
+  \makeatother
+\centering
+\caption{Table of variable names. \textit{salt dil.} stands for "salt dilution experiment technique", and \textit{a.s.l} stands for "above sea level". Individual quantities might either be available for a point in time ($PT$; the index \textit{i} means that the measurement is instantaneous) or as a time series ($TS$), or might be constant through time ($CT$). A bar over the corresponding symbol indicates that the quantity is averaged over a given channel segment, i.e. between two stations.}
+\begin{tabular}{l c c c c }
+\hline
+\textbf{Direct field Measurements} & \multicolumn{3}{c}{\textbf{Notation}} & \textbf{Unit}\\
+%\cline{2-3}
+\multirow{2}{2em} & PT & CT & TS &\\
+\hline
+\textit{of channel:} &  & & &\\
+Water stage & $h_i$ & & $h$ & m \\
+Channel floor elevation & $z_i$ & & & m (a.s.l)\\
+Hydraulic head & $p_i$ & && m\\
+Hydraulic slope & $\theta_i$ & && -\\
+Width & $w_i$ && & m \\
+Discharge (salt dil.)  & ${Q}_i$ & &&  m\,$^3$\,s$^{-1}$\\
+Stream velocity (salt dil.)  & $\bar v_i$ & &&  m\,s$^{-1}$\\
+Wetted cross-section (salt dil.) & $\bar S_i$ && & m$^2$\\
+Water temperature & && $T_w$ & °C\\
+\cline{1-1}
+\textit{of lake:} & & & \\
+Lake level & & &$z_{\rm lake}$  & m\\
+\hline
+\textbf{Derived \& other variables} & &  & \\
+\hline
+\textit{of channel:} & & &\\
+Melt rate & $m$ &&& m\,s$^{-1}$\\
+Discharge & & & $Q$ &  m\,$^3$\,s$^{-1}$\\
+Stream velocity & && $v$ & m\,s$^{-1}$\\
+Wetted cross-section & && $S$ & m$^2$\\
+Wetted perimeter & $P_{w,i}$ && $P_w$ & m\\
+Hydraulic diameter & $D_{H,i}$ && $D_H$ & m\\
+Reynolds number &  && $Re$ & -\\
+Darcy Weisbach friction factor & $f_D$ && & -\\
+Manning roughness & $n'$ && & m$^{-1/3}$\,s\\
+Convective heat transfer & $h_t$ && & W\,m$^{-2}$\,K$^{-1}$\\
+Heat flux & && $q$ & W\,m$^{-2}$\\
+Energy content of water &&& $E$ & J\,m$^{-1}$\\
+Energy source term &&& $M$ & W\,m$^{-1}$\\
+e-folding length of water temperature decrease  & && $x_0$ & m\\
+Nusselt number & && $\Nu$ & - \\
+\cline{1-1}
+\textit{of lake:} & & & \\
+Lake surface area & && $A_{\rm lake}$ & m$^2$\\
+Lake inflow & & &$Q_{\rm in}$ & m\,$^3$\,s$^{-1}$\\
+Lake outflow &  & &$Q_{\rm out}$  & m\,$^3$\,s$^{-1}$\\
+\hline
+\textbf{Time independent variable} & & &   \\
+\hline
+Length between two stations & & $l$ &  & m\\
+Distance in channel from P5 & & $x$ &  & m\\
+\hline
+\textbf{Time and space independent parameter} & & & \\
+\hline
+\textit{of channel:} \\
+Mean width & & $\bar w$ & &  m\\
+Mean water stage & &$\bar h$&  & m\\
+Mean water perimeter & &$\bar P_w$&  & m\\
+Mean hydraulic diameter & &$\bar D_H$&  & m\\
+Nusselt length scale  & &$\lambda = D_H$& & m\\
+\hline
+\end{tabular}
+\label{table variable}
+\end{table}
+
+\FloatBarrier
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Lake drainage hydrographs 2012-2019}
+\label{sec:results:phases}
+
+Figure~\ref{fig:outburst} shows the temporal evolution of lake-water volumes between 2012 and 2019, and hourly-averaged discharge. The lake water input $Q_{\rm in}$ was only accounted for the year 2019, since it becomes relevant to take it into account in the calculation of $Q_{\rm out}$, due to much smaller value of the latter compared to previous years.
+The increasing trend of both maximum volume and peak discharge from 2012 to 2018 are clearly visible. The drainage onset time depends, amongst others, on the meteorological conditions during the lake filling phase. In warmer years, the date of complete filling of the lake basin occurs earlier. Also, an early depletion of the winter snow cover is likely to be linked with an early development of the subglacial drainage system, which in turn favours subglacial lake drainage \citep{GlaciologicalReport2018}.  Since 2014, the lake volume has systematically reached more than $2\times10^6$\,m$^3$, and the subglacial release of the total lake water occurred within a few days, except for 2015 when the water drained through a supraglacial channel into a nearby moulin for about two weeks.
+
+The 2019 lake drainage pattern is drastically different from previous years due to the artificial intervention. We distinguish four different phases. The first phase (Phase I) is from 10 July to 1 August 2019, when approximately half of the lake emptied through the supraglacial channel. Phase II is from 2 to 15 August 2019, when the lake level remains roughly constant but  lake water was still running in the channel. Phase III is from 15 to 21 August 2019, when lake water stopped running in the channel and the lake level remained constant or slightly increased. Phase IV is from 22 to 27 August 2019, when the second half of the lake volume emptied subglacially, similar to the natural drainage mechanism of previous years. Note that the discharge peak of 3.5\,m$^3$s$^{-1}$ was much lower compared to other years, e.g. over 20 times lower than in 2018 (Fig.~\ref{fig:outburst}). In this regard, the technical intervention was very successful.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{chapters/chapter_plainemorte/fig02.pdf}
+    \caption{Lake volume (a) and lake discharge (b) during summer from 2012 to 2019. The year 2019 is represented by a black and thicker line. Discharge is shown as  hourly averages for 2012 to 2018, and daily averages for 2019. Note that the 2018 discharge peak (78 m$^3$\,s$^{-1}$) is beyond the plotted range.}
+    \label{fig:outburst}
+\end{figure}
+
+\subsection{Channel geometry}
+
+The channel bottom elevation and its evolution with time at five locations along the channel is presented in Fig.~\ref{canal_profile}. The incision shows a uniform spatial pattern, and is about 8\,m during the supraglacial drainage (phase I and II: 10 July - 15 August 2019). Note that the channel slope was not uniform prior to the drainage onset (Fig.~\ref{fig:study_area}d), and that it remained relatively constant after natural adjustments during the first days of drainage. The low slope at the channel segment P5--P3 leads to uniform stream flow, that allowed the formation of clear daily water level cuts (Fig.~\ref{fig:picture_channel}). In contrast, the higher slope between P2 and P1 led to more turbulent water flow and subsequent formation of step-pools \citep[e.g.][]{Vatne&al2016}. Note that meandering \citep{Karlstrom&al2013} did not occur and, thus, the channel length stayed constant.
+
+Widening is substantial only at P5 where channel width increased from 1\,m on 10 July to 3\,$\pm$\,0.1\,m on 8 August 2019. Further downstream, e.g. at P4, the widening is minor (Fig.~\ref{fig:picture_channel}). Overall, the channel geometry was mainly driven by vertical incision rather than lateral melting.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{chapters/chapter_plainemorte/fig03.pdf}
+    \caption{Channel bottom elevation at P5, P4, P3, P2 and P1 during the lake drainage (locations are presented in Fig.~\ref{fig:study_area}). The color-coded crosses indicate lake level at the corresponding time.  Note that the actual lake was located further east than P5.  Distance between stations are taken along the channel flow path.}
+    \label{canal_profile}
+\end{figure}
+
+\FloatBarrier
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{chapters/chapter_plainemorte/fig04.pdf}
+    \caption{Photo from within the supraglacial channel from P4 towards P3. The dashed line represents the highest water stage in the channel (10 July 2019) prior to the supraglacial lake drainage start and prior to the onset of channel-bottom incision. Daily water level cuts are clearly visible on both sides. The picture was taken on 30 July 2019.}
+    \label{fig:picture_channel}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Channel hydraulics}
+
+Water stage (Fig.~\ref{fig:stage_P5_P3}) and the hydraulic slope determine the water discharge.
+Water stage measurements were challenging  during the first days of the supra-glacial drainage (i.e. 10 July 2019, beginning of Phase I) since the excavator used to deepen the channel spillway left irregular traces on the channel bottom. Nevertheless, probe measurements (at P5, P4, P3, P2 and P1) together with water pressure sensors (at P5, P3, P2 and P1 only) reveal that water stage on 10 July 2019 was around 1\,m at P5, 0.4\,m at P4 (which was close to the spillway location), and 0.3-0.5\,m for the others stations. Water stage stabilized at 0.6\,m after a few days of drainage (Phase I) at P5, and at around 0.4-0.5\,m at the others stations. Daily fluctuation were typically of 0.1\,m due to the daily melting cycle influencing the lake input. At P1, measurements were soon no longer feasible because of the formation of step pools. Water stage slowly decreased to a value of 0.1-0.2\,m uniformly over the channel during Phase III and Phase IV, when lake water no longer drained through the channel.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{chapters/chapter_plainemorte/fig05.pdf}
+    \caption{Hourly time series of water stage at P5 (dashed black line) and P3 (blue line) from continuous pressure measurements. Direct observations (and associated standard errors) from field visits are marked by black diamonds and blue dots, respectively. Part of the discrepancies between direct field observations and continuous water stage from pressure sensors can be explained by the probing not always being made at the exact location of the sensors.}
+    \label{fig:stage_P5_P3}
+\end{figure}
+
+\FloatBarrier
+
+
+Figure~\ref{fig:channel_discharge} presents time series of water temperature, channel discharge and channel-bottom elevation at station P3, along with the lake level. Data gaps in discharge and temperature times series are due to disruptions of logging. The daily mean discharge time series between 13 and 24 July 2019 has been calculated using lake level change and modelled lake inflow (see Section~\ref{subsubsection:Hydraulics}). The peak in channel discharge was reached on 14 July 2019 (Phase I), with a daily average of ~1.7\,m$^3$s$^{-1}$. The good agreement between the different direct discharge measurements ($\hat Q_i$) and the continuous discharge at P3 indicates that the stage/discharge relationship is valid over the entire drainage duration. The decoupling between $Q$ at P3 and $Q_{\rm out}$ during Phase III and IV (Fig.~\ref{fig:channel_discharge}b) is because the lake did no longer drain through the channel at that stage. The temperature and discharge signal of the lake water is clearly visible in the channel until 14 August 2019. This is in contrast with the temperature signal from the glacier's daily melt pattern from 23 August to 4 September 2019 (water temperature close to 0°C at night), when the lake was no longer draining through the channel (beginning of Phase III).
+
+
+The stable mode of drainage during Phase I is corroborated by the observation that the distance between daily water level cuts in the channel (indicative for channel floor erosion, cf. Sec.~\ref{subsubsection:channel_geometry}) corresponds to the rate at which the lake level lowers (Fig.~\ref{fig:channel_discharge}). At P5, this distance varies between 30\,cm and 60\,cm per day during the second half of July 2019, and  drops on average to 12\,cm per day for the first half of August 2019.
+
+
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{chapters/chapter_plainemorte/fig06.pdf}
+    \caption{(a) Lake level elevation (continuous curve), channel bottom elevation (blue dots) and water level cut elevations (black dots) at P5. (b) Hourly channel discharge at P3 ($Q$), direct discharge measurement by salt dilution averaged over all stations ($\bar Q_i$), and lake discharge from elevation change ($Q_{\rm out}$). (c) Water temperature at P3. The four distinct lake drainage phases are delimited by the dashed line and explained in the main text (Sec.~\ref{sec:results:phases}). Standard uncertainties for hourly discharge and temperature are shown with light bands.}
+    \label{fig:channel_discharge}
+\end{figure*}
+
+\FloatBarrier
+
+The stream flow in the channel is highly turbulent during supraglacial drainage. The Reynolds number fluctuates with discharge, and is between 2.5$\times$10$^5$ and 1.5$\times$10$^6$  (Phase I and II). Note that the transition between laminar flow in the lake and turbulent flow somewhere at the channel entrance is further upstream than P5 (the location is not known exactly).
+
+The Darcy-Weisbach friction factor was calculated for the channel segment between P5 and P3, where accurate calculation of $\bar D_H$ and thus $\bar P_w$, was possible. The time series of the inferred friction factor is presented in Table~\ref{table:friction_factor}.
+
+\begin{table}[H]
+\centering % To place a caption above a table
+\caption{Darcy-Weisbach friction factor $f_D$ and Manning roughness $n'$  with associated standard deviation in the channel segment between stations P5 and P3. All measurements were performed during Phase I of the drainage when salt dilution experiments were conducted (see Fig.~\ref{fig:channel_discharge}).}
+\begin{tabular}{c c c}
+\hline
+\textbf{Date and time (2019)} & \boldmath{$f_D$} (-) & \boldmath{$n'$} (m$^{-1/3}$\,s)\\
+\hline
+11 July, 09:27 & 0.41 $\pm$ 0.12 & 0.055 ± 0.009 \\
+11 July, 12:51 & 0.34 $\pm$ 0.10 & 0.051 ± 0.008  \\
+16 July, 14:12 & 0.17 $\pm$ 0.02 & 0.038 ± 0.003 \\
+25 July, 08:44 & 0.17 $\pm$ 0.02 & 0.040 ± 0.003 \\
+30 July, 14:47 & 0.48 $\pm$ 0.07 &  0.068 ± 0.005  \\
+30 July, 18:34 & 0.19 $\pm$ 0.03 & 0.042 ± 0.003 \\
+31 July, 09:39 & 0.35 $\pm$ 0.06 &  0.056 ± 0.005\\
+\hline
+Mean & 0.30 ± 0.12 & 0.050 ± 0.011\\
+\hline
+\end{tabular}
+\label{table:friction_factor}
+\end{table}
+
+
+\subsection{Thermodynamics}
+
+Water temperature, measured continuously at P5, P3, P2, and P1, shows an exponential decrease along the channel (Fig.~\ref{fig:exponential_temperature_decrease}), and exhibits daily fluctuations (Fig.~\ref{fig:channel_discharge}, e.g. $\pm$\,0.1°C during Phase I). The relation given in Eq.~(\ref{eq:exponential_law_temperature}) is fitted to these temperature observations. Note that the pattern is similar whenever lake water was flowing through the channel.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{chapters/chapter_plainemorte/fig07.pdf}
+    \caption{Temperature decrease along the channel-flow path at three different times. Dots are observations, lines correspond to the fitted exponential law according to Eq.~(\ref{eq:exponential_law_temperature}).}
+    \label{fig:exponential_temperature_decrease}
+\end{figure}
+
+Figure~\ref{fig:nusselt} presents time series of the Nusselt number $\Nu$ calculated from our measurements according to the melt-rate method (Eq.~(\ref{eq:melt-rate})), the spatial-cooling rate method (Eq.~(\ref{eq:x_0})), as well as from the empirical Dittus-Boelter equation (Eq.~(\ref{eq:DB})) and the Gnielinski correlation (Eq.~(\ref{eq:Gnielinski})). For the Dittus-Boelter equation we use coefficients $A$, $\alpha$ and $\beta$ from previous studies (Table~\ref{table:DBcoefficients}); for the Gnielinski correlation, we use the mean friction factor $f_D = 0.3$ (Table~\ref{table:friction_factor}). The heat transfer is dominated by convection, with typical $\Nu$ values in the order of 10$^4$. The results from the melt-rate and spatial-cooling rate methods are in good agreement, except for the period 11-16 July 2019 (beginning of Phase I). For this period, the higher $\Nu$ values obtained by the melt rate method compared to the spatial-cooling rate method could be explained by the very high melt rate at P3 (see Fig~\ref{canal_profile}).
+
+Our values for $\Nu$ are significantly higher than the ones derived from the Dittus-Boelter equation using standard coefficients \cite[e.g.][]{Clarke2003}. We note, however, that the coefficients used by \cite{Lunardini&al1986} and \cite{Vincent&al2010} result in $\Nu$-values that lie at the lower and upper edge, respectively, of the uncertainty range of our $\Nu$-values. Conversely, the Gnielinski correlation produces values of $\Nu$ that are significantly higher than our results, as well as the ones obtained by the alternative methods.
+
+
+\begin{table}[h]
+\centering % To place a caption above a table
+\caption{Dimensionless coefficients of the Dittus-Boelter equation (Eq.~(\ref{eq:DB})) from various studies, including this one (see Section~\ref{subsubsection:thermo}).}
+\begin{tabular}{l c c c}
+\hline
+Study & $A$ & $\alpha$ & $\beta$ \\
+\hline
+Standard \citep[e.g.][]{Clarke2003} & 0.023 & 2/5 & 0.8    \\
+{\cite{Lunardini&al1986}} & 0.0078 & 1/3 & 0.927    \\
+{\cite{Vincent&al2010b}} & 0.332 & 1/3 & 0.74  \\
+This study & 1.78 & 1/3 & 0.58 \\
+\hline
+\end{tabular}
+\label{table:DBcoefficients}
+\end{table}
+
+
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{chapters/chapter_plainemorte/fig08.pdf}
+    \caption{Nusselt number $\Nu$ at P3 computed using two different approaches and several empirical relations. \textit{MR method} refers to melt-rate method (Eq.~(\ref{eq:melt-rate})) and \textit{SCR method} refers to spatial-cooling rate method (Eq.~(\ref{eq:x_0})). The Dittus Boelter equation and the Gnielinski correlation are presented in Eq.~(\ref{eq:DB}) and Eq.~(\ref{eq:Gnielinski}), respectively. For the sake of readability, the standard deviation (band around the mean values) is only displayed for the values derived from our measurements. The vertical dashed line separates Phase I and II of the lake drainage.}
+    \label{fig:nusselt}
+\end{figure*}
+
+\FloatBarrier
+
+The Nusselt number $\Nu$ is dependent on the Reynolds number $\Re$ via turbulent mixing. Figure~\ref{fig:Re_Nu}a shows the relation between $\Nu$ and $\Re$ as determined by our field measurements, along with the previously used parameterisations for $\Nu$.
+It is noteworthy that our results show a less pronounced dependence of $\Nu$ on $\Re$ than other assessments.  Indeed, fitting the Dittus-Boelter equation (coefficients $A$ and $\beta$, Eq.~(\ref{eq:DB})) to our data yields an exponent of $\beta=0.58$, which is low compared to exponents between 0.75 and 0.93 found by \cite{Clarke2003}, \cite{Lunardini&al1986} and \cite{Vincent&al2010b} (Table~\ref{table:DBcoefficients}).
+
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{chapters/chapter_plainemorte/fig09.pdf}
+    \caption{Nusselt number (a) and friction factor (b) against Reynolds number (Eq.~(\ref{eq:reynolds})). Note that all quantities are dimensionless. The Nusselt number from our observations is calculated using the \textit{melt-rate method} at P3 (Eq.~(\ref{eq:melt-rate})) and the \textit{spatial-cooling rate method} (Eq.~(\ref{eq:x_0})). The band shows the mean relative error of 9\%. The Nusselt number is also calculated from the Dittus-Boelter equation Eq.~(\ref{eq:DB})) using coefficients (named "D-B coef." in the legend) from other studies (see Table~\ref{table:DBcoefficients}) and the Gnielinski correlation (Eq.~(\ref{eq:Gnielinski})).}
+    \label{fig:Re_Nu}
+\end{figure*}
+
+
+\section{Discussion}
+
+We collected an extensive data set of a supraglacial lake drainage through a channel, and characterise its hydraulics and thermodynamics.  We derive key parameters, namely the factors of hydraulic friction and heat transfer.  In the following, we discuss the implications of our findings to future studies and for hazard mitigation measures.
+
+\subsection{Reconstruction of the lake drainage during Phase I--IV}
+
+The four phases of the lake drainage are interpreted as follows:  Phase I is characterized by stable supraglacial lake drainage, i.e. the lake draw-down is controlled by the rate of vertical channel incision. There is a significant difference between the computed lake outflow $Q_{\rm out}$ and the channel discharge $Q$ at P3 during the sub-period 26 July to 30 July 2019 (Fig.\ref{fig:channel_discharge}b) coinciding with strong rain that ended a heat wave which started on 20 July 2019.
+
+During Phase II, the lake level remained constant (Fig.\ref{fig:channel_discharge}a), but the lake water was still running in the channel as evidenced by the relatively warm water (Fig.\ref{fig:channel_discharge}c). This is indicative for the outflow of the lake-channel system behaving like a non-erosive spillway: the channel only received the water from snow and ice melt, which spilled above a constant elevation. The  exact location of the spillway is unknown: it could either be located in the englacial siphon between the main lake and the canyon, or in the ice cave (Fig.~\ref{fig:study_area}) although visual inspection gave no evidence for the latter.
+Phase III is characterized by the stop of the supraglacial drainage around 15 August 2019. It is likely that lake surface became too small, such that the lake draw-down became higher than the channel incision. This is especially likely if the channel was disconnected from the main lake by the spillway between the canyon and the main lake, or in the case of subglacial leaks. Although no sensors were installed in the channel from 19 to 23 August 2019, the channel incision between 14 to 23 August 2019 was negligible (Fig.~\ref{canal_profile}). This indicates that the peak in $Q_{\rm out}$ on 19 August 2019 was due to subglacial rather than supraglacial drainage.
+
+During Phase IV, the lake emptied subglacially, with no influence from the supraglacial channel. The triggering mechanism is presumably similar to previous years. \cite{Lindner&al2020} showed, for example, that the drainage in 2016 was initiated by hydrofracturing.
+
+\subsection{Hydraulics}
+
+We calculated the hydraulic friction factor $f_D$ of the channel at several instances during Phase I (Table~\ref{table:friction_factor}), when the necessary salt-dilution measurements are available. Values for $f_D$ range from 0.17 to 0.48, corresponding to a Manning roughness $n'$ of 0.038 to 0.068\,m$^{-1/3}$\,s. These values are similar to the ones of \cite{Mernild&al2006}, who inferred $n'$ between 0.036 and 0.058\,m$^{-1/3}$\,s in supraglacial streams on the Greenland Ice Sheet. Similar observations of \cite{Gleason&al2016} revealed strong variability of $n'$ in time and space, ranging from 0.009 to 0.154\,m$^{-1/3}$\,s with a mean value of 0.035$\pm$0.027\,m$^{-1/3}$\,s, similar to ours. The lower end of their range corresponds to a smooth channel, whereas the upper end cannot be explained by ice-channel roughness alone and is an indication for slush-ice being present in the channel, but also for the influence of form friction (as opposed to skin friction) in a complex three dimensional channel geometry.
+
+Why the friction factors vary so much is unclear from our observations. For instance, there is no correlation with the Reynolds number (Fig.~\ref{fig:Re_Nu}b). Previous studies already highlighted the need to better quantify hydraulics of englacial channels \citep[e.g.][]{Clarke2003, Gleason&al2016}, and the need for additional in situ observations to better constrain the parameters that control  discharge \citep[e.g.][]{Kingslake&al2015, Smith&al2015}. Our work provides a range of accurate, field-based friction factors for a supraglacial stream at different times during a lake drainage, and shows its variability.
+%
+However, the large range of friction factor values reported here and in other studies suggests that using a constant value in modelling studies could be inappropriate.
+Instead, we suggest that modelling studies should treat $f_D$ as a stochastic variable \citep[e.g.][]{Brinkerhoff&al2021,Irarrazaval&al2021}, i.e. that they should use a range of values as opposed to a single one.
+
+\subsection{Thermodynamics}
+
+In general, the supraglacial drainage of an ice-dammed lake progresses via the incision of the channel by melt. The incision rate determines whether the lake drains gradually, i.e. with an approximately constant discharge over time, or unstably, i.e. with a progressively increasing discharge \citep{Raymond&Nolan2000}.
+
+To characterise channel incision, the heat transfer between the advected lake water and the ice channel walls needs to be quantified.  This heat transfer is captured by the Nusselt number $\Nu$, which was derived from measurements in this study. Our results (Fig.~\ref{fig:nusselt} and \ref{fig:Re_Nu}) are in-between the predictions of the Dittus-Boelter equation (Eq.~(\ref{eq:DB})) using the parameters from \cite{Vincent&al2010}, which are higher than our values, and those of \cite{Lunardini&al1986}, which are lower than our values.
+This suggests that using the parameterisations of these two studies, that have a cryospheric context as well, gives an interval of Nusselt numbers to consider.  Again, as for the hydraulic friction factor, the large range of plausible Nusselt numbers means that it should be a stochastic parameter in modelling studies.
+
+The cause of the discrepancy between the exponent of Reynolds number in the Dittus-Boelter equation determined in our study ($\beta=0.58$) and others ($\beta$ between 0.75 and 0.93, Table~\ref{table:DBcoefficients}, Fig.~\ref{fig:Re_Nu}a) is not clear. Our water temperature measurements were conducted using CTD sensors which sunk to the channel bottom. Their close proximity to the ice means that they might have measured a temperature below the bulk water temperature, which would lead to an overestimation of $\Nu$ using the melt-rate method. Conversely, the results of the spatial-cooling rate method would likely be less impacted as the temperature e-folding length should not depend on the location of the sensors.
+Future studies should put an emphasis on accurate water temperature measurements, for instance by using fiber optics methods as in \citet{Karlstrom&al2014}, paying attention to accurately estimate the bulk water temperature.
+
+Longitudinal temperature profiles of supraglacial channels have been studied in both the field and in the laboratory, but only by one study so far \citep{Isenko&al2005}. Water temperature decreases exponentially with distance, which is the basis of estimating $\Nu$ in our spatial-cooling rate method (Eq.~(\ref{eq:x_0})). This method is useful because it is easier to implement and allows a higher sampling rate than the melt-rate method (Eq.~(\ref{eq:melt-rate})) because it only requires temperature measurements and not the more challenging channel-incision rate measurements, as were used in other studies \citep[e.g.][]{Vincent&al2010}.
+If the melt-rate method is chosen, direct measurements of channel incision are needed and
+we support the idea of \cite{Raymond&Nolan2000} that daily water level cuts can be used to conduct those measurements a posteriori (Fig.~\ref{fig:picture_channel}).
+
+Besides the incision rate, the channel aspect-ratio plays a major role in the drainage stability of a supraglacial lake: for a given stage, a wider channel has a bigger discharge capacity than a narrower channel, and will consequently contribute to stabilize the drainage by accelerating the lake-level draw-down (\cite{Raymond&Nolan2000}, their Eq.~(8)). Channel width was considered constant in the present field study and was used to calculate the hydraulic diameter and consequently all parameters which are derived from it. The large uncertainties we put on the width take into account a potential change in width, and  the estimated parameters take this fully into account. Moreover, our stage/discharge relation at P3 seems to work well despite of a slight widening at that location.
+
+The channel aspect-ratio was considered by \cite{Jarosch&Gudmundsson2012} who suggest that this ratio is determined by melt rate dependence on water depth: if the melt rate is independent of water depth, a very broad channel forms, whereas if it scales linearly, a nearly semi-circular channel forms. To our knowledge, there is no theoretical work available for how melt rates distribute over the channel perimeter, but extending the study of \cite{Sommers&Rajaram2020} could shed light on this issue. Future field-based studies could try to quantify the channel aspect-ratio, as it would give indications on both lake drainage stability as well as melt-rate distribution along the channel perimeter.
+
+
+ \subsection{Hazard mitigation}
+
+The maximum lake volume of $1.49\times10^6$\,m$^3\,\pm\,$ 0.11$\times10^6$\,m$^3$ reached in 2019 was limited by the constructed supraglacial channel to about two thirds of its potential volume, and half of the lake water ($\sim$0.7x10$^6$\,m$^3$) drained, stably, through the channel once the lake overspilled into it. In this sense, the hazard mitigation of Lac des Faverges was very successful; however construction costs were considerable at 1.7 million CHF. Still, construction costs were lower than the damage costs of 2.5 million CHF only in 2018.
+The relatively small volume of remaining water later then drained subglacially during an outburst event (Fig.~\ref{fig:outburst}). The peak discharge was only $\sim$3.5\,m$^3$s$^{-1}$, and thus far lower than the $\sim$80\,m$^3$s$^{-1}$ recorded in 2018.
+
+The intervention at Lac des Faverges thus indicates that a channel dug at the glacier surface prior to the lake filling can successfully limit the maximum lake volume and thus the hazard potential.  Indeed, partially or fully-filled lakes have been successfully drained in the past via such channels \citep[e.g.][]{Vincent&al2010}, however not at the scale of the present artificial intervention. Nonetheless, surface lake drainages also have considerable hazard potential \citep[e.g.][]{Ancey&al2019, Walder&Costa1996} and therefore the prediction of whether a surface drainage proceeds stably or unstably is critical for hazard assessments. \cite{Raymond&Nolan2000}
+proposed a criterion based on lake area and temperature (their Eq.~(8)). The area and temperature of Lac des Faverges respected this stability criterion when the drainage initiated in 2019, but only barely.  However, the past surface drainage of 2015 (Fig.~\ref{fig:outburst}), which drained stably through a shorter channel (about 400\,m), suggests that the 2019 drainage was well in the stable regime; refining this criterion would help improve future hazard assessments.
+
+The artificial channel remained active throughout the summer of 2020 and it was effective in limiting the lake volume and thus the hazard emerging from it. In terms of operations, the substantial amounts of winter snow blown into the channel proved to be challenging, as they formed an intermediate blockage. In early August 2020, the winter-snow was partially removed by an excavator, and the remaining snow blockage was eroded in a slush-flow like event, after which the lake drained partially through the supraglacial channel (i.e. corresponding to Phase I in Figure~\ref{fig:channel_discharge}), and partially subglacially (i.e. corresponding to Phase IV in Figure~\ref{fig:channel_discharge}). Since the slush-flow like event was relatively difficult to control, additional artificial measures were taken for 2021. These aimed at activating the channel’s water flow underneath the extensive snow cover that rebuilds during winter.
+%
+However, in 2021 the lake drained subglacially when only half full and before lake water could flow through the channel; the lake outlet was situated in the ``canyon'' region (Fig.~\ref{fig:study_area}b).  The drainage occurred in late July 2021 which was early relative to the still extensive snow cover and to the low filling level.
+
+\section{conclusions}
+
+In 2019, the ice-dammed Lac des Faverges, located on Glacier de la  Plaine Morte in the Swiss Alps, partially drained through an artificial supraglacial channel, constructed in order to mitigate the hazard posed by this lake.
+This unique setting was used to acquire a comprehensive dataset describing the evolution of the lake level, channel discharge, channel incision, and channel-water temperature during drainage.
+It is probably one of the most comprehensive such datasets currently available.
+
+
+The field measurements were used to characterize the  hydraulics and thermodynamics of the supraglacial channel, quantifying, among other parameters, the friction factor and the Nusselt number.
+The observed Darcy-Weisbach friction factors range between 0.17 and 0.48, with a mean value of 0.30 which is close to what other studies found and to what modelling studies used so far. However, the large spread found in our study suggests considering the friction factor as a stochastic variable, instead of as a constant.
+
+The heat transfer between water and channel wall, responsible for channel incision and quantified by the Nusselt number, was determined using two distinct methods: the \textit{melt rate method} and the \textit{spatial cooling-rate method}. The results of the two methods agree, but as for the hydraulic friction factor, a large spread is found, indicating that the Nusselt number should also be treated as a stochastic variable in modelling studies.
+%
+The Nusselt numbers derived from the often-used empirical Dittus-Boelter equation are significantly different to ours. More precisely, the dependence of the Nusselt number on the Reynolds number is less pronounced than previously reported \citep[e.g.][]{Clarke2003,Lunardini&al1986, Vincent&al2010} or in the commonly used empirical Gnielinski correlation.
+%
+We identify the heat-transfer rate as one of the key processes to be investigated by future studies, since it defines the supraglacial channel incision rate and thus the discharge and lake drainage stability. For this to be successful, an increase in the representativeness and accuracy of water temperature measurements would be needed.
+
+The modelling of supraglacial lake drainages will likely remain afflicted with large uncertainties. In line with previous work, our study shows that some key hydraulic and thermodynamic parameters are only weakly constrained. This translates into large model uncertainties which, in turn means that model-based hazard assessments will have to allow for large uncertainties.
+
+\section{Appendix A. Calculation of $\Nu$ as a function of the e-folding length $x_0$}
+\label{sec:appendixA}
+
+We derive the spatial temperature profile along the channel (Eq.~(\ref{eq:exponential_law_temperature}) and Eq.~(\ref{eq:x_0})) using the energy conservation equation
+%
+\begin{equation}\label{eq:energy_conservation_appendix}
+\frac{\partial E}{\partial t} + \frac{\partial vE}{\partial x} = M,
+\end{equation}
+%
+where $E = \rho_w c_w T_w S$ is the energy density of the water per unit channel length (J\,m$^{-1}$), $x$ the distance (m) along channel-flow path, $v$ the stream flow velocity (m\,s$^{-1}$), and $M$ is a source term (W\,m$^{-1}$). The source is expressed in terms of  $q$, the heat flux (Wm$^{-2}$) from the water into the ice
+\begin{equation}
+  M = q P_w.
+\end{equation}
+%
+We thus assume that the only relevant heat source is negative and stems from the consumption of energy related to ice melt at the channel wall and that both heat exchange at the ice-air interface and heat production due to potential energy dissipation can be neglected. This can be justified, as these two sources are on the order of 100\,Wm$^{-1}$, which is two orders of magnitude smaller than $M$.
+We write $q$ as
+\begin{equation}\label{eq:heat_transfer}
+q = h_t \Delta T,
+\end{equation}
+where $h_t$ is the convective heat transfer coefficient (the conductive heat transfer can be neglected) and $\Delta T$ is the temperature difference between water and ice. Note that since the ice temperature is 0°C, $\Delta T = T_w$.
+Assuming a steady state, i.e. $\frac{\partial E}{\partial t} = 0$, using Eq.~(\ref{eq:heat_transfer}), and expressing $E$ in terms of $T_w$, the Eq.~(\ref{eq:energy_conservation_appendix}) becomes
+\begin{equation}
+  Q\, c_w \rho_w \frac{\partial T_w}{\partial x} = h_t T_w P_w,
+\end{equation}
+which uses the assumption $\frac{\partial Q}{\partial x} = 0$.  This equation can be integrated to give
+\begin{equation}
+    T_w = T_0\, \mathrm{e}^{-\frac{x}{x_0}},
+\end{equation}
+%
+with
+\begin{equation}\label{eq:x0 as function of ht}
+    x_0 = c_w\rho_w \frac{Q}{h_t P_w} = \frac{c_w\rho_w \lambda}{k_w} \, \frac{Q}{\Nu \, P_w},
+\end{equation}
+%
+where the second equality follows from Eq.~(\ref{eq:nusselt}).
+
+\section{Appendix B. Salt dilution experiments in the supraglacial channel}
+\label{sec:appendixB}
+
+Table~\ref{table salt dilution} presents the salt dilution experiments conducted to determine the discharge $Q_i$ at station P3, and the velocity $\bar v_i$ and the wetted cross section $\bar S_i$ averaged between stations P5 and P3. These quantities are in turn used to characterise the hydraulics (calculation of Reynolds number $Re$ and the Darcy Weisbach friction factor $f_D$) and the thermodynamics (calculation of the Nusselt number $\Nu$) of the supraglacial channel. Other salt dilution experiments conducted at stations P2 and P1 were used to validate the rating curve (Eq.~(\ref{eq:stage/discharge})) and are presented in Code and data availability Section.
+
+\begin{table}[H]
+\centering
+\caption{Table of salt dilution experiments conducted to determine $Q_i$ at station P3, and to obtain $\bar v_i$ and $\bar S_i$ averaged between stations P5 and P3. Salt dilution experiments at P3 were used for the rating curve (Equation (\ref{eq:stage/discharge})) when water stage $h_i$ was available at the same moment and at the same location. The accuracy for $Q_i$ and $\bar S_i$ is typically 4\%. The accuracy for $h_i$ is 0.005\,m.}
+\begin{tabular}{l c c c c c c r}
+\hline
+\textbf{Salt injection} & \textbf{Date} & \textbf{Time} & \textbf{$Q_i$ (m\,$^3$\,s$^{-1}$}) & \textbf{$\bar v_i$ (m\,s$^{-1}$)} & \textbf{$\bar S_i$ (m$^2$)} & \textbf{$h_i$ (m)} & \textbf{Used for rating curve}\\
+\hline
+
+1 & 2019-07-08 & 13:16 &  0.016  & - & - & - &no\\
+2 & 2019-07-08 & 14:45 &  0.017 & - & - & - &no \\
+3 & 2019-07-09 & 10:50 &  0.016 & 0.073 & 0.219 & 0.126 &yes\\
+4 & 2019-07-10 & 10:01 &  0.021 & 0.098 & 0.214 & 0.192 &yes \\
+5 & 2019-07-10 & 14:44 &  0.115 & 0.288 & 0.399 & 0.165 &yes \\
+6 & 2019-07-10 & 15:13 & 0.116 & 0.202 & 0.574 & 0.174 &yes\\
+7 & 2019-07-11 & 09:11 &  0.206 & 0.387 & 0.532 & 0.239 &yes \\
+8 & 2019-07-11 & 12:27 &  0.252 & 0.585 & 0.431 & 0.300 &yes\\
+9 & 2019-07-11 & 12:42 &  0.262 & 0.437 & 0.600 & - &no\\
+10 & 2019-07-15 & 16:26 &  1.020 & 1.103 & 0.925 & - &no\\
+11 & 2019-07-16 & 14:07 &  0.811 & 1.057 & 0.767 & 0.350 &yes \\
+12 & 2019-07-24 & 16:57 &  1.300 & 0.890 & 1.461 & 0.552 &yes \\
+13 & 2019-07-25 & 08:41 &  1.140 & 1.015 & 1.123 & 0.478 &yes\\
+14 & 2019-07-30 & 14:40 &  0.923 & 0.583 & 1.583 & 0.446 &yes \\
+15 & 2019-07-30 & 18:29 &  0.942 & 0.832 & 1.132 & 0.441 & yes\\
+16 & 2019-07-31 & 09:32 &  0.619 & 0.564 & 1.098 & 0.382 & yes \\
+
+\hline
+\end{tabular}
+\label{table salt dilution}
+\end{table}
+
+
+\section{Code and data availability}
+
+The raw data, the code to process the raw data, and the results are available at \url{https://www.research-collection.ethz.ch/} with the DOI: 10.3929/ethz-b-000504956.
+
+
+\section{Outlook}
+
+Discussion on Bosson and the DH length
+

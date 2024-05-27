@@ -16,9 +16,8 @@
   %minionprospacing,
   %subfig,%
   %eulermath,%
-  a5paper,%
+  a4paper, %a5paper
 }{classicthesis}
-
 % Meta
 \input{preamble/meta}
 
@@ -42,9 +41,30 @@
 \usepackage{textcomp}
 \usepackage{mparhack}
 \usepackage{relsize}
+\usepackage{tabularx}
+\usepackage{cancel}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{rotating}
+\usepackage{placeins}
+
+
+
+%new comand
+\newcommand\Nu{\mbox{\textit{Nu}}}
+\renewcommand\Re{\mbox{\textit{Re}}}
+\renewcommand\Pr{\mbox{\textit{Pr}}}
 
 % Biblatex
-\input{preamble/biblatex}
+% \input{preamble/biblatex} % do not use this
+\usepackage[sort]{natbib}
+\setcitestyle{authoryear}
+%\bibliographystyle{plainnat}
 
 % Redefine cite command to include space before
 % <http://tex.stackexchange.com/questions/11602/>
@@ -63,7 +83,7 @@
 \setlength{\extrarowheight}{3pt}
 \newcommand{\tableheadline}[1]{\multicolumn{1}{c}{\spacedlowsmallcaps{#1}}}
 \newcommand{\myfloatalign}{\centering}
-\usepackage{floatrow}
+
 \usepackage{caption}
 \captionsetup{format=hang,font=small,labelfont={sc},margin=5pt}
 \usepackage{subcaption}
@@ -192,7 +212,7 @@
 \usepackage{siunitx}
 \sisetup{
   separate-uncertainty,
-  repeatunits=false,
+  %repeatunits=false,
   detect-family,
   unit-mode=text,
 }
@@ -247,7 +267,7 @@
 
 % Put pages on A4 w/ crop marks
 %\usepackage[a4,center,cam]{crop}
-
+\usepackage[a4paper, total={7in, 9.5in}]{geometry}
 % Widow and club penalties
 \clubpenalty = 10000
 \widowpenalty = 10000

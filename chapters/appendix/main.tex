@@ -1,4 +1,164 @@
-\chapter{Appendix}
-\label{ch:appendix}
+\chapter[The ice thickness of Chüebodengletscher]{Supplementary materiel for Chapter~\ref{ch:chapter_gprmax}: The ice thickness of Chüebodengletscher using ground penetrating radar}
 
-Here be dragons.
+\label{ch:chueboden}
+
+In this Appendix, we describe the method that was used at Chuebodengletscher to infer the distributed ice thickness from ground penetrating radar data. The following report is found at ETH's Research Collection under the following DOI: 10.3929/ethz-b-000516258.
+
+\section{Summary}
+
+In November 2020, a large frontal piece of the lake-terminating Chüebodengletscher calved off (Fig.~\ref{fig:photo}, Ticino, Switzerland). This event raised questions on the glacier stability, and on the potential hazard constituted by the glacier-lake ensemble. 
+On 31 March 2021, we conducted a ground penetrating radar (GPR) campaign to measure the glacier's ice thickness. The acquired ice thickness observations were then interpolated to a spatial resolution of 5\,m over 92\,\% of the glacier area using a physically-based algorithm. The resulting ice thickness distribution was subtracted from a recent digital elevation model of the surface (September 2020) to obtain bedrock elevations. We calculated an ice volume of 4.35$\times$10$^6$\,m$^3$ with a maximal ice thickness of 75\,m, located at the glacier front. This is 40\,m deeper than previous thickness estimates. We provide access to both the data and the code to reproduce our results. The information can be used for assessing the hazard associated to the glacial lake.  
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{\dir/Chueboden_picture.png}
+\caption{Chüebodengletscher on 29.11.2021. Picture by Jasmine Vismara.}
+\label{fig:photo}
+\end{figure}
+
+
+\section{Methods}
+
+We aim to calculate the ice volume of Chüebodengletscher and to map the underlying bedrock. This is achieved by the following four steps. First, the glacier area and the glacier digital elevation model (DEM) are determined from aerial images. Second, the ice thickness is calculated from field observations using ground penetrating radar (GPR). In a third step, the GPR observations are interpolated over the glacier area using the GlaTE algorithm \citep{Langhammer&al2019}. Finally, the distributed thickness map obtained by GlaTE is subtracted from a DEM of the surface to obtain a map of the glacier bedrock topography. The following four sub-sections detail these four steps.
+
+\subsection{Glacier outline and digital elevation model (DEM)}
+\label{subsection:glacierarea}
+
+The glacier outline (i.e. the glacier extent) was determined from ADS100 Image strips (ground sampling distance of $\sim$0.2\,m) from the Swiss Federal Office of Topography (swisstopo) acquired during flights commissioned by the Swiss Federal Office of the Environment on 9 September 2020\footnote{\url{https://api.geo.admin.ch/rest/services/luftbilder/MapServer/ch.swisstopo.lubis-bildstreifen/12501202009090750/extendedHtmlPopup?lang=en}}. The glacier area at that time was 0.12\,km$^2$. Note that the images were taken before the calving event. The DEM was derived from these images by swisstopo by using stereophotogrammetry, aerotriangulation, and ground control points (maximum resolution of 0.5\,m).
+
+\subsection{Ice thickness from ground penetrating radar (GPR)}
+
+GPR is a widely used geophysical method to scan the earth subsurface, in particular glacier subsurfaces. The GPR is constituted of a transmitter that sends a series of electromagnetic pulses at high frequency through antennas. These pulses are scattered when they encounter a change in physical properties, and are eventually reflected back to the GPR receiver (Fig.~\ref{fig:gpr}). The physical properties of interest are permittivity and conductivity. Because the permittivity and conductivity contrast between ice and rock is large, this allows the ice-bedrock interface at the bottom of the glacier to be detected. The travel time of the reflected pulse between the surface and the bedrock is recorded by the GPR, and is converted into distance by knowing the pulse velocity in the ice. 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{\dir/gpr_chueboden.pdf}
+\caption{GPR system during the ice thickness field measurements at Chuebodengletscher.}
+\label{fig:gpr}
+\end{figure}
+
+The GPR field campaign took place on 31 March 2021. The GPR was mounted on two sledges (Fig.~\ref{fig:gpr}). Seven GPR lines were performed, both perpendicular and parallel to the glacier flow (Fig.~\ref{fig:fig1}). Note that twelves lines were initially conducted, but five of them failed due to either battery or global navigation satellite system (GNSS) issues in the field. The characteristics of the GPR survey are presented in Table~\ref{tab_gpr}. The data were processed with an in-house MATLAB-based toolbox \citep[e.g.][]{Langhammer&al2019}. The processing steps to obtain the ice thickness are detailed in Table~\ref{tab:processingflowGPR}. For the ice thickness calculation, we uniformly subtracted the snow depth from the surface elevation. This is motivated by snow depth measurements performed at three different places, which all showed similar snow-depth values (4\,m, see Section~\ref{section:codeanddata} for details). Note that the vertical accuracy of the GPS position was only $\pm$\,5\,m because of a failure in the GNSS that day. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{\dir/profile7.pdf}
+\caption{Example of picking bedrock in a radar section to determine ice thickness.}
+\label{fig:prof7}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\textwidth]{\dir/Fig1.pdf}
+\caption{Point-scale ice thickness measurements along the seven GPR profiles. The distributed ice thickness map is computed within the blue outline. The blue outline represents 92\,\% of the total glacier area in September 2020. The latter is marked by the red outline.}
+\label{fig:fig1}
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{l c r}
+         \hline
+\textbf{GPR parameters}  & \textbf{Value} & \textbf{Remarks} \\
+\hline
+Frequency & 25 MHz  \\
+Sampling interval & 0.4 ns \\
+Time window & 2640 ns / 440 m & two way traveltime\\
+Antenna separation & 4 m \\
+Antenna step size & 1 m \\
+Radar velocity in ice & 0.167 m\,ns$^{-1}$ & value by default \\
+System Stacking & 8 & \\
+GPS input & Internal GPS & precision $\pm$5\,m\\
+\hline
+    \end{tabular}
+    \caption{GPR parameters for Chüebodengletscher survey.}
+    \label{tab_gpr}
+\end{table}
+
+
+\begin{table}[h!]
+    \begin{center}
+    \begin{tabular}{l l l}
+        \hline
+         \textbf{} & \textbf{Processing step} & \textbf{Comments} \\
+         \hline 
+         1. & Smooth GPS profile & Moving average of coordinates over 500 traces\\
+         2. & Set time zero and record length & 2640\,ns ($\approx$ 220\,m depth penetration in ice)\\
+         3. & Background noise removal &\\
+         4. & Trace binning along profile & Binned to 0.5\,m spacing\\
+         5. & Butterworth bandpass filter & 10-75\,MHz\\
+         6. & Kirchoff migration &\\
+         7. & Time-to-depth conversion & Constant velocity 0.167 m\,s$^{-1}$\\
+         8. & Bedrock elevation picking & Manually (see Figure~\ref{fig:prof7})\\
+         9. & Ice thickness calculation & Uniform snow depth = 4\,m\\
+         \hline
+    \end{tabular}
+    \caption{Overview of the processing flow for the GPR data}
+    \label{tab:processingflowGPR}
+    \end{center}
+\end{table}
+
+
+
+\subsection{Ice thickness interpolation at the glacier scale}
+\label{subsection:glate}
+
+The ice thickness obtained from the GPR profiles was interpolated by using the glacier thickness estimation algorithm ``GlaTE'' \citep{Langhammer&al2019}. GlaTE obtains the distributed ice thickness of a glacier by optimally combining modelling results (glaciological constrain) and measured ice thickness (GPR data). The GlaTE inputs are: a glacier outline, a glacier surface DEM, and possibly observational data (e.g. GPR measurements). The algorithm had been used to estimate the ice thickness of Chüebodengletscher before \citep{Grab&al2021}, but the existing results were obtained without GPR data, thus making them less reliable. The DEM obtained in Section~\ref{subsection:glacierarea} was re-sampled to 5\,m to reduce the computational cost and to avoid non-physical interpretations of the results between the GPR lines. In contrast to most alpine glaciers, Chüebodengletscher has a non-zero ice thickness at one of its borders, i.e. at the calving front. Because GlaTE was not designed for such glaciers, we implemented a slight modification in the original procedures. First, we ran GlaTE over the glacier and lake area (black outline in Fig.~\ref{fig:fig1}) assuming zero ice thickness at the borders. Since the boundary of the interpolation is far away from the calving front, the procedure avoids the front being affected by the zero ice thickness conditions. The influence of the out-of-glacier topography was not taken into account ($\lambda_2$=0 in Appendix A of \cite{Grab&al2021}). In a second step, we applied the glacier mask (blue outline in Fig.~\ref{fig:fig1}) to artificially cut the ice thickness at the calving front. Note that this new mask is ca. 15\,m inward the glacier at the calving front, and that the new mask represents ca. 92\,\% of the total glacier area. We applied this inward-cut to minimize the strong gradient at the glacier-lake transition. These two steps respect the zero ice thickness at the ground-based glacier border, and allow for a calving front at the lake-terminating glacier border. The ice volume is finally obtained by integrating the distributed ice thickness over the glacier area.  
+
+
+\subsection{Glacier bedrock elevation}
+\label{subsection:bedrock}
+
+The bedrock elevation under the glacier was calculating by subtracting the distributed ice thickness obtained by GlaTE (see Section~\ref{subsection:glate}) from the glacier surface elevation obtained by the 2020 DEM (see Section~\ref{subsection:glacierarea}). 
+
+
+\section{Results}
+
+\subsection{Ice thickness}
+
+Figure~\ref{fig:fig2}a presents the ice thickness of Chuebodengletscher as obtained from linear interpolation of the GPR measurements, whilst Figure~\ref{fig:fig2}b shows the ice thickness as interpolated by using GlaTE. Both grids have a resolution of 5\,m. We found a maximal ice thickness of 75\,m, which is ~40\,m deeper than the previous estimation by \citet{Grab&al2021}. During the field campaign, a GPR profile was acquired close to the calving front. However, due to GPS failure, this profile couldn't be placed accurately on the map. Consequently, we did not consider this profile in our calculations. This notwithstanding, the radar section associated to this profile show a maximal depth of 78\,m, in line with the 75\,m ice thickness calculated close to the calving front.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{\dir/Fig2.png}
+\caption{a) Linear interpolation of GPR ice thickness measurements. GPR profiles are represented by the black lines. b) Ice thickness interpolation as obtained by GlaTE when using both GPR and glaciological constrain. The thickest ice (75m) is marked by the cross. Glacier outline on September 2020 (before calving event) is indicated in red. The grid resolution is 5\,m.}
+\label{fig:fig2}
+\end{figure}
+
+\subsection{Glacier bedrock elevation and lake bathymetry}
+
+
+Figure~\ref{fig:fig3} presents the glacier bedrock elevation as calculated in Section~\ref{subsection:bedrock}. Additionally, Figure~\ref{fig:fig3}a presents the lake depth measurements conducted by Giovanni Kappenberger on 15.10.2021 (see Section~\ref{section:codeanddata} for raw data). These values are in line with our bedrock map and suggest that the maximal lake depth is close to the current glacier front, at ca. 2710\,m a.s.l. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\textwidth]{\dir/Fig3.png}
+\caption{a) Glacier bedrock elevation derived from the ice thickness. The dots represents additional lake bathymetry points-measurements performed by Giovanni Kappenberger on 15.10.2021. The background photo was taken on 9 September 2020 by the Swiss Federal Office of Topography. b) 3D visualization of the glacier bedrock. Note that the vertical axis is exaggerated for better visibility. The grid resolution is 5\,m in both plot.}
+\label{fig:fig3}
+\end{figure}
+
+\subsection{Ice volume}
+
+We calculated an ice volume of 4.35\,$\times$\,10$^6$\,m$^3$ for the 92\,\% of the glacier area on September 2021. Note that the 8\,\% of the missing area corresponds to 0.01\,km$^2$ located at the calving front, where ice is the thickest. The corresponding ice volume missing at this date is thus more that 8\,\% of the total volume. The calculations are done by considering the glacier prior to the calving event. By consequence, the actual, present-day volume is smaller. The volume of the ice detachment that occurred in November 2021 can be estimated by integrating the calculated ice thickness over the calved area. For this, an outline of the calved area would be necessary. We expect this to become available when the 2021-image acquired by the Swiss Federal Office of Topography will be released (presumably in early 2023). An alternative would be to obtain such an outline from a orthoimage acquired on site, e.g. through a dedicated UAV survey.  
+
+\subsection{Uncertainties and limitations}
+
+The point-specific uncertainty in bedrock elevations includes uncertainties from (i) the GlaTE ice thickness interpolation, (ii) the GPR data ($\pm$\,5\,m), and (iii) the elevations of the surface DEM ($\pm$\,2\,m). Although "ii" and "iii" are known, we didn't evaluate the uncertainties for each grid cells of the glacier. The ice volume uncertainty is expected to be substantially smaller than the point-specific uncertainty described above, since random uncertainties of neighbouring pixel cancel out each other when integrating over the glacier extent. For further considerations of uncertainties estimation, see Section 4 and Appendix D in \cite{Grab&al2021}.
+
+Future users of the presented thickness and bedrock map have to be aware of several limitations. First, GlaTE is known to slightly overestimate the bedrock slope close to the glacier borders \citep{Grab&al2021}. This is also the case here. This results in overestimated ice thickness close to the borders. Second, some location of the glacier have inaccurate ice thickness because of the distribution of GPR profiles, and because of modelling constrains. For instance, the glacier left hand side (bottom left at Fig.~\ref{fig:fig3}a) show a suspicious topographic dorsal (``ridge'') at the bedrock surface. This can be seen on the color contrast at the bottom left in Fig.~\ref{fig:fig2}b, on the contour lines at the bottom left in Fig.~\ref{fig:fig3}a, and at the right side of Fig.~\ref{fig:fig3}a. This is due to the disagreement between the GlaTE algorithm (ice thickness overestimation close to the border) and GPR-profile nr 5. Although local ice thickness estimation can suffer of such anomalies, we believe that the overall thickness is well constrained by the GPR observations and the model. 
+
+
+\section{Data and Code availability}
+\label{section:codeanddata}
+
+The data and the code necessary to obtain the ice thickness and the bedrock elevation are available from ETH's Research Collection under the following DOI: \href{https://doi.org/10.3929/ethz-b-000516258}{10.3929/ethz-b-000516258}. The material provided at the link allow for reproducing all results and figures contained within this report. Figure~\ref{fig:folder_three} presents the repository structure.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.75\textwidth]{\dir/folder_three.png}
+\caption{Folder tree of the data repository available from ETH's Research Collection. The data can be accessed through the following DOI: \href{https://doi.org/10.3929/ethz-b-000516258}{10.3929/ethz-b-000516258}.}
+\label{fig:folder_three}
+\end{figure}
+
+
+
+
