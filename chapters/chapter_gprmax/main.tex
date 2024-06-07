@@ -56,7 +56,7 @@ Diffraction patterns in GPR sections often appear as random, yet one would expec
 
 A glacier model is defined by its geometry and materials properties. In order to assess the effects on the GPR data, we build our glacier models upon a reference model in two dimensions, and sequentially add new features to it. More specifically, we start with a reference model consisting of homogeneous, water-free ice, and then add, in turn, (i) a snowpack with a given LWC, (ii) heterogeneous ice properties with stochastic fluctuations, and (iii) small-scale water inclusions distributed amid the ice. All simulations share constant geometry parameters such as ice thickness and glacier width (Table~\ref{tab:simul_param}) while the di-electrical properties of the ice are given in Table~\ref{tab_material_properties}.
 
-\begin{table*}[H]
+\begin{table*}
     \centering
 \caption{Model parameters for the forward simulations of the GPR signal. The subglacial channel radius is considered to be a typical value \citep{Fountain&Walder1998, Cuffey&Paterson2010}. The maximal scatterer radius $r$ refers to the size of the randomly distributed water inclusions.}
     \begin{tabular}{l l r}
@@ -78,7 +78,7 @@ Maximal scatterer radius ($r$) & 0.1\,m, 0.5\,m, 1.0\,m & Fig.~\ref{fig:model_ge
 \label{tab:simul_param}
 \end{table*}
 
-\begin{table}[H]
+\begin{table}
 \centering
  \caption{Di-electrical properties of the space-domain for the gprMax simulations. Di-electric properties of granite and glacial melt water are taken from \cite{Plewes&Hubbard2001}. Di-electric properties of ice vary stochastically with values according to \cite{Jezek&al1978}, \cite{Johari&Charette1975} and \cite{ Plewes&Hubbard2001}. Di-electric properties of wet snow are calculated from \cite{Tiuri&al1984} and \cite{Granlund&al2010} with a snow density of $\rho_{snow}$\,=\,500\,kg\,m$^{-3}$ and $LWC$\,=\,3\,\%. Permeability $\mu$ and magnetic loss $\Omega$ are kept constant at $\mu$\,=\,1 and $\Omega$\,=\,0 Ohm\,m$^{-1}$ for all materials}
 \begin{tabular}{l r r}
@@ -95,7 +95,7 @@ Wet snow & 2.3 & 10$^{-4}$\\
     \label{tab_material_properties}
 \end{table}
 
-\begin{figure*}[H]
+\begin{figure*}
     \centering
     \includegraphics[width=0.6\textwidth]{chapters/chapter_gprmax/Fig01.pdf}
     \caption{2D geometry of the investigated glacier models and relative permittivity ($\epsilon_r$) for (a) the reference model, (b) the additional wet snowpack, here 10\,m thick, (c) the additional stochastic variation of ice permittivity (note the different color scale), and (d) the additional water inclusions (here $LWC$\,=\,0.2\,\% and $r$\,=\,0.1\,m). The position of the bedrock (labeled "b") and the subglacial channel (labeled "c") are indicated by arrows for each model.}
