@@ -14,7 +14,7 @@ Ogier, C., Werder, M. A., Huss, M., Kull, I., Hodel, D., and Farinotti, D.: Drai
 
 Lac des Faverges, located at Glacier de la Plaine Morte in Switzerland, has been draining subglacially every summer from 2011 to 2018. Over time, the volume and peak discharge of these drainage events have increased, posing significant hazards to the downstream population. Notably, the 2018 drainage event caused substantial inundations in the village of Lenk, necessitating evacuations and resulting in considerable damage to houses and infrastructure \citep{GemeindeLenk2019}. To mitigate the risks, the local authorities decided to implement measures to artificially lower the lake level. In 2019, an artificial supraglacial channel was dug to initiate the lake drainage at the glacier surface. This intervention aimed to control the drainage process and reduce the hazard potential. 
 
-The unique situation in 2019, where the lake initially drained through an artificial channel and later partially drained subglacially, provided an opportunity to conduct extensive field measurements. During the 48 days of the lake drainage, I design and maintain a monitoring network to measure lake level, discharge, water temperature, and channel geometry with high spatial and temporal resolution. This data collection allowed us to capture key physical parameters involved in the supraglacial drainage of an ice-dammed lake and to answer the research questions addressed in SECTION XX IN INTRO.
+The unique situation in 2019, where the lake initially drained through an artificial channel and later partially drained subglacially, provided an opportunity to conduct extensive field measurements. During the 48 days of the lake drainage, I design and maintain a monitoring network to measure lake level, discharge, water temperature, and channel geometry with high spatial and temporal resolution. This data collection allowed us to capture key physical parameters involved in the supraglacial drainage of an ice-dammed lake and to answer the research questions addressed in Table~\ref{table_GLOFs_research_gaps}.
 
 % A question I am not sure we asnwer: does matthew and clague relation ship on volume/peak discharge valid for PM? and 2019? That would highlight the limitation of the empirical relation and the need for better physical understanding
 
@@ -443,6 +443,7 @@ Mean & 0.30 ± 0.12 & 0.050 ± 0.011\\
 
 
 \subsection{Thermodynamics}
+\label{sec:thermodynamics_results}
 
 Water temperature, measured continuously at P5, P3, P2, and P1, shows an exponential decrease along the channel (Fig.~\ref{fig:exponential_temperature_decrease}), and exhibits daily fluctuations (Fig.~\ref{fig:channel_discharge}, e.g. $\pm$\,0.1°C during Phase I). The relation given in Eq.~(\ref{eq:exponential_law_temperature}) is fitted to these temperature observations. Note that the pattern is similar whenever lake water was flowing through the channel.
 
@@ -519,6 +520,7 @@ However, the large range of friction factor values reported here and in other st
 Instead, we suggest that modelling studies should treat $f_D$ as a stochastic variable \citep[e.g.][]{Brinkerhoff&al2021,Irarrazaval&al2021}, i.e. that they should use a range of values as opposed to a single one.
 
 \subsection{Thermodynamics}
+\label{sec:thermodynamics_discussion}
 
 In general, the supraglacial drainage of an ice-dammed lake progresses via the incision of the channel by melt. The incision rate determines whether the lake drains gradually, i.e. with an approximately constant discharge over time, or unstably, i.e. with a progressively increasing discharge \citep{Raymond&Nolan2000}.
 
@@ -567,86 +569,15 @@ We identify the heat-transfer rate as one of the key processes to be investigate
 
 The modelling of supraglacial lake drainages will likely remain afflicted with large uncertainties. In line with previous work, our study shows that some key hydraulic and thermodynamic parameters are only weakly constrained. This translates into large model uncertainties which, in turn means that model-based hazard assessments will have to allow for large uncertainties.
 
-\section{Appendix A. Calculation of $\Nu$ as a function of the e-folding length $x_0$}
-\label{sec:appendixA}
-
-We derive the spatial temperature profile along the channel (Eq.~(\ref{eq:exponential_law_temperature}) and Eq.~(\ref{eq:x_0})) using the energy conservation equation
-%
-\begin{equation}\label{eq:energy_conservation_appendix}
-\frac{\partial E}{\partial t} + \frac{\partial vE}{\partial x} = M,
-\end{equation}
-%
-where $E = \rho_w c_w T_w S$ is the energy density of the water per unit channel length (J\,m$^{-1}$), $x$ the distance (m) along channel-flow path, $v$ the stream flow velocity (m\,s$^{-1}$), and $M$ is a source term (W\,m$^{-1}$). The source is expressed in terms of  $q$, the heat flux (Wm$^{-2}$) from the water into the ice
-\begin{equation}
-  M = q P_w.
-\end{equation}
-%
-We thus assume that the only relevant heat source is negative and stems from the consumption of energy related to ice melt at the channel wall and that both heat exchange at the ice-air interface and heat production due to potential energy dissipation can be neglected. This can be justified, as these two sources are on the order of 100\,Wm$^{-1}$, which is two orders of magnitude smaller than $M$.
-We write $q$ as
-\begin{equation}\label{eq:heat_transfer}
-q = h_t \Delta T,
-\end{equation}
-where $h_t$ is the convective heat transfer coefficient (the conductive heat transfer can be neglected) and $\Delta T$ is the temperature difference between water and ice. Note that since the ice temperature is 0°C, $\Delta T = T_w$.
-Assuming a steady state, i.e. $\frac{\partial E}{\partial t} = 0$, using Eq.~(\ref{eq:heat_transfer}), and expressing $E$ in terms of $T_w$, the Eq.~(\ref{eq:energy_conservation_appendix}) becomes
-\begin{equation}
-  Q\, c_w \rho_w \frac{\partial T_w}{\partial x} = h_t T_w P_w,
-\end{equation}
-which uses the assumption $\frac{\partial Q}{\partial x} = 0$.  This equation can be integrated to give
-\begin{equation}
-    T_w = T_0\, \mathrm{e}^{-\frac{x}{x_0}},
-\end{equation}
-%
-with
-\begin{equation}\label{eq:x0 as function of ht}
-    x_0 = c_w\rho_w \frac{Q}{h_t P_w} = \frac{c_w\rho_w \lambda}{k_w} \, \frac{Q}{\Nu \, P_w},
-\end{equation}
-%
-where the second equality follows from Eq.~(\ref{eq:nusselt}).
-
-\section{Appendix B. Salt dilution experiments in the supraglacial channel}
-\label{sec:appendixB}
-
-Table~\ref{table salt dilution} presents the salt dilution experiments conducted to determine the discharge $Q_i$ at station P3, and the velocity $\bar v_i$ and the wetted cross section $\bar S_i$ averaged between stations P5 and P3. These quantities are in turn used to characterise the hydraulics (calculation of Reynolds number $Re$ and the Darcy Weisbach friction factor $f_D$) and the thermodynamics (calculation of the Nusselt number $\Nu$) of the supraglacial channel. Other salt dilution experiments conducted at stations P2 and P1 were used to validate the rating curve (Eq.~(\ref{eq:stage/discharge})) and are presented in Code and data availability Section.
-
-\begin{table}[H]
-\centering
-\caption{Table of salt dilution experiments conducted to determine $Q_i$ at station P3, and to obtain $\bar v_i$ and $\bar S_i$ averaged between stations P5 and P3. Salt dilution experiments at P3 were used for the rating curve (Equation (\ref{eq:stage/discharge})) when water stage $h_i$ was available at the same moment and at the same location. The accuracy for $Q_i$ and $\bar S_i$ is typically 4\%. The accuracy for $h_i$ is 0.005\,m.}
-\begin{tabular}{l c c c c c c r}
-\hline
-\textbf{Salt injection} & \textbf{Date} & \textbf{Time} & \textbf{$Q_i$ (m\,$^3$\,s$^{-1}$}) & \textbf{$\bar v_i$ (m\,s$^{-1}$)} & \textbf{$\bar S_i$ (m$^2$)} & \textbf{$h_i$ (m)} & \textbf{Used for rating curve}\\
-\hline
-
-1 & 2019-07-08 & 13:16 &  0.016  & - & - & - &no\\
-2 & 2019-07-08 & 14:45 &  0.017 & - & - & - &no \\
-3 & 2019-07-09 & 10:50 &  0.016 & 0.073 & 0.219 & 0.126 &yes\\
-4 & 2019-07-10 & 10:01 &  0.021 & 0.098 & 0.214 & 0.192 &yes \\
-5 & 2019-07-10 & 14:44 &  0.115 & 0.288 & 0.399 & 0.165 &yes \\
-6 & 2019-07-10 & 15:13 & 0.116 & 0.202 & 0.574 & 0.174 &yes\\
-7 & 2019-07-11 & 09:11 &  0.206 & 0.387 & 0.532 & 0.239 &yes \\
-8 & 2019-07-11 & 12:27 &  0.252 & 0.585 & 0.431 & 0.300 &yes\\
-9 & 2019-07-11 & 12:42 &  0.262 & 0.437 & 0.600 & - &no\\
-10 & 2019-07-15 & 16:26 &  1.020 & 1.103 & 0.925 & - &no\\
-11 & 2019-07-16 & 14:07 &  0.811 & 1.057 & 0.767 & 0.350 &yes \\
-12 & 2019-07-24 & 16:57 &  1.300 & 0.890 & 1.461 & 0.552 &yes \\
-13 & 2019-07-25 & 08:41 &  1.140 & 1.015 & 1.123 & 0.478 &yes\\
-14 & 2019-07-30 & 14:40 &  0.923 & 0.583 & 1.583 & 0.446 &yes \\
-15 & 2019-07-30 & 18:29 &  0.942 & 0.832 & 1.132 & 0.441 & yes\\
-16 & 2019-07-31 & 09:32 &  0.619 & 0.564 & 1.098 & 0.382 & yes \\
-
-\hline
-\end{tabular}
-\label{table salt dilution}
-\end{table}
-
-
 \section{Code and data availability}
 
 The raw data, the code to process the raw data, and the results are available at \url{https://www.research-collection.ethz.ch/} with the DOI: 10.3929/ethz-b-000504956.
 
 
-\section{Outlook}
+\section{Epilogue: the channel evolution until 2023}
 
-Discussion on Bosson and the DH length
+\todo{Few words to qualitatively describe the evolution of the channel, see mail from Isabelle}
 
-In \citet{Emmer&al2022}: suggest as further research to back-calculating relevant events in order to refine model parameters and define plausible sets of parameters for predictive modelling of potential future events. That is what Gag does here with my dataset.
+
+
 

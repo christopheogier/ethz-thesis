@@ -1,5 +1,123 @@
-\chapter[The ice thickness of Chüebodengletscher]{Supplementary materiel for Chapter~\ref{ch:chapter_gprmax}: The ice thickness of Chüebodengletscher using ground penetrating radar}
+\chapter[Calculation of $\Nu$ as a function of the e-folding length $x_0$]{Supplementary materiel for Chapter~\ref{ch:chapter_plainemorte}: calculation of $\Nu$ as a function of the e-folding length $x_0$}
+\label{sec:appendixA}
 
+
+We derive the spatial temperature profile along the channel (Eq.~(\ref{eq:exponential_law_temperature}) and Eq.~(\ref{eq:x_0})) using the energy conservation equation
+%
+\begin{equation}\label{eq:energy_conservation_appendix}
+\frac{\partial E}{\partial t} + \frac{\partial vE}{\partial x} = M,
+\end{equation}
+%
+where $E = \rho_w c_w T_w S$ is the energy density of the water per unit channel length (J\,m$^{-1}$), $x$ the distance (m) along channel-flow path, $v$ the stream flow velocity (m\,s$^{-1}$), and $M$ is a source term (W\,m$^{-1}$). The source is expressed in terms of  $q$, the heat flux (Wm$^{-2}$) from the water into the ice
+\begin{equation}
+  M = q P_w.
+\end{equation}
+%
+We thus assume that the only relevant heat source is negative and stems from the consumption of energy related to ice melt at the channel wall and that both heat exchange at the ice-air interface and heat production due to potential energy dissipation can be neglected. This can be justified, as these two sources are on the order of 100\,Wm$^{-1}$, which is two orders of magnitude smaller than $M$.
+We write $q$ as
+\begin{equation}\label{eq:heat_transfer}
+q = h_t \Delta T,
+\end{equation}
+where $h_t$ is the convective heat transfer coefficient (the conductive heat transfer can be neglected) and $\Delta T$ is the temperature difference between water and ice. Note that since the ice temperature is 0°C, $\Delta T = T_w$.
+Assuming a steady state, i.e. $\frac{\partial E}{\partial t} = 0$, using Eq.~(\ref{eq:heat_transfer}), and expressing $E$ in terms of $T_w$, the Eq.~(\ref{eq:energy_conservation_appendix}) becomes
+\begin{equation}
+  Q\, c_w \rho_w \frac{\partial T_w}{\partial x} = h_t T_w P_w,
+\end{equation}
+which uses the assumption $\frac{\partial Q}{\partial x} = 0$.  This equation can be integrated to give
+\begin{equation}
+    T_w = T_0\, \mathrm{e}^{-\frac{x}{x_0}},
+\end{equation}
+%
+with
+\begin{equation}\label{eq:x0 as function of ht}
+    x_0 = c_w\rho_w \frac{Q}{h_t P_w} = \frac{c_w\rho_w \lambda}{k_w} \, \frac{Q}{\Nu \, P_w},
+\end{equation}
+%
+where the second equality follows from Eq.~(\ref{eq:nusselt}).
+
+\chapter[Salt dilution experiments in the supraglacial channel]{Supplementary materiel for Chapter~\ref{ch:chapter_plainemorte}: salt dilution experiments in the supraglacial channel}
+\label{sec:appendixB}
+
+Table~\ref{table salt dilution} presents the salt dilution experiments conducted to determine the discharge $Q_i$ at station P3, and the velocity $\bar v_i$ and the wetted cross section $\bar S_i$ averaged between stations P5 and P3. These quantities are in turn used to characterise the hydraulics (calculation of Reynolds number $Re$ and the Darcy Weisbach friction factor $f_D$) and the thermodynamics (calculation of the Nusselt number $\Nu$) of the supraglacial channel. Other salt dilution experiments conducted at stations P2 and P1 were used to validate the rating curve (Eq.~(\ref{eq:stage/discharge})) and are presented in Code and data availability Section.
+
+\begin{table}[H]
+\centering
+\caption{Table of salt dilution experiments conducted to determine $Q_i$ at station P3, and to obtain $\bar v_i$ and $\bar S_i$ averaged between stations P5 and P3. Salt dilution experiments at P3 were used for the rating curve (Equation (\ref{eq:stage/discharge})) when water stage $h_i$ was available at the same moment and at the same location. The accuracy for $Q_i$ and $\bar S_i$ is typically 4\%. The accuracy for $h_i$ is 0.005\,m.}
+\begin{tabular}{l c c c c c c r}
+\hline
+\textbf{Salt injection} & \textbf{Date} & \textbf{Time} & \textbf{$Q_i$ (m\,$^3$\,s$^{-1}$}) & \textbf{$\bar v_i$ (m\,s$^{-1}$)} & \textbf{$\bar S_i$ (m$^2$)} & \textbf{$h_i$ (m)} & \textbf{Used for rating curve}\\
+\hline
+
+1 & 2019-07-08 & 13:16 &  0.016  & - & - & - &no\\
+2 & 2019-07-08 & 14:45 &  0.017 & - & - & - &no \\
+3 & 2019-07-09 & 10:50 &  0.016 & 0.073 & 0.219 & 0.126 &yes\\
+4 & 2019-07-10 & 10:01 &  0.021 & 0.098 & 0.214 & 0.192 &yes \\
+5 & 2019-07-10 & 14:44 &  0.115 & 0.288 & 0.399 & 0.165 &yes \\
+6 & 2019-07-10 & 15:13 & 0.116 & 0.202 & 0.574 & 0.174 &yes\\
+7 & 2019-07-11 & 09:11 &  0.206 & 0.387 & 0.532 & 0.239 &yes \\
+8 & 2019-07-11 & 12:27 &  0.252 & 0.585 & 0.431 & 0.300 &yes\\
+9 & 2019-07-11 & 12:42 &  0.262 & 0.437 & 0.600 & - &no\\
+10 & 2019-07-15 & 16:26 &  1.020 & 1.103 & 0.925 & - &no\\
+11 & 2019-07-16 & 14:07 &  0.811 & 1.057 & 0.767 & 0.350 &yes \\
+12 & 2019-07-24 & 16:57 &  1.300 & 0.890 & 1.461 & 0.552 &yes \\
+13 & 2019-07-25 & 08:41 &  1.140 & 1.015 & 1.123 & 0.478 &yes\\
+14 & 2019-07-30 & 14:40 &  0.923 & 0.583 & 1.583 & 0.446 &yes \\
+15 & 2019-07-30 & 18:29 &  0.942 & 0.832 & 1.132 & 0.441 & yes\\
+16 & 2019-07-31 & 09:32 &  0.619 & 0.564 & 1.098 & 0.382 & yes \\
+
+\hline
+\end{tabular}
+\label{table salt dilution}
+\end{table}
+
+\chapter[Theoretical subglacial water pocket volumes for all Swiss glaciers]{Supplementary material for Chapter~\ref{ch:chapter_WPOFs}: theoretical subglacial water pocket volumes for all Swiss glaciers}
+\label{Appendix:subglacialWP}
+
+\setcounter{equation}{0}
+
+We used the VAW-ETHZ package WhereTheWaterFlows.jl (WWF) to artificially fill the depressions in the subglacial hydraulic potential (i.e.\ to create artificial water pockets) and to route the subglacial water formed by hydraulic barriers to the portal of all Swiss glaciers. WWF is based on the D8 routing algorithm developed by \cite{O'Callagan&al1984} and implements Shreve equations \citep{Shreve1972} for the hydraulic potential (see Section below). We consider the predicted water pocket volumes as a proxy for potential subglacial water accumulation.
+The map of the theoretical distribution of subglacial water pockets for all Swiss glaciers can be downloaded from \url{http://hdl.handle.net/20.500.11850/667509}.
+
+
+\subsection{ Calculation of the subglacial hydraulic potential $\psi$}
+
+The subglacial hydraulic potential $\psi$, which drives the water flow, is defined by:
+
+\begin{equation}
+     \psi = p + \rho_w\,g\,z_b,
+     \label{eq:phi}
+\end{equation}
+%
+where $p$ is the water pressure, $g$ the gravitational acceleration, $\rho_w$ the density of water and $z_b$ the elevation of the bedrock \citep{Cuffey&Paterson2010}. \cite{Shreve1972} assumes that water pressure is equal to the overburden ice pressure, and thus
+%
+\begin{equation}
+     \psi_S = \rho_i\,g\,(z_s - z_b) + \rho_w\,g\,z_b \approx \psi,
+     \label{eq:p}
+\end{equation}
+%
+where $\rho_i$ is the ice density and $z_s$ is the elevation of the glacier surface. 
+
+The distributed bedrock elevation $z_b$ for all Swiss glaciers is obtained from digital elevation models derived from a combination of extensive ice thickness measurements from airborne ground-penetrating radar with glaciological modelling \citep{Grab&al2021}. The bedrock DEM has a spatial resolution of 10\,m. The distributed glacier surface elevation $z_s$ is taken from the 2019 release of the swissALTI\textsuperscript{3D} DEMs with 2 m resolution (Swiss Federal Office of Topography), which were resampled to a resolution of 10\,m \citep{Grab&al2021}. On average, the data set represents the surface topography of the year 2015 (acquisition years span between 2007 and 2017) over glacierized areas. We then applied a moving-average filter to the surface elevation DEMs that is equal to half of the ice thickness, or to 50\,m as a minimum to prevent the impact of thin ice at the glacier margins. This is because the high-resolution swissALTI\textsuperscript{3D} surface DEMs are sensitive to local features such as large crevasses or moulins. It also has a physical meaning because in reality the basal water pressure is also dampened by the ice thickness, such that small and local features at the ice surface don't necessarily have an impact on the basal conditions.
+
+
+\subsection{ Calculation of the water pocket volumes}
+
+Subglacial water pockets caused by hydraulic barrier develop in areas having a local minimum of the hydraulic potential as calculated with Equation~\ref{eq:phi}. The subglacial water pocket depth is calculated by accommodating the water pressure to the ice overburden pressure. Thus, the subglacial water pocket depth $h_{wp}$ is given by
+%
+\begin{equation}
+     h_{wp} = \frac{\psi_{f} - \psi_{S}}{g\,\rho_w},
+\end{equation}
+%
+where $\psi_{f}$ is the filled Shreve potential $\psi_S$ and $\rho_w$ the water density. The volume of the water pocket is then obtained by integrating the water pocket depth over its area with a spatial discretisation of 10\,m due to the DEMs used (see subsection above). Note that in this simplistic treatment we assume that the water pocket fills slowly enough that the ice roof can uplift and is in hydrostatic equilibrium with the water in the reservoir.
+%
+
+\subsection{ Limitations}
+
+The applied approach to calculate the theoretical subglacial water pocket volumes for all Swiss glaciers contains important uncertainties in the water pocket volumes themselves as well as their location. First, the algorithm was run using the glacier outlines from the SGI2016, which may not reflect the glacier surface topography at the time of older WPOF events (acquisition dates of source data used for glacier outlines in the SGI2016 vary from 2013 to 2018 \citep{Linsbauer&al2021}). The spatiotemporal resolution of existing DEMs reflecting the glacier surface topography for the entire Swiss Alps during the late 20th century or earlier \citep[e.g. in][]{Fischer&al2015} is not sufficient for a reasonable application of the WWF tool. Second, we still observed artefacts of hydraulic potential values for some areas after application of the moving average filter because of the uncertainties in inferred bedrock. Third, flow routing in general is very sensitive to the spatial resolution of DEMs used and can show large uncertainties, especially for DEMs derived from Kriging methods or mass conservation \citep{Mackie&al2021}. 
+
+
+
+\chapter[The ice thickness of Chüebodengletscher]{Supplementary materiel for Chapter~\ref{ch:chapter_gprmax}: the ice thickness of Chüebodengletscher using ground penetrating radar}
 \label{ch:chueboden}
 
 In this Appendix, we describe the method that was used at Chuebodengletscher to infer the distributed ice thickness from ground penetrating radar data. The following report is found at ETH's Research Collection under the following DOI: 10.3929/ethz-b-000516258.
@@ -158,6 +276,11 @@ The data and the code necessary to obtain the ice thickness and the bedrock elev
 \caption{Folder tree of the data repository available from ETH's Research Collection. The data can be accessed through the following DOI: \href{https://doi.org/10.3929/ethz-b-000516258}{10.3929/ethz-b-000516258}.}
 \label{fig:folder_three}
 \end{figure}
+
+%\chapter[The hypothetical drainage of a water pocket]{Supplementary materiel for Chapter~\ref{ch:discussion}: The hypothetical drainage of the water pocket at Rhonegletscher in 2022}
+
+
+
 
 
 
