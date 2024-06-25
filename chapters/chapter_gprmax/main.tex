@@ -1,32 +1,18 @@
 \chapter[GPR in temperate ice: englacial water inclusions as limiting factor for data interpretation]{Ground penetrating radar in temperate ice: englacial water inclusions as limiting factor for data interpretation}
 \label{ch:chapter_gprmax}
 
-% \dictum[James C. Maxwell]{%
-%   The true logic of this world is in the calculus of probabilities. }%
-% \vskip 1em
 
+\section{Background}
+
+In the summer of 2021, I conducted two field campaigns using ground penetrating radar (GPR) to detect potential water pockets in two Swiss glaciers. The glaciers chosen for the survey were Triftgletscher in the Mattertal region and Glacier de Trient in the Mont Blanc massif, selected due to their history of water pocket outburst floods — Trift in 2019 and Trient repeatedly in the 20th century (see Chapter~\ref{ch:chapter_WPOFs}). Despite our efforts and a relatively good GPR spatial coverage ($\approx$30\,km of GPR lines for each glaciers), the attempts to detect water pocket on Triftgletscher and Glacier du Trient were unsuccessful, as the GPR data show a strong scattering, in turn preventing to reveal other physical features. For instance, the bedrock was not detected in most of the radargrams, which contrasted with successful bedrock mapping in Chuebodengletscher (in winter) using the same method (Appendix~\ref{ch:chueboden}). This prompted us to consider the capabilities of detecting water pockets with GPR from a theoretical perspective. Because we conducted the GPR measurement at Triftgletscher and Glacier de Trient in summer (during the melt season) and since these two glaciers are temperate, we hypothesized that the englacial water inclusions were responsible of the strong scattering. To test this hypothesis, we conducted a numerical modeling study of GPR signals in temperate glacier ice, including various scenarios of liquid water content and water inclusion size. We also compared qualitatively our numerical results with field data acquired in Triftgletscher and Glacier du Trient. This study allowed us to assess the interpretability of GPR signal in temperate ice and to quantify its limitations.\\
 This chapter is published by the Journal of Glaciology (Cambridge university press publishing
 group) as:\\
-Ogier C, van Manen D-J, Maurer H, et al. Ground penetrating radar in temperate ice: englacial water inclusions as limiting factor for data interpretation. Journal of Glaciology. Published online 2023:1-12. doi:10.1017/jog.2023.68. In this study I conducted the fieldwork at Trient and Triftglestcher, processed the field data, performed the numerical modelling and its analysis, produced the figures and wrote the article. 
+Ogier C, van Manen D-J, Maurer H, Räss L, Hertrich M, Bauder A ,Farinotti, D. \textit{Ground penetrating radar in temperate ice: englacial water inclusions as limiting factor for data interpretation}. Journal of Glaciology,p1-12, doi:10.1017/jog.2023.68.\\
+In this study I conducted the fieldwork at Trient and Triftglestcher, processed the field data, performed the numerical modelling and its analysis, produced the figures and wrote the article. 
 
-\section{Background} 
+\section{Abstract}
 
-\begin{itemize}
-    \item During my PhD, I aimed to detect water pockets within glaciers using ground penetrating radar (GPR).
-  
-    \item However, our attempts on Triftgletscher and Glacier du Trient were unsuccessful, as the GPR data yielded noisy and ambiguous results.
-  
-    \item This raised questions about the reliability of GPR for detecting water pockets in temperate glacier (i.e. most of the glaciers in the Alps). \textit{"we look for water but water is also a source of unwanted noise"}.
-  
-    \item We hypothesized that the strong scattering responsible for noise in the GPR data could be primarily attributed to englacial water inclusions, given the significant contrast in di-electric permittivity between water and ice. 
-  
-    \item To investigate these issues further, we performed numerical modeling study of GPR signals in temperate glacier ice.
-  
-    \item By simulating different scenarios involving liquid water content (LWC) and water-inclusion size, we aimed to understand the impact of these factors on the reliability of GPR data for detecting physical target such as water bodies or bedrock.
-  
-    \item We improve the understanding of the GPR as a tool for studying glacial hydrology and assessing associated hazards.
-    
-\end{itemize}
+\textbf{Ground penetrating radar (GPR) has been extensively used in glaciology to infer glacier's ice thickness, liquid water content, water drainage pathways, and other properties. The interpretation of such GPR data is not always straightforward and for temperate glaciers, the signal is often affected by strong scattering and attenuation. It has often been suggested that such effects originate from englacial water inclusions, since water and ice  have a large contrast in their di-electric permittivity. To investigate such effects quantitatively, we perform an extensive numerical modeling study of GPR signals. By exploring how different liquid water contents (LWC) and water-inclusions size affect the GPR signal, we show that their effects are much larger than the potential presence of a wet snowpack or a heterogeneous distribution of ice permittivity. In particularly, we show that the presence of such water inclusions is a necessary and sufficient condition for reproducing the typical characteristics of GPR data acquired in the field. Further, we find that for 25\,MHz GPR antennas, a bulk LWC $\gtrsim $\,0.2\,\%, associated with decimeters-scale water inclusions already limits bedrock detectability for ice thicknesses $\gtrsim$100\,m. Since these values are typical for Alpine glaciers, they clarify why the quality of GPR data is often poor in such environments.}
 
 
 \section{Introduction} 
@@ -361,8 +347,7 @@ In terms of practical implications, our results confirm that GPR surveys aiming 
 
 \section{Code and data availability}
 
-The GPR measurements acquired at Triftgletscher and Glacier du Trient are available through ETH Zurich's Research Collection, DOI:\,\texttt{10.3929/ethz-b-000590672}.
-The MATLAB scripts to generate the gprMax input are available at \texttt{https:/$\!$/github.com/christopheogier/gprMax} [this link will be replaced with a DOI handle in the event of this paper being accepted for publication]. The results of the gprMax simulations will also be made available though a DOI at ETH Zurich's Research Collection in the event of this paper being accepted for publication. For the time being, the results are available from the author upon on request. gprMax is an open access software available at \texttt{https:/$\!$/www.gprmax.com/}. 
+The GPR measurements acquired at Triftgletscher and Glacier du Trient are available through ETH Zurich's Research Collection, \url{https://doi.org/10.3929/ethz-b-000590672}. The ice temperature measurements acquired at Triftgletscher are available through ETH Zurich's Research Collection, \url{https://doi.org/10.3929/ethz-b-000609144}. The results of the gprMax simulations and the MATLAB scripts to generate the gprMax input are available through ETH Zurich's Research Collection, \url{https://doi.org/10.3929/ethz-b-000609177}. gprMax is an open access software available at \url{https://www.gprmax.com/}.
 
 
 \section{Acknowledgements} 

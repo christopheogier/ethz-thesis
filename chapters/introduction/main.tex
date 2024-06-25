@@ -1,282 +1,100 @@
 \chapter{Introduction}
 \label{ch:introduction}
 
-% TODO: put some recent figures in Intro (check rules of reproduction). For instance the nice graph from Zhang et al on spatial distribution and mechanism overview
-
 \section{Rationale and motivation of the thesis}
 
-% the following citation contextualize my thesis:
+Glacier ice melts due to various heat inputs, and when the resultant meltwater is naturally dammed by ice, moraine, or bedrock, glacial lakes can form in various locations relative to the glacier. These locations are on the surface of the glacier (and the lake is called supraglacial), within the glacier (englacial), beneath the glacier (subglacial), at the glacier's margin (ice-marginal), or dammed by a moraine or the bedrock beyond the glacier's terminus (proglacial). Presently, over 110,000 glacial lakes are reported worldwide, covering a total area of  $\approx$15,000 km$^2$ (see Fig.~\ref{fig:fig1_zhnagetal2024}). Glacial lakes are the most present in Greenland, the Southern Andes, Antarctica, Alaska, Canada, and High Mountain Asia \citep{Shugar&al2020}. The primary concern of glacial lakes is the potential hazards they pose, and not their contribution to sea level rise as glacial lakes hold about 0.43 mm of sea level equivalent \citep{Shugar&al2020}, 
 
-%\cite{Zhang&al2024} in abstract: Future research should prioritize acquiring field data on lake and dam properties, producing globally coordinated multitemporal lake mapping, and robust and efficient modelling of GLOFs for comprehensive hazard assessment and response planning.
+Glacial outburst floods are sudden releases of water from a glacier. When this water originates from a lake, the events are referred to as glacial lake outburst floods (GLOFs). GLOFs occur when the dam containing a glacial lake fails due to various triggers, which depend on the type of dam. GLOFs are infrequent but high-magnitude events with substantial geomorphic consequences such as erosion, sediment transport, and landscape alteration \citep[e.g.][]{Cook&al2018}. In particular, GLOFs pose serious threats to human lives and infrastructure in high mountain regions. A world-wide documentation of 1,348 GLOFs show that 24\% of them have recorded societal impacts \citep{Carrivick&Tweed2016}. This study records 7 deaths in Iceland, 393 in the European Alps, 5745 in South America, and 6300 in Central Asia. Notable events include the 1941 GLOF in Huaraz, Peru, which destroyed a third of the city and killed about 5000 people \citep{Carey2005}, and the 2013 GLOF in Kedarnath, India, which resulted in over 6000 deaths \citep{Allen&al2016}. The GLOFs inventory first compiled by \cite{Carrivick&Tweed2016} was further extended by \cite{Emmer&al2022, Veh&al2022, Lutzow&al2023} to 3000 GLOFs reported worldwide from 850 to 2022. Most GLOFs occurred in Alaska (24\%), High Mountain Asia (18\,\%) and Iceland (19\,\%), the majority (64.8\%) being from ice-dammed lakes. Recorded GLOFs have increased in most glaciated mountain regions worldwide, with ongoing deglaciation and lake expansion expected to further increase their frequency, in particular for glacial lakes dammed by frontal moraine \citep{Harrison&al2018,Zhang&al2024}. It is estimated that over 15 million people are currently at risk from GLOFs, primarily due to dam failures or wave overtopping caused by mass movements falling into the lake in the Himalayas and Andes \citep{Taylor&al2023}. However, note that this study considers populations at risk if they are located less than 1\,km from a river originating from a glacial lake within a distance of 50\,km. Consequently, the number of people threaten may be overestimated in the Alps, where relatively small, stable glacial lakes have minimal impact, although located in densely populated regions (e.g. the bedrock-dammed lake of Rhoneglestcher in the Rhone valley). The European Alps are the most susceptible region worldwide for GLOFs with 443 events ever recorded in 89 sites since 1560 \citep{Carrivick&Tweed2016,Lutzow&al2023}. However, the fact that GLOFs have been overlooked in the European Alps compared to other regions of the world may explain these results \citep{Veh&al2022}. In Switzerland, more than 200 GLOFs were recorded for 60 sites since 1560 \cite{Carrivick&Tweed2016}. Approximately 30-40\,\% of these glacial outburst floods were estimated to originate from englacial and subglacial water reservoirs known as water pockets, rather than from identified lakes \citep{Haeberli1983}. Note that these events are still classified as GLOFs in \citep{Lutzow&al2023, Zhang&al2024} (see Table~\ref{tab:glof_types}). In general, very little is known about water pockets due to their hidden nature, despite them being responsible for a significant proportion of outburst events 
 
-%\cite{Carrivick&Tweed2016} in abstract: "We recommend that accurate, full and standardised monitoring, recording and reporting of glacier floods is essential if spatio-temporal patterns in glacier flood occurrence, magnitude and societal impact are to be better understood."
+Given the widespread risk posed by GLOFs, particularly in a warming climate and in densely populated areas such as the European Alps or in some part of the Himalayas, it is crucial to understand the formation, evolution, and physical characteristics of glacial lakes to predict their magnitude and mitigate their impacts on downstream communities and infrastructure. In this regard, research on GLOFs has been considerably increasing in the last years. For instance, \cite{Emmer&al2022} reported a 110\,\% increase in the number of peer-reviewed scientific publication on GLOFs between 2017 and 2021. However, this is largely due from advancements in remote sensing capabilities and most of our fundamental understanding of GLOFs mechanisms comes from earlier studies \citep[see][for a review]{Bjornsson2010}.
 
-%\cite{Veh&al2022} in abstract: We invite future research to learn more about the physical drivers of regional GLOF trends to improve projections of GLOF occurrence under ongoing atmospheric warming.
-% -> Ok, this is not what we do directly, but we set some basis to go in that direction (with the WPOF inventory at the Swiss scale). That said, we don't conclude on any trend and potential trend driver.
+The current limited physical understanding of some type of GLOFs prevent their prediction for natural hazard purposes \citep{Emmer&al2022}. This is particularly the case for the drainage of supraglacial lakes \citep[e.g.][]{Vincent&al2010} and the outburst flood originating from water pocket \citep[e.g.][]{Haeberli1983}. In both type of floods, the lack of field measurements prevent adequate modelling framework and thus further good predictability of their occurrence and impacts. The general lack of detailed field measurement and physical understanding on GLOFs is identified in numerous recent studies \citep{Zhang&al2024, Carrivick&Tweed2016, Veh&al2022}.
 
-%% TEXT
-
-Glacier ice melts due to various heat inputs, including positive temperatures, phase changes, precipitation, and internal ice deformation. When the resultant meltwater is naturally dammed by ice, moraine, or bedrock, glacial lakes can form in various locations relative to the glacier. These locations are on the surface of the glacier (and the lake is called supraglacial), within the glacier (englacial), beneath the glacier (subglacial), at the glacier's margin (ice-marginal), or dammed by a moraine beyond the glacier's terminus (proglacial). Glaciers have been losing mass since the end of the Little Ice, and at high — and accelerating — rates since the 1960s \cite{Huggonet2022,Zemp2019}, producing more and larger glacial lakes \cite{Zhang&al2024}. Presently, over 110,000 glacial lakes are reported worldwide, covering a total area of  $\approx$15,000 km$^2$, reflecting a 22\% increase in area from 1990 to 2020 \citep{Zhang&al2024}. These lakes are primarily in Greenland, the Southern Andes, Antarctica, Alaska, Canada, and High Mountain Asia \citep{Shugar&al2020}. Although glacial lakes hold about 0.43 mm of sea level equivalent \cite{Shugar&al2020}, the primary concern is not their contribution to sea level rise but the potential hazards they pose.
-
-Glacial outburst floods are sudden releases of water from a glacier. When this water originates from a lake, it is referred to as a glacial lake outburst flood (GLOFs). GLOFs occur when the dam containing a glacial lake is breached due to various triggers, which depend on the type of dam. GLOFs are infrequent but high-magnitude events with substantial geomorphic consequences, posing serious threats to human lives and infrastructure in high mountain regions. A documentation of 1,348 glacier floods show that 24\% of them have recorded societal impacts \citep{Carrivick&Tweed2016}. This study records 7 deaths in Iceland, 393 in the European Alps, 5745 in South America, and 6300 in Central Asia. Notable events include the 1941 GLOF in Huaraz, Peru, which destroyed a third of the city and killed about 5000 people \citep{Carey2005}, and the 2013 GLOF in Kedarnath, India, which resulted in over 6000 deaths \citep{Allen&al2016}. The GLOFs inventory first compiled by \cite{Carrivick&Tweed2016} was further extended by \cite{Emmer&al2022, Veh&al2022, Lutzow&al2023} to 3000 GLOFs reported worldwide from 850 to 2022. Most GLOFs occurred in Alaska (24\%), High Mountain Asia (18\,\%) and Iceland (19\,\%), the majority (64.8\%) being from ice-dammed lakes. Recorded GLOFs have increased in most glaciated mountain regions worldwide, with ongoing deglaciation and lake expansion expected to further increase their frequency \cite{Zhang&al2024}. It is estimated that over 10 million people are currently at risk from GLOFs, principally linked to dam failures or wave overtopping due to mass movements falling into the lake \citep{Zhang&al2024}. The European alps is the most susceptible region worldwide for GLOFs with 443 events ever recorded in 89 sites since 1560 \citep{Carrivick&Tweed2016,Lutzow&al2023}. In particular, Switzerland is the most susceptible country to GLOFs with more than 200 GLOFs recorded for 60 sites since 1560 \cite{Carrivick&Tweed2016}. %In the European Alps, GLOFs have historically caused hundreds of fatalities, motivating extensive glaciological research in these regions \citep{Haeberli1983, Vincent&al2010b, Ancey&al2019, Veh&al2022}.
-In Switzerland, 30-40\,\% of glacial outburst floods originate from englacial and subglacial water reservoirs called water pockets \citep{Haeberli1983}, and thus not from identified lakes. However, these events are still classified as GLOFs in \cite{Lutzow&al2023, Zhang&al2024}. This situation highlights two key points: firstly, there is a misunderstanding between the definition of GLOFs and outburst floods from water pockets, as the latter do not necessarily involve lakes. Secondly, and more importantly, little is known about water pockets due to their hidden nature, despite them being responsible for a significant proportion of outburst events \citep[e.g. 49\,\% of all type of GLOFs in the European Alps][]{Lutzow&al2023}.
-
-Given the widespread risk posed by GLOFs, particularly in a warming climate and in densely populated areas such as the European Alps or the Himalayas, it is crucial to understand the formation, evolution, and physical characteristics of glacial lakes to predict their magnitude and mitigate their impacts on downstream communities and infrastructure. In this regard, research on GLOFs has been considerably increasing in the last years. For instance, \cite{Emmer&al2022} reported a 110\,\% increase in the number of peer-reviewed scientific publication on GLOFs between 2017 and 2021. However, the current limited physical understanding of some type of GLOFs prevent their prediction for natural hazard purposes \citep{Emmer&al2022}. This is particularly the case for the drainage of supraglacial lakes \citep[e.g.][]{Vincent&al2010} and the outburst flood originating from water pocket \citep[e.g.][]{Haeberli1983}. In both type of floods, the lack of field measurements prevent adequate modelling framework and thus further good predictability of their occurrence and impacts. The general lack of detailed field measurement and physical understanding on GLOFs is identified in numerous recent studies \citep{Zhang&al2024, Carrivick&Tweed2016, Veh&al2022}.
-%\cite{Emmer&al2022} identifies 4 theme in GLOFs research: (i) understanding GLOFs, including their timing and processes; (ii) modeling GLOFs and their process chains; (iii) managing GLOF risks, including prevention and warning systems; and (iv) examining the human dimensions of GLOFs and attributing them to climate change \citep{Emmer&al2022}. Recent studies, in particular, suggested that future research should focus on acquiring detailed field data on lake and dam properties to then develop robust models for GLOFs hazard assessment, as well as providing extensive GLOFs inventories for global a understanding  \citep{Zhang&al2024, Carrivick&Tweed2016, Veh&al2022}. This highlights the importance of the first theme (i) as the start point for GLOFs research.
-
-%Motivation of the thesis
-In this thesis, I aim at improving the general physical understanding of GLOFs by providing 1) an extensive field-based dataset of an ice-marginal lake drainage at the glacier surface, 2) an up-to-date inventory glacial outburst floods originating from water pockets in alpine glaciers and insights on their mechanisms, and 3) a discussion on the limitation of monitoring technique such as the ground penetrating radar for the detection of englacial water pockets. Each of these listed points are analyzed in a dedicated chapter corresponding to a published (or submitted) peer-reviewed article.
-
-%In 2019, two uncommon glacier outburst floods occurred in Switzerland. At Glacier de la Plaine Morte, Lac des Faverges drained supra glacially (i.e. in a supraglacial channel) from XX June to YY August. At Triftgletscher (Mattertal), an outburst flood was observed on the XX July but without any observation lakes, suggesting the englacial or subglacial nature of the water reservoir. 
-
-%Glacial lakes review: https://www.sciencedirect.com/science/article/pii/B9780128182345000572
-
-%in the link above:
-%Blocking of subsurface outflow channels by sediments, deposits from the mass movement, freezing, or an earthquake-induced settlement of dam structure can increase the lake water level and dam rupture (due to the increasing hydrostatic pressure). Alternatively, the lake level increases until the dam is overtopped and possibly incised and breached. This trigger has rarely been documented. An example is the moraine dam failure of Lake Zhangzhanbo in 1981 (Ding and Liu, 1992; Yamada, 1998).
-
-%\subsection{Physical and societal impacts of GLOFs}% and ecological?
-% or is it more a section on the global aspect of GLOFs research?
+In this thesis, I aim to contribute to the understanding of GLOFs by providing 1) an extensive field-based dataset of an ice-marginal lake drainage at the glacier surface constraining some important physical parameters, 2) an up-to-date inventory glacial outburst floods originating from water pockets in alpine glaciers and insights on their mechanisms, and 3) insights on the limitation of monitoring technique such as the ground penetrating radar for the detection of englacial water pockets. Each of these listed points are analyzed in a dedicated chapter corresponding to a published (or submitted) peer-reviewed article.
 
 
-% chronological history of GLOFs research
+\section{Glacier outburst floods: current understanding and research gaps} 
 
-%Fun note: a positive aspect of glofs: for example tens of glacier floods in Norway were noted to have contributed additional water into hydropower reservoirs (Jackson and Ragulina, 2014).
-
-%\cite{Emmer&al2022}: Hence, the geographical focus of research appears to be driven by potential societal impacts and relevance of GLOFs and the size of these mountain regions, rather than by the physical GLOF processes themselves.
-
-% good example on the ‘word-of-mouth’ reports of glacier floods which are difficult to substantiate in \cite{Carrivick&Tweed2016}: for example Vivian (1979) was told that several thousand people were killed when a huge flood was generated fromice fall into a proglacial lake in Tibet (see Tufnell, 1984).
+The characteristics of GLOFs, such as the triggering process, the magnitude, the mechanisms of drainage and the impacts downstream depend on the type of lake and dam from which they originate. Therefore, differentiating type of GLOFs by the type of the dam constitutes the first step for GLOFs hazard assessment \citep{Allen&al2022}. Here, we classify GLOFs according to the type of lake they originate from, i.e., from moraine-dammed lakes, bedrock-dammed lakes, ice-dammed lakes (also called ice-marginal lakes), subglacial lakes, water pocket, and supraglacial lakes. Note that even in recent studies \citep[e.g.][]{Lutzow&al2023,Zhang&al2024} the different categories are not clear. Refer to Table~\ref{tab:glof_types} for clarification on the different types of lakes and GLOFs as defined in the literature. In this section, we mirror the type of GLOFs associated to theses type of lake. For each of these GLOFs categories, we review the current knowledge on their spatial and temporal distribution, on the rupture mechanisms at play, on their flood modelling and on the challenges associated. 
 
 
-\section{Glacier outburst floods: current understanding and research gaps} % really important subsection that put our work into focus. Needs to be substancial
+\begin{table}[ht]
+\caption{Examples of lake types and GLOFs associated as defined in the literature.}
+\centering
+\small
+\begin{tabular}{l r r r}
+\hline
+\textbf{Type of lake} & & & \\
+\textbf{in {\cite{Roberts2005}}} & \textbf{in {\cite{Zhang&al2024}}} & \textbf{in {\cite{Lutzow&al2023}}} & \textbf{in others} \\
+\hline
+1. Ice-marginal, &  ice-dammed & ice-dammed & Jökulhlaup \todo{this is glofs, not lake, remove and just say in text?}\\
+ice-dammed &  &  & {\citep{Bjornsson2010}} \\
+\hline
+2. Supraglacial & supraglacial & ice-dammed &  \\
+\hline
+3. Volcanic  & other & volcanic & Jökulhlaup \\
+&  &  & {\citep{Bjornsson2010}} \\
+\hline
+4. Subglacial & other & ice-dammed & Jökulhlaup \\
+&  &  & {\citep{Bjornsson2010}} \\
+\hline
+5. Intraglacial cavity & englacial & water pocket & water pocket \\
+ &  &  & outburst flood  \\
+  &  &  & {\citep{Deline&al2004}} \\
+\hline
+6. Moraine-dammed & moraine-dammed & moraine-dammed &  \\
+ & bedrock-dammed & bedrock-dammed &  \\
+\hline
+7. Surge termination & not specified & not specified & {\cite{Kamb&al1985}}\\
+\hline
+\end{tabular}
+\label{tab:glof_types}
+\end{table}
 
-The characteristics of GLOFs, such as the triggering process, the magnitude, the mechanisms of drainage and the impacts downstream depend on the type of lake and dam from which they originate. Therefore, differentiating type of GLOFs by the type of the dam constitutes the first step for GLOFs hazard assessment \citep{Allen&al2022}. Here, we keep the classification of GLOFs by lake type in \cite{Zhang&al2024}, which classify GLOFs originating from bedrock-dammed lakes, moraine-dammed lakes, ice-dammed lakes (=glacier-ice marginal lakes), englacial water reservoir (also called water pocket in \cite{Lutzow&al2023}), supraglacial lakes, and other (e.g. subglacial lakes caused by volcanic or geothermal activity). In this section, we mirror the type of GLOFs associated to theses type of lake. For each of these GLOFs categories, we review the current knowledge on their spatial and temporal distribution, on the rupture mechanisms at play, on their flood modelling and on the challenges associated. 
-%The differentiation between supraglacial lakes and water pockets from subaerial glacier-dammed lakes emphasize differences in dam shapes and breach dynamics (in Zhang 2024).
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{chapters/introduction/Fig1_Zhnag&al2024.pdf}
+    \caption{From \cite{Zhang&al2024} (with permission). a) Area and volume of present-day (2018) glacial lakes within 1\,km of glaciers, aggregated over 220\,km hexagon grid cells (red shades), and regional statistics of lake volume, area and number according to Global Terrestrial Network for Glaciers (GTN-G) glacier regions of the Randolph Glacier Inventory (RGI)(doughnut plots); outer, middle and inner circles indicate the total volume, area and number percentage of glacial lakes in a given size interval, respectively, with the total lake area in each region in the centre of the circle. b) Global distribution of historical glacial lake outburst floods (GLOFs) aggregated over 220\,km hexagon grid cells (red shading), and regional breakdown of the GLOF number by glacial lake (dam) types (pie charts).}
+    \label{fig:fig1_zhnagetal2024}
+\end{figure}
 
 
-\subsection{GLOFs from moraine-dammed lakes and bedrock-dammed lakes}
+\subsection{GLOFs from moraine-dammed lakes and bedrock-dammed lakes}% pro glacial lakes
+% also see Carriveek and tweed 2015 if more material needed  https://doi.org/10.1111/gto.12094
 
-
-Moraine-dammed lake are impounded by the frontal moraine and the glacier front. Moraine dam breaching can be caused by seepage of lake water through unconsolidated material, degradation of an ice core, or overtopping due to calving, avalanches or landslides into the lake [ref 76,83 in Zhang 2024]. GLOFs from moraine-dammed lakes constitute 13\,\% of all documented outbursts globally \citep{Lutzow&al2023}. Their occurrence varies regionally \citep{Zhang&al2024}, with most cases reported in the low-latitude Andes (n=100; 61.3\% of regional GLOFs, 25.1\% globally), Central Asia (n=110; 46.2\% regionally, 27.6\% globally), and the Himalaya (n=71; 77.2\% regionally, 17.8\% globally). GLOFs from moraine-dammed are expected to occur more frequently in the next decades and into the 22$^{nd}$ in response to climate warming \citep{Harrison&al2018}. In Switzerland, for instance, the count of moraine-dammed lakes increased from 21 in 1900 to 47 in 2006, and then to 82 in 2016 \cite{Zhang&al2024}. However, in some regions, observational biases have led to an underestimation of past event numbers \citep{Veh&al2022}. %Complete failure of the (moraine) dam restricts any future ability to impound meltwater \citep{Clague&Evans2000}. Hence, moraine-dammed lakes usually fail only once. 
-% a sentence on what an increase means and implies ?
-Since moraine-dammed lake are well visible and their area is relatively easily measurable (e.g. from remote sensing technique), it is relevant to assess their flood potential from their size. Empirical relationships between peak discharge, water volume and water height has been established to predict the flood magnitude \citep[see][for a review on moraine-dammed lake failure]{Neupane&al2019}. Recent improvement on the prediction of flood magnitude considered solid particles dynamics in modelling studies \citep[e.g.][]{Mergili&al2018}. However, very limited experimental investigations have been conducted on the failure mechanism of moraine dams, and the cascade effect of moraine dam failures remains poorly know \citep{Somos-Valenzuela&al2016}. This currently limits the understanding of moraine failure mechanism and their downstream impacts \citep{Neupane&al2019}. 
+Moraine-dammed lake are impounded by the frontal moraine and the glacier front. Moraine dam breaching can be caused by seepage of lake water through unconsolidated material, degradation of an ice core, or overtopping due to calving, avalanches or landslides into the lake \citep{Emmer2020,Tweed&Russel1999}. GLOFs from moraine-dammed lakes constitute 13\,\% of all documented outbursts globally \citep{Lutzow&al2023}. Their occurrence varies regionally (see Fig.~\ref{fig:fig1_zhnagetal2024}, with most cases reported in the low-latitude Andes (n=100; 61.3\% of GLOFs within the low-latitude Andes, 25.1\% of global moraine-dammed GLOFs), Central Asia (n=110; 46.2\% of GLOFs in central Asia, 27.6\% of global moraine-dammed GLOFs), and the Himalaya (n=71; 77.2\% of GLOFs in the Himalaya, 17.8\% of global moraine-dammed GLOFs). GLOFs from moraine-dammed are expected to occur more frequently in the next decades and into the 22$^{nd}$ in response to climate warming \citep{Harrison&al2018}. In Switzerland, for instance, the count of moraine-dammed lakes increased from 21 in 1900 to 47 in 2006, and then to 82 in 2016 \citep{Zhang&al2024}. However, some of this increase is due to the artificial impoundment of lakes by dams for hydropower generation, as most moraine-dammed lakes susceptible to breaching from past moraines have already been breached in the European Alps (i.e.\ moraines that formed during the little ice age which occurred between 1300 to 1850). Therefore, this increase may not be directly relevant to the hazard posed by GLOFs.%Complete failure of the (moraine) dam restricts any future ability to impound meltwater \citep{Clague&Evans2000}. Hence, moraine-dammed lakes usually fail only once. % In \cite{Zhang&al2024}: 
+% Moraine-dammed lakes in the ice-marginal phase of evolution are the most likely to pro-duce GLOFs due to calving processes and proximity to ice avalanche release zones. In contrast, glacial lakes detached from glaciers become disconnected from the most frequent GLOF-triggering processes with increasing distance from glaciers [56]. 
+Since moraine-dammed lake are well visible and their area is relatively easily measurable (e.g. from remote sensing technique), it is relevant to assess their flood potential from their size. Empirical relationships between peak discharge, water volume and water height has been established to predict the flood magnitude \citep[see][for a review on moraine-dammed lake failure]{Neupane&al2019}. Recent improvement on the prediction of flood magnitude considered solid particles dynamics in modelling studies \citep[e.g.][]{Mergili&al2018}. However, very limited experimental investigations have been conducted on the failure mechanism of moraine dams, and the cascade effect of moraine dam failures remains poorly know \citep{Somos-Valenzuelas&al2016}. This currently limits the understanding of moraine failure mechanism and their downstream impacts \citep{Neupane&al2019}. 
 
 %modelling of moraine dam failure: https://doi.org/10.5194/esurf-3-171-2015
-
-% \cite{Zhang&al2024}: most moraine-dammed and bedrock-dammed glacial lakes persist after a GLOF has occurred [62]
-
 %mass movement into proglacial lakes: Haeberli 2017
 
-% In \cite{Zhang&al2024}: 
-% Moraine-dammed lakes in the ice-marginal phase of evolution are the most likely to pro-duce GLOFs due to calving processes and proximity to ice avalanche release zones. In contrast, glacial lakes detached from glaciers become disconnected from the most frequent GLOF-triggering processes with increasing distance from glaciers [56]. 
-
-%\subsubsection{GLOFs from bedrock dam}
-
-Bedrock-dammed lakes form when solid bedrock acts as a barrier to impound water near the glacier. Unlike moraine dams, bedrock dams are relatively stable and less prone to failure because of the robustness of the bedrock barrier. Consequently, GLOFs from bedrock-dammed lakes typically occur only when the dam is overtopped by mass movement into the lake, such as landslides, rockfalls or ice and snow avalanches \citep{Emmer2017, Huggel&al2004, Haeberli&al2017}. These events constitute only about 1\,\% (30 out of 3,151) of the total documented GLOFs in \cite{Lutzow&al2023}.
+Bedrock-dammed lakes form when solid bedrock acts as a barrier to impound water near the glacier. Unlike moraine dams, bedrock dams are relatively stable and less prone to failure because of the robustness of the bedrock barrier. Consequently, GLOFs from bedrock-dammed lakes typically occur only when the dam is overtopped by mass movement into the lake, such as landslides, rockfalls or ice and snow avalanches \citep{Emmer2017, Huggel&al2004, Haeberli&al2017}. These events constitute only about 1\,\% (30 out of 3,151) of the total documented GLOFs in \cite{Lutzow&al2023} (see also Fig.~\ref{fig:fig1_zhnagetal2024}).
 
 
 \subsection{GLOFs from ice-dammed marginal lakes}
 \label{subsection:glofs_ice-dammed_lakes}
-% I guess this accounts for supraglacial lakes too!! But i couldn't really fine a distinction in recent overview paper (for instance no such categorization in Zhang 2024)
-% and I also assume WPOFs are counted in too -> make a good distinction/sub-category
 
-% check consistency with ice-marginal lakes, ice-dammed lakes, ice-dammed marginal lakes...
+Ice-dammed marginal lakes form when thick glaciers block the flow of water, creating a natural dam that temporarily impounds water at the glacier's margins. Note that in \cite{Lutzow&al2023,Zhang&al2024}, ice-dammed marginal lakes are simply called ice-dammed lake, but we add marginal to differentiate more explicitly with supraglacial lakes and englacial water pocket in the next subsections, which are also reservoir of water dammed by ice (see Table~\ref{fig:fig1_zhnagetal2024}). GLOFs from ice-dammed marginal lakes (also called jökulhlaups in \cite{Bjornsson2010}, see Table~\ref{tab:glof_types}) occur when the ice dam fails by hydrofracturing due to the lake's hydrostatic pressure \citep[e.g. in][]{Lindner&al2020}, subglacial channel enlargement \citep{Nye1976} or ice dam flotation \citep[e.g. in][]{Liestol1956}, or a combination thereof \citep{Flowers&al2004}\citep[see also][for a review on the physical aspects of these mechanisms]{Flowers2015}. Alternatively, the lake water can overspill the dam and forms a breach due to ice erosion \citep[e.g.][]{Walder&Costa1996,Raymond&Nolan2000,Mayer&Schuler2005}. Glacial lake outburst floods originating from ice-dammed marginal lakes are the most prevalent type of all type of GLOFs, accounting for 64.8\,\% of occurrences worldwide (see Fig.~\ref{fig:fig1_zhnagetal2024}). At the regional scale, Alaska has the most GLOFs from ice-dammed marginal lakes (n = 764; 99\,\% within Alaska, 37\,\% of global ice-dammed GLOFs) \citep{Emmer&al2022}. Ice-dammed marginal lakes are also the main source of GLOFs in Greenland periphery (n = 153; 100\,\% within Greenland, 7.5\,\% globally), the Karakoram (n = 190; 33.4\,\% within HMA, 9.3\,\% globally), Scandinavia (n = 183; 96.8\,\% within Scandinavia, 9.0\,\% globally), Central Europe (n = 258; 58.2\,\% within Central Europe, 12.7\,\% globally), and Iceland (n = 237; 40.2\,\% within Iceland, 11.6\,\% globally)\citep{Zhang&al2024}. The high frequency of GLOFs from ice-dammed marginal lakes is attributed to the possibility of multiple draining events, because the ice dam can temporarily "re-heal" once a large part of the lake water had been drained \citep{Zhang&al2024}. Despite some current positive trends, declining trends in ice-dam failures may dominate in the future due to ongoing ice loss preventing the formation of such dams \citep{Rick&al2022}. As glaciers retreat, many glacier dams become unable to impound lakes at higher elevations due to steeper topography \cite{Zhang&al2024}, or the glaciers disappear entirely \citep[e.g.][]{Geertsema&Clague2005,Tweed&Russel1999}. %former part because we don't want to arise question we don't answer:
+%However, the decrease in ice-dammed lakes does not necessarily correlates with a decrease in GLOFs. For instance, in Alaska, the total number and area of ice-dammed lakes decreased by 13\,\% and 43\,\%, respectively, between 1984 and 2019 because of glacier recession \citep{Rick&al2022}. Nevertheless, there was an increase in GLOFs for the same period, indicating that the regional increases in ice-dammed failures are linked to fewer lakes emptying more frequently \citep{Veh&al2022}, but to my knowledge the causes were not resolved in the mentioned studies.
 
-Ice-dammed marginal lakes form when thick glaciers block the flow of water, creating a natural dam that temporarily impounds water at the glacier's margins. Note that in \cite{Lutzow&al2023,Zhang&al2024}, ice-dammed marginal lakes are simply called ice-dammed lake, but we add marginal to differentiate more explicitly with supraglacial lakes and englacial water pocket in the next subsections, which are also reservoir of water dammed by ice. GLOFs from ice-dammed lakes (also called jökulhlaup) occur when the ice dam fails by hydrofracturing due to the lake's hydrostatic pressure \citep[e.g.][]{Lindner&al2020}, subglacial channel enlargement \citep{Nye1976} or ice dam flotation \citep[e.g.][]{Bjornsson&al1996}, or a combination thereof \citep{Flowers&al2004}. In rarer cases, the lake water overspills the dam and forms a breach due to ice erosion \citep[e.g.][]{Walder&Costa1996,Raymond&Nolan2000,Mayer&Schuler2005}. Glacial lake outburst floods originating from ice-dammed lakes are the most prevalent type of all type of GLOFs, accounting for 64.8\,\% of occurrences worldwide \cite{Lutzow&al2023}. At the regional scale, Alaska has the most GLOFs from ice-dammed marginal lakes (n = 764; 99\,\% within Alaska, 37\,\% of global ice-dammed GLOFs) \citep{Emmer&al2022}. Ice-dammed marginal lakes are also the main source of GLOFs in Greenland periphery (n = 153; 100\,\% within Greenland, 7.5\,\% globally), the Karakoram (n = 190; 33.4\,\% within HMA, 9.3\,\% globally), Scandinavia (n = 183; 96.8\,\% within Scandinavia, 9.0\,\% globally), Central Europe (n = 258; 58.2\,\% within Central Europe, 12.7\,\% globally), and Iceland (n = 237; 40.2\,\% within Iceland, 11.6\,\% globally)\citep{Zhang&al2024}. The high frequency of GLOFs from ice-dammed marginal lakes is attributed to the possibility of multiple draining events, because the ice dam can temporarily "re-heal" once a large part of the lake water had been drained \citep{Zhang&al2024}. Despite some current positive trends, declining trends in ice-dam failures may dominate in the future due to ongoing ice loss preventing the formation of such dams \citep{Rick&al2022}. As glaciers retreat, many glacier dams become unable to impound lakes at higher elevations due to steeper topography \cite{Zhang&al2024}, or the glaciers disappear entirely \citep[e.g.][]{Geertsema&Clague2005,Tweed&Russel1999,Wolf}. However, the decrease in ice-dammed lakes does not necessarily correlates with a decrease in GLOFs. For instance, in Alaska, the total number and area of ice-dammed lakes decreased by 13\,\% and 43\,\%, respectively, between 1984 and 2019 \citep{Veh&al2022}. Nevertheless, there was an increase in GLOFs for the same period, indicating that the regional increases in ice-dammed failures are linked to fewer lakes emptying more frequently \citep{Veh&al2022}.
+When predicting the impact of a GLOF downstream, the peak discharge and the hydrograph (i.e., the discharge time series of the flood) are of particular interest. The flood peak discharge can be estimated using empirical relationships between the lake area and the lake volume \citep{Evans1986, Huggel&al2002, Cook&Quincey2015}, and then between the lake volume and the peak discharge \citep{Clague&Mathews1973, Haeberli1983, Costa1985, Evans1986, Walder&OConnor1997, Huggel&al2002}, although these empirical formulations have shown limitations \citep[e.g.][]{Huss&al2007}. Flood hydrographs, however, need a physical-based calculation to be accurately modeled. In particular, the hydraulics and the thermodynamics of the water flow through the ice has to be considered. The understanding of jökulhlaups hydraulics was significantly advanced by the development of the general theory of time-dependent turbulent water flow through intraglacial conduits by \cite{Nye1976}, who build his work on \cite{Roethlisberger1972,Shreve1972,Weertman1972}. This theory explains flood evolution by examining water input at the upper end of a ice tunnel from a reservoir, accounting for the heat stored in the lake and the tunnel's geometry. According to these studies, the lake drainage can start when the lake hydrostatic pressure lead the dam to float. The tunnel grows due to positive feedback, with the ice walls melting from the frictional heat generated by the flowing water, leading to increasing discharge. The flood discharge is then controlled by the lake level (which determines the hydraulic gradient) and the changes in channel size. Theses changes are linked to the melting rates at the channel walls, driven by the dissipation of potential energy. This jökulhlaups model from \cite{Nye1976} was refined by \cite{Spring&Hutter1981} and \cite{Clarke1982} to incorporate water reservoir temperatures, heat transfer in the tunnel, and the geometry of both the lake and the subglacial pathway. This model was further improved by \cite{Clarke2003} by using field data from Grímsvötn outbursts in Iceland \citep[see][]{Bjornsson2010}. These improvements considered that the location of flow constrictions, which control the flood's magnitude, may shift upward along the flood path. To summarize, by the end of the twentieth century, our understanding of ice-dammed marginal lake drainage mainly come from observed jökulhlaups in Iceland, which provided detailed dataset including water temperature, lake level variations and hydrograph of the flood. Despite these advancements, certain model parameters necessary for accurately modeling jökulhlaups and reconstructing flood hydrographs remain poorly constrained. These parameters are discussed in detail in the next paragraph. 
 
-
-When predicting the impact of a GLOF downstream, the peak discharge and the hydrograph (i.e., the discharge time series of the flood) are of particular interest. The flood peak discharge can be estimated using empirical relationships between the lake area and the lake volume \citep{Evans1986, Huggel&al2002, Cook&Quincey2015}, and then between the lake volume and the peak discharge \citep{Clague&Mathews1973, Haeberli1983, Costa1985, Evans1986, Walder&OConnor1997, Huggel&al2002}. Flood hydrographs, however, need a physical-based calculation to be accurately modeled. In particular, the hydraulics and the thermodynamics of the water flow through the ice has to be considered. The understanding of jökulhlaup hydraulics was significantly advanced by the development of the general theory of time-dependent turbulent water flow through intraglacial conduits by \cite{Nye1976}, who build his work on \cite{Roethlisberger1972,Shreve1972,Weertman1972}. This theory explains flood evolution by examining water input at the upper end of a ice tunnel from a reservoir, accounting for the heat stored in the lake and the tunnel's geometry. The lake drainage can start when the lake hydrostatic pressure lead the dam to float. The tunnel grows due to positive feedback, with the ice walls melting from the frictional heat generated by the flowing water, leading to increasing discharge. The flood discharge is then controlled by the lake level (which determines the hydraulic gradient) and the changes in channel size. Theses changes are linked to the melting rates at the channel walls, driven by the dissipation of potential energy. This jökulhlaup model from \cite{Nye1976} was refined by \cite{Spring&Hutter1981} and \cite{Clarke1982} to incorporate water reservoir temperatures, heat transfer in the tunnel, and the geometry of both the lake and the subglacial pathway. This model was further improved by \cite{Clarke2003} by using field data from Grímsvötn outbursts in Iceland \citep[see][]{Bjornsson2010}. However, \cite{Clarke2003} highlighted the need of field-based observation to better calibrate jökulhlaup model. In particular, the previous estimate of flow resistance were suggested to be too high, and that the empirical formulas of heat exchange between ice and water were possibly inappropriate. In 1996, the discharge characteristics of a significant jökulhlaup from Grímsvötn in Iceland \citep{Bjornsson1996} could only be explained by integrating subglacial flow through both a sheet and conduits \citep{Flowers&al2004}. This model suggests that pressurized floodwater initially propagates in a turbulent subglacial sheet before transitioning to conduits having higher streamflow discharge capacity. However, simulated outlet water temperature was overestimated, emphasizing a persistent discrepancy between observations and the predictions of jökulhlaup thermodynamic theory (as already indicated by \cite{Clarke2003}). Although these discrepancies between observed and modeled water temperatures at the outlet did not significantly affect the simulation results in \cite{Flowers&al2004}, they indicate that more work is needed on the heat exchange parametrization for accurate simulations of jökulhlaup. The additional and recent theoretical work on the heat transfer between water and ice in \cite{Sommers&Rajaram2020} showed the importance in considering the stream flow geometry (e.g. wide sheet or circular channels) on the heat transfer parametrization. The results of this study could explain part of the temperature discrepancies between observation and jökulhlaup models highlighted in \cite{Clarke2003,Flowers&al2004}. Yet, in situ field measurements are still lacking to validate this theoretical framework.   
-
-% few words on recent heat transfer modelling study: rajah et el
-
-In recent years, more ice-dammed marginal lakes drainage had been monitored in Alaska \citep[Hidden Creek Lake, ][]{Anderson&al2003,Anderson&al2005,Walder&al2005,Walder&al2006} and Switzerland \citep{Huss&al2007, Werder&al2010}. In \cite{Huss&al2007}, the GLOF from the ice-marginal lake Gornersee was monitored in detail for two years. Measurements included lake geometry, water pressure in nearby boreholes, glacier surface motion. In addition, input and output lake discharge were modeled. Results show that, even within a single lake system, various drainage processes lead to various hydrograph. This study highlights the need for an integrative assessment of glacier-dammed lake floods to better understand these events. While the study of Gornersee validated the proportionality of the empirical relationship of \cite{Clague&Mathews1973} regarding the peak discharge and the lake volume, it found that peak discharges of the lake outburst were significantly below the values predicted by this empirical relation. \cite{Werder&al2010} attempted to model the hydrograph of an ice-marginal lake at Unterer Grindelwaldgletscher based on field data previously acquired. However, too little constrain on the choice of the channel roughness value (i.e. the resistance of the water flow) led to large uncertainties on the peak discharge. Moreover, no temperature measurements were conducted in Gornesee, Unterer Grindelwaldgletscher or Hidden Creek lake, which prevented to characterize the thermodynamics of their drainage. 
-
-%  \citep{Carrivick&al2020}  gives good state of the art on what's missing in glacier-lake interaction numericasl modelling (but not necessarily GLOFs!), like data to validate models
+The need of field-based observation to better calibrate jökulhlaups model was highlighted in \cite{Clarke2003}. In particular, the author found the previous estimate of flow resistance were suggested to be too high, and that the empirical formulas of heat exchange between ice and water were possibly inappropriate. In addition, the observed discharge characteristics of a significant jökulhlaups from Grímsvötn in Iceland, as described by \cite{Bjornsson1996}, could only be explained by integrating subglacial flow through both a sheet and conduits \citep{Flowers&al2004}. This model suggests that pressurized floodwater initially propagates in a turbulent subglacial sheet before transitioning to conduits having higher streamflow discharge capacity. However, simulated outlet water temperature was overestimated, emphasizing a persistent discrepancy between observations and the predictions of jökulhlaups thermodynamic theory \citep[as already indicated by ][]{Clarke2003}. Although these discrepancies between observed and modeled water temperatures at the outlet did not significantly affect the simulation results in \cite{Flowers&al2004}, they indicate that more work is needed on the heat exchange parametrization for accurate simulations of jökulhlaups. In recent years, more ice-dammed marginal lakes drainage had been monitored in Alaska \citep[Hidden Creek Lake, ][]{Anderson&al2003,Anderson&al2005,Walder&al2005,Walder&al2006} and Switzerland \citep{Huss&al2007, Werder&al2010}. However, none of these studies included temperature measurements, which prevented to characterize the thermodynamics of their drainage. 
+%In \cite{Huss&al2007}, the GLOF from the ice-marginal lake Gornersee was monitored in detail for two years. Measurements included lake geometry, water pressure in nearby boreholes, glacier surface motion. In addition, input and output lake discharge were modeled. Results show that, even within a single lake system, various drainage processes lead to various hydrograph. This study highlights the need for an integrative assessment of glacier-dammed lake floods to better understand these events. 
+While the study of Gornersee in \cite{Huss&al2007} validated the proportionality of the empirical relationship of \cite{Clague&Mathews1973} regarding the peak discharge and the lake volume, it found that peak discharges of the lake outburst were significantly below the values predicted by this empirical relation.\cite{Werder&al2010} attempted to model the hydrograph of an ice-marginal lake at Unterer Grindelwaldgletscher based on field data previously acquired. However, too little constrain on the choice of the channel roughness value (i.e. the resistance of the water flow) led to large uncertainties on the peak discharge. The additional and recent theoretical work on the heat transfer between water and ice in \cite{Sommers&Rajaram2020} showed the importance in considering the stream flow geometry (e.g. wide sheet or circular channels) on the heat transfer parametrization. The results of this study could explain part of the temperature discrepancies between observation and jökulhlaups models highlighted in \cite{Clarke2003,Flowers&al2004}. The heat exchange between the ice and water flows is a important parameter that partly controls the evolution of the subglacial channel size and, consequently, the outflow from the lake. Yet, in situ field measurements are still needed to validate our understanding of how this heat exchange impacts ice-dammed lakes drainage.
 
 % in parrallell, recent model couple the subglacial fllod routing to the ice dynamics (Kingslake and Ng 2013, Kingslake 2015, Pimentel and flowers 2010 (https://doi.org/10.1098/rspa.2010.0211)
-
-
-% TO ADD: Kingslake and Ng 2013 -> assess modeling performance on the prediction of the timing of an ice-marginal lake GLOFs in Kyrghistan -> Local predictions of the occurrence and timing of GLOFs from temperature data alone have been only partly successful
-
-
-
-% % recent case studies
-% During the past 10 years, the understanding of jo¨kulhlaup
-% complexity has been considerably aided by comprehensive
-% field studies of the processes occurring before, during and
-% after jo¨kulhlaups at Hidden Creek Lake, Alaska, USA
-% (Anderson and others, 2003, 2005; Walder and others,
-% 2005, 2006), and Gornersee, Switzerland (Huss and others,
-% 2007; Sugiyamo and others, 2008; Walter, 2009; Werde and
-% Funk 2009; Riesen and others, 2010)
-% These studies have
-% provided data for testing present and future jo¨kulhlaup
-% models with an accuracy heretofore impossible, as regards
-% drainage patterns, water storage during the flood and the
-% complex relationships between lake levels and drainage
-% initiation mechanisms.
-
-% Yet: i don't know any of the above studies being validated by models. We provide another dataset to do so, but this time on supraglacial lakes (I guess the studies above are for glacier-dammed lake, right?)
-
- 
-
-
-
-%% former text
-
-% % During the early 1970s, the understanding of joökulhlaups
-% profited from advances in theoretical glaciology. Weertman
-% (1972) reviewed and extended an elementary theory of
-% water flow at the base of a glacier or ice sheet. For his part,
-% Shreve (1972) described water movements in glaciers and
-% defined the hydraulic gradient driving water through the
-% glacier in relation to its geometry. Röthlisberger (1972)
-% theoretically analysed the water pressure in intra- and
-% subglacial channels while they are being enlarged by
-% frictional melting but are being simultaneously constricted
-% by the deformation of the overburden ice seeking to constrict
-% the passageway. Thus he presented conduit discharge as a
-% function of the hydraulic gradient and of the conduit’s size,
-% shape and wall roughness
-
-% This progressive period of theoretical glacier hydrology
-% culminated in the work of Nye (1976). Nye formulated a
-% general theory of time-dependent, turbulent water flow
-% passing through a single water-filled intraglacial tunnel of a
-% given roughness and being driven by a certain hydraulic
-% gradient, which was related to flow velocity through the
-% Gauckler–Manning formula. Nye described the current’s
-% energy and mass, noting the transport of thermal energy to
-% where it melts the tunnel walls, considered the geometry of
-% the ice tunnel and included the water contributed to the flow
-% by the melting tunnel walls.
-
-% Nye’s thesis became the basis for his jo¨kulhlaup theory,
-% according to which the drainage of an ice-dammed lake is
-% controlled by the enlargement of a single ice conduit located
-% at the glacier base
-
-
-
-% Not many years passed until Nye’s (1976) jo¨kulhlaup model
-% was enhanced by Spring and Hutter (1981, 1982) and Clarke
-% (1982), allowing it to account also for reservoir temperatures,
-% heat transfer in the tunnel, and the geometry of both
-% the lake and the subglacial pathway.
-
-% Two decades after the model
-% mentioned above, Clarke (2003) again simulated jo¨kulhlaups
-% from Grı´msvo¨tn by a slightly modified form of the Spring
-% and Hutter (1981) equations. As a flood progresses, according
-% to Clarke (2003), the location of flow constrictions which
-% control its magnitude may shift along the flood path, with
-% the bottleneck that controls flow through the tunnel being
-% located near the conduit outlet in early stages of the flood
-% and in later stages shifting to the conduit inlet.
-
-% % introduce clarke 2003 parameteres (important for PM)
-
-% Although the classical jo¨kulhlaup theory seemed success
-% fully
-% to simulate exponentially rising jo¨kulhlaups, especially
-% through later theory enhancements, this model was well
-% known not to describe other types of glacial outburst floods.
-
-% Clarke 2003: Previous work has suggested
-% that the Manning roughness of the conduits is remarkably high, but the new calibration
-% yields substantially lower values that are representative of those for natural streams and
-% rivers.The discrepancy can be traced to a poor assumption about the effectiveness of heat
-% transfer at the conduit walls.
-
-% A re-calibration of the Manning roughness for outburst
-% floods using the Spring Hutter model indicates that previous
-% estimates of flow resistance are unreasonably high.
-
-% % clarke 2003: introducing the need of netter constraining friction factor from field-based observation
-% Additional work remains to be done in improving the calibration of these models, but better observational data are required before substantial progress can be made.
-
-% % clarke 2003:  introducing the need of better constraining nusselt number (tells how much ice melt from water heat exchange) from field based observations
-% Careful observations of outlet temperature, preferably as
-% a function of time, are lacking, but the Spring-Hutter
-% model, together with earlier work, appears to overestimate
-% the temperature of water exiting the subglacial
-% drainage conduit. It is possible that empirical formulas
-% for heat exchange at the conduit walls are incorrect or
-% inappropriate.
-
-
-
-% %new theory
-% In 1996, 20 years after the publication of Nye’s (1976)
-% classical jo¨kulhlaup theory and its successful simulation of
-% the 1972 exponentially rising Grı´msvo¨ tn hydrograph, a
-% rapidly rising Grı´msvo¨ tn jo¨kulhlaup  was for the first time monitored in detail (Bjo¨rnsson, 1997, 2002; Snorrason and others,
-% 1997), with
-% accurate measurements of the lake discharge curve. (Bjornsson 1997)
-% It was impossible to explain this flood’s characteristics
-% through classic theory, since the discharge in this jo¨kulhlaup
-% increased much faster than could be explained by conduit
-% expansion through melting (Bjo¨rnsson, 1997, 2002; Roberts
-% and others, 2000; Bjo¨rnsson and others, 2001; Jo´hannesson,
-% 2002). The solution was therefore that Flowers and others
-% (2004) managed to simulate the rapid rise of the 1996
-% jo¨kulhlaup by combining subglacial flow through both a
-% sheet and conduits.
-
-% % introduce Gwenn Flowers 2004
-
-% For this pattern of outburst, they
-% described a one-dimensional flowline model that couples
-% water transport in a sheet-like subglacial layer (described by
-% reduced Navier–Stokes equations) with that through icewalled
-% conduits, following the approach of Spring and Hutter
-% (1981, 1982). In doing so, Flowers and others (2004) adopted
-% Nye’s (1976) simplification of instantaneous heat transfer,
-% producing a model in which a laminar/turbulent water sheet
-% and a system of ice-walled conduits of a given spacing
-% coexist in a coupled system and nourish each other, with
-% water exchanges between them depending on the relative
-% sheet and conduit pressures.
-
-% However, in numerical experiments following Clarke [2003], we have treated water temperature as an independent state variable and expressed ice-water heat transfer as a function of the difference between ice and water temperatures.  Simulated outlet water temperature is overestimated, peaking at 2–3°C, emphasizing a persistent discrepancy between observations and the predictions of jökulhlaup thermodynamic theory [Clarke, 2003]. That this alternative formulation does not strongly affect the simulated outlet hydrograph attests to the controlling nature of sheet dynamics in this particular event.
-% % basically: heat exchange between ice and water during the drainage is poorly constrained. Although the discrepencies betwwen obsevred and model water temperature at the outlet doesn't seem to affect the simulation results, it indicates that more work is needed on the heat exchange parametrisasion of Clarke 2003 (again a link to our PM chapter)
-
-
-
-
-% Recent studies resulted in a step-bystep
-% splitting of the complex puzzle of varying jo¨kulhlaup
-% patterns into sub-problems which were distinct enough to be
-% tackled apart from each other, for instance when more
-% detailed information was collected on outburst floods that
-% did not conform to the classical jo¨kulhlaup model. Looking
-% towards an exciting scientific future, the study of jo¨kulhlaups
-% will surely continue to progress through the interplay of new
-% phenomenological observations and theoretical insights.
-
-% %conclusion of physics of ice dammend lakes
-% Although successful in simulating many aspects of the classical jökulhlaup hydrograph (cf. flower 2004), current models still overestimate outlet flood-water temperature \citep[see][for reviews]{Bjornsson2003, Bjornsson2010}, pointing to a persistent shortcoming in the treatment of jökulhlaup thermodynamics (ref Fowler 2009 doi:10.1098/rspa.2008.0488). 
-
-% % should we distinguish glacier-dammed lake and ice-dammed lakes? the latter include englacial and subglacial lakes
-
-% GLOFs from ice-dammed lakes are the most common type. Their activity is largely controlled by the activity of the damming glaciers and resulting fracture or flexure of the ice dam. Flotation of the ice dam once a critical lake level is reached also acts as a potential breach mechanism [ref 33,83,84 in Zhnag 2024]. When lake water suddenly drains through an ice
-% dam, thermal and mechanical erosion (usually progressively enlarging a subglacial tunnel) leads to an exponentially rising discharge [ref 54,85,86 in Zhang 2024].
-
-% GLOFs from ice-dammed lakes are the most present 64.8\,\% \citep{Veh&al2022l,Lutzow&al2023} (cited in Zhang 2024)
-
-% This is partly owing to the recurrence of multiple GLOFs from individual ice-dammed lakes (I guess a moraine break empty the lake at all).
-% In other term in Zhang 2024: Their frequent occurrence is linked to the fact that they can drain repeatedly as an ice dam will ‘re-heal’ temporarily once energetic egress of lake water has subsided.
-
-
-% Ice-dammed lakes, in contrast to moraine-dam lakes, are more short-lived, and their formation is tied to thick glaciers that can impound lakes at their margins, a common situation along glaciers descending from ice fields in Alaska (Field et al., 2021; Rick et al., 2022) and Patagonia (Wilson et al., 2018). %but also the Alps! cite gornersee Huss 2007, Ancey 2019 Gietroz, Marjelensee in Altesch.
-
-% In Central Europe, fatalities and damage from these occasional ice-dam failures were particularly high before the twentieth century, possibly related to limited warning and flood control measures [93 in Zhang et al 2024]
+% potential adding: Kingslake and Ng 2013 -> assess modeling performance on the prediction of the timing of an ice-marginal lake GLOFs in Kyrghistan -> Local predictions of the occurrence and timing of GLOFs from temperature data alone have been only partly successful
 
 \subsection{GLOFs from subglacial lakes}
 \label{subsection:glofs_subglacial_lakes}
 
 % Lakes at the glacier base, i.e.\ subglacial lakes, are dammed by the ice until that the hydrostatic pressure of the lake water reaches the ice dam flotation and leads to the drainage of the reservoir \citep[e.g.][]{Bjornsson2010}. The drainage can also be initiated through pre-existing veins and channels that are progressively enlarged \citep{Nye1976}. Note that subglacial lakes are usually caused by heat fluxes at the glacier base and are more common in ice sheets or in ice caps associated to geothermal activities, rather than in Alpine glaciers \citep{Livingstone&al2022}. 
 
-Subglacial lakes are formed by volcanic activity or geothermal flux at the glacier base, and are impounded by the glacier ice. GLOFs from subglacial lake occur when the hydrostatic water pressure overcome the ice overburden pressure and/or subglacial channels enlarge by positive feedback (see the previous subsection GLOFs from ice-dammed marginal lakes for a review on the physics of subglacial drainage). Note that GLOFs originating from subglacial lakes are also referred to as jökulhaups, similar to GLOFs resulting from ice-dammed marginal lakes, as they involve similar rupture mechanisms \citep{Bjornsson2010}. Relatively few GLOFs are attributed to subglacial lakes induced by geothermal or volcanic activity (8\,\%) compared to other triggers and mechanisms \citep{Lutzow&al2023}. The majority of GLOFs from subglacial lakes are found in Central Europe (n = 5; 1.13\% of all GLOFs type within Central Europe, 71.4\% of global subglacial GLOFs). In Iceland, there have been at least 264 instances of outbursts from a limited number of subglacial lakes \citep{Bjornsson2003}, which cyclically form and drain due to geothermal activity beneath the ice caps. Additional occurrences are documented in Southeast Asia (n = 1; 1.18\,\% within Southeast Asia, accounting for 14.3\,\% of global subglacial GLOFs) and the low-latitude Andes (n = 1; 0.61\,\% within the low-latitude Andes, accounting for 14.3\,\% of global subglacial GLOFs). Large subglacial lakes are also found in Greenland and Antarctica ice sheet \citep{Livingstone&al2022}, but are in general stable and don't cause outburst floods \citep{Siegert&al2016,Bowling&al2019}. 
+Subglacial lakes are formed by volcanic activity or geothermal flux at the glacier base, and are impounded by the glacier ice. GLOFs from subglacial lake occur when the hydrostatic water pressure overcome the ice overburden pressure and/or subglacial channels enlarge by positive feedback (see the previous subsection GLOFs from ice-dammed marginal lakes for details of the subglacial drainage mechanisms). Note that GLOFs originating from subglacial lakes are also referred to as jökulhaups, similar to GLOFs resulting from ice-dammed marginal lakes, as they involve similar rupture mechanisms \citep{Bjornsson2010}. Relatively few GLOFs are attributed to subglacial lakes induced by geothermal or volcanic activity (8\,\%) compared to other triggers and mechanisms \citep{Lutzow&al2023}. The majority of GLOFs from subglacial lakes are found in Iceland, with at least 264 recorded instances from a small number of subglacial lakes \citep{Bjornsson2003}. These lakes cyclically form and drain due to geothermal activity beneath the ice caps \citep{Bjornsson&al2001}. Additional occurrences are documented in Central Europe (n = 5; 1.13\% of all GLOFs type within Central Europe), in
+Southeast Asia (n = 1; 1.18\,\% of all GLOFs type within Southeast Asias) and the low-latitude Andes (n = 1; 0.61\,\% of all GLOFs type within the low-latitude Andes). Large subglacial lakes are also found in Greenland and Antarctica ice sheet \citep{Livingstone&al2022}, but are in general stable and don't cause outburst floods \citep{Siegert&al2016,Bowling&al2019}. Large subglacial lakes are also found in the Greenland and Antarctic ice sheets \citep{Siegert&al2016, Bowling&al2019}. While approximately 80\,\% of these lakes are stable \citep{Livingstone&al2022}, the remaining 20\,\% can be dynamic and may cause outburst floods, which might often go unnoticed due to their remote locations.
 
 %some consideration of subglacial lakes found in Cappy et al (2010):
 %We use the term ‘glacier-dammed lake’ in reference to any lake that is dammed by glacier ice, irrespective of its position relative to the glacier (Reference Blachut, Ballantyne and HamiltonBlachut and Ballantyne, 1976). In contrast, a ‘subglacial lake’ is one that occurs primarily underneath a glacier, whether or not it is at atmospheric pressure (Reference Clague and EvansClague and Evans, 1994;Reference Tweed and RussellTweed and Russell, 1999). This primarily morphological definition contrasts with the usages of Reference SiegertSiegert (2000), who states that subglacial lakes are ‘discrete bodies of water that lie at the base of an ice sheet between ice and substrate’, and Reference HodgsonHodgson and others (2009), who further limit the term to lakes sealed off from, and presumably at higher pressure than, the atmosphere.
@@ -286,84 +104,43 @@ Subglacial lakes are formed by volcanic activity or geothermal flux at the glaci
 
 %Lakes at the surface, i.e.\ supraglacial lakes, are most common in cold ice and usually drain when the lake water oversflows the ice dam \citep{Walder&Costa1996,Raymond&al2003,Kingslake&al2015}. Supraglacial lakes can also drain through sudden hydro-fracture propagation \citep[e.g.][]{Christoffersen&al2018}.
 
-Supraglacial lakes form at the surface of glaciers and are entirely impounded by ice. GLOFs from supraglacial lakes can occur when the ice-spillway lower non linearly due to the release of heat from the drained flowing meltwater \citep{RaymondNolan2000}. Alternatively, GLOFs can result from the release of meltwater into intraglacial drainage systems by hydrofracturing \citep[e.g.][]{Bjornsson1976, Boon&Sharp2003}. GLOFs from supraglacial lakes account for less than 4\,\% of all type of GLOFs worldwide \citep{Lutzow&al2023}. However, supraglacial lakes play an important role in the dynamics of ice sheet. In Greenland, supraglacial lakes drainage down to the basal hydrological
-system adds to subglacial lubrication and may increase sliding \citep[e.g.][]{Schoof2010,Pimentel&Flowers2011,Tedesco&al2013}. In Antarctica, the presence of supraglacial lakes has the potential to lead to ice shelf instabilities and eventual collapse \citep[e.g.][]{Banwell&al2013,Banwell&al2019}. This process can significantly impact the ice sheet mass balance and contribute to sea level rise \citep{Van&al2022}. GLOFs originating from supraglacial lakes are assumed to become more frequent worldwide with ongoing glacier recession \cite{Emmer&al2022,Miles&al2018}. In this context, it is important to better understand and predict futures supraglacial lake drainages. 
+Supraglacial lakes form at the surface of glaciers and are entirely impounded by ice. GLOFs from supraglacial lakes can occur when the overflowing meltwater cuts through the ice-spillway, creating a drainage channel \citep{Raymond&Nolan2000}. Alternatively, GLOFs can result from the release of meltwater into intraglacial drainage systems by hydrofracturing \citep[e.g.][]{Bjornsson1976, Boon&Sharp2003}. GLOFs from supraglacial lakes account for less than 4\,\% of all type of GLOFs worldwide \citep{Lutzow&al2023}. However, supraglacial lakes play an important role in the dynamics of ice sheet. Supraglacial lakes in Greenland \citep[see][]{Mcmillan&al2007} can drain down to the basal hydrological system, contributing to subglacial lubrication and increased sliding \citep[e.g.][]{Schoof2010,Pimentel&Flowers2011,Tedesco&al2013}. In Antarctica, the presence of supraglacial lakes has been linked to ice shelf instabilities and eventual collapses \citep[e.g.][]{Banwell&al2013,Banwell&al2019}. The dynamic response (i.e.\ debutressing) of the Antarctica ice-sheet to ice-shelves collapse can in turn significantly impact the ice sheet mass balance and contribute to sea level rise \citep{Van&al2022}. In this context, it is important to better understand and predict futures supraglacial lake drainages. 
 
-\cite{Raymond&Nolan2000} adapted the glacial lake drainage model of \cite{Walder&Costa1996} for surface lake drainage on alpine glaciers, introducing stable and unstable drainage. Stable drainage lead to discharge decrease over time, while unstable drainage lead to increase discharge. Unstable drainage occurs when the channel incision rate exceeds the lake-surface lowering rate. \cite{Raymond&Nolan2000} identified a critical lake area, dependent on temperature, beyond which drainage becomes unstable. \cite{Vincent&al2010} used the approach from \cite{Raymond&Nolan2000} to reconstruct the drainage of the ice-marginal Lac de Rochemelon, based on extensive field measurements during an artificial supraglacial drainage (i.e. through a open channel at the glacier surface). They conducted a sensitivity analysis on parameters controlling lake discharge, such as water temperature and lake area. However, some parameters were inferred post-observation, so they couldn't predict the peak discharge in advance, as it would be necessary for hazard mitigation associated to GLOFs. Since then, further research has aimed to model channelized surface drainage to better understand the underlying physical processes. \cite{Jarosch&Gudmundsson2012} conducted numerical simulations explicitly incorporating ice dynamics into open-channel flow models, allowing the channel's shape and evolution to be driven solely by ice physical and hydraulic processes. This contrasts with earlier studies \citep{Walder&Costa1996, Raymond&Nolan2000} where the channel's characteristics were predefined. \cite{Jarosch&Gudmundsson2012} identified channel slope, water flux, and temperature as key parameters governing channel incision, which in turn influences discharge at the lake outlet. \cite{Kingslake&al2015} developed a more universally applicable model built upon \cite{Raymond&Nolan2000}, by considering sub-critical flow at the lake outlet (i.e. for streamflow with Froude number inferior to one). However, despite representing the current state of the art, these models have not been validated against independent field observations \citep{Pitcher&Smith2019}, highlighting the need for corresponding datasets to assess their ability to accurately simulate supraglacial lake drainage for hazard mitigation purposes. For instance, all studies mentioned above used an empirical parametrization to calculate the heat transfer from the water flow to the ice wall based that may be inappropriate (see also Section~\ref{subsection:glofs_ice-dammed_lakes} for more details), and the relevance of this empirical relationship was not assessed against field observations due to the lack of temporal and spatial temperature measurement during lake drainage. 
+\cite{Raymond&Nolan2000} adapted the glacial lake drainage model of \cite{Walder&Costa1996} for surface lake drainage on alpine glaciers, introducing stable and unstable drainage. Stable drainage lead to discharge decrease over time, while unstable drainage lead to increase discharge. Unstable drainage occurs when the channel incision rate exceeds the lake-surface lowering rate. \cite{Raymond&Nolan2000} identified a critical lake area, dependent on temperature, beyond which drainage becomes unstable. \cite{Vincent&al2010} used the approach from \cite{Raymond&Nolan2000} to reconstruct the drainage of the ice-marginal Lac de Rochemelon, based on extensive field measurements during an artificial supraglacial drainage (i.e. through a open channel at the glacier surface). They conducted a sensitivity analysis on parameters controlling lake discharge, such as water temperature and lake area. However, some parameters were inferred post-observation, so they couldn't predict the peak discharge in advance, as it would be necessary for hazard mitigation associated to GLOFs. Since then, further research has aimed to model channelized surface drainage to better understand the underlying physical processes. For instance,\cite{Jarosch&Gudmundsson2012} conducted numerical simulations explicitly incorporating ice dynamics into open-channel flow models, allowing the channel's shape and evolution to be driven solely by ice physical and hydraulic processes. This contrasts with earlier studies \citep{Walder&Costa1996, Raymond&Nolan2000} where the channel's characteristics were predefined. \cite{Jarosch&Gudmundsson2012} identified channel slope, water flux, and temperature as key parameters governing channel incision, which in turn influences discharge at the lake outlet. \cite{Kingslake&al2015} developed a more universally applicable model built upon \cite{Raymond&Nolan2000}, by considering sub-critical flow at the lake outlet (i.e. for streamflow with Froude number inferior to one). However, despite representing the current state of the art, these models have not been validated against independent field observations \citep{Pitcher&Smith2019}, highlighting the need for corresponding datasets to assess their ability to accurately simulate supraglacial lake drainage for hazard mitigation purposes. For instance, all studies mentioned above used an empirical parametrization to calculate the heat transfer from the water flow to the ice wall based that may be inappropriate (see also Section~\ref{subsection:glofs_ice-dammed_lakes} for more details), and these studies also used a constant value of the flow resistance through the ice channel \citep[e.g. in][]{Clarke2003,Kingslake&al2015}. However, the relevance of the heat transfer parametrization was not assessed against field observations due to the lack of temporal and spatial temperature measurement during lake drainage, and the value for the flow resistance was shown to varies significantly from in situ measurements \citep{Gleason&al2016}.  
 
-%cite Gleason 2016 (Greenland) on the need of characterizing the flow resistance for surface draiange
 
 
 \subsection{Outburst floods from englacial and subglacial water pockets} 
 \label{subsection:glofs_water_pockets}
 % essentially what doesn't fall in the other categorie. 
 
-Of all type of glacier outburst floods, those originating from englacial and subglacial water pockets are the least understood. Here, note the distinction between water pockets and subglacial lakes formed by volcanic or geothermal activity. Outburst floods from water pockets, which may not necessarily stem from a lake, are referred to as water pocket outburst floods (WPOFs) instead of GLOFs \citep[as in][]{Deline&al2004}. WPOFs account for only 5\,\% of global outburst floods, however, these events have been often reported in the European Alps, where they represent 49\,\% of the reported outburst sources \citep{Lutzow&al2023}. A similar ratio was already found in \cite{Haeberli1983}, where 30/40\,\% of all outburst floods in Switzerland were indicated to originate form water pocket (n=26). Although this suggest WPOFs to be relatively frequent in Europe, no recent regional inventory has been conducted since \cite{Haeberli1983} to characterize and understand the processes of water pocket formation and rupture. Moreover, apart from the well-documented case of the water pocket at Tête Rousse in France \citep{Vincent&al2010b,Vincent&al2012}, observations and monitoring of water pockets are no existent. Consequently, these processes remain poorly understood compared to glacial lakes formation and GLOFs trigger. In addition, occurrences of WPOFs are often misclassified due to their hidden nature. For instance, \cite{Rabot1905} mentions "glacier-pocket pool" to describe the origin of an outburst flood at Glacier de l'A Neuve in June 1898 and Festigletscher in August 1899 (both in Switzerland), and "pool of water in the interior of the glacier" for the origin of a flood at Hobärggletscher in August 1898 (Switzerland), although there is virtually no evidences of the so-called glacier-pocket pool or evidences for discarding the presence of lake at the glacier surface. Another example of miss-classification includes the outburst flood of 2.7 million cubic meters from Glacier d'Albigna (Switzerland) in 1927, which is likely to have originated from a glacier-dammed lake rather than an englacial water pocket, as wrongly reported in \cite{Lutzow&al2023}. An observed outburst flood on Lhotse Glacier (Everest area, Nepal) has been reported in \cite{Rounce&al2017}, where most of the flood water was stored englacially and the flood was triggered by dam failure. The peak discharge was estimated to be 210\,m$^3$\,s$^{-1}$, but the term "water pocket" was not used. \cite{Byers&al2022} note that "less attention has been given to other cryospheric flood phenomena, which include floods sourced primarily from englacial conduits." They refer to these glacier outbursts as "englacial conduit floods," without using the term "water pocket." This indicates that even in recent studies on GLOFs, there is no clear consensus on the definition and understanding of outburst floods from water pockets. \cite{Emmer&al2022} claim that proper terminology should be maintained among researchers, disaster risk reduction practitioners, and authorities to avoid misinterpretation of individual events. 
-%For instance, some studies use "water pocket" to refer to centimeter-scale water inclusions in glaciers \citep[e.g.][]{Vivian&Bocquet1973,Raymond&Harrison1975,Holmlund1988,Fountain&Walder1998,Murray&al2000b}, while others use it for water reservoirs with substantial volumes \citep[][]{Beecroft1983, Haeberli&al1989,Tweed&Russel1999,Vincent&al2010b}. 
-
+Of all type of glacier outburst floods, those originating from englacial and subglacial water pockets are the least understood. Here, note the distinction between water pockets and subglacial lakes formed by volcanic or geothermal activity (see Table~\ref{tab:glof_types}). Outburst floods from water pockets, which may not necessarily stem from a lake, are referred to as water pocket outburst floods (WPOFs) \citep[e.g. WPOFs is used in][instead of GLOFs]{Deline&al2004}. WPOFs account for only 5\,\% of global outburst floods \cite{Lutzow&al2023}. However, these events have been more frequently reported in the European Alps, where they represent 49\,\% of the reported outburst sources \citep{Lutzow&al2023}. Note that this number is significantly larger than the one reported in \cite{Zhang&al2024}, where outburst floods from water pockets represent 25.3\,\% (n\,=\,112) of all type of GLOFs within Central Europe (see Fig.~\ref{fig:fig1_zhnagetal2024}). This discrepancies suggest a non-consensus on the definition, or error when reporting events. A similar ratio to \cite{Lutzow&al2023} was already found in \cite{Haeberli1983}, where 30/40\,\% of all outburst floods in Switzerland reported before 1983 were indicated to originate form water pocket (n\,=\,26). The difference between the global ratio of 5\,\% and the regional ratio of 25 to 49\,\% in the European Alps raises questions about observational biases in WPOFs reporting, as it is unlikely that the ratio of WPOFs to all types of glacier floods is so different between the European Alps and the other mountain ranges of the world. It is thus likely that the number of WPOFs in the European Alps is overestimated, or that the number of WPOFs worldwide is underestimated. Moreover, no recent regional inventory has been conducted since \cite{Haeberli1983} to characterize and understand the processes of water pocket formation and rupture, and apart from the well-documented case of the water pocket at Tête Rousse in France \citep{Vincent&al2010b,Vincent&al2012}, observations and monitoring of water pockets are not existent. Consequently, these processes remain poorly understood compared to glacial lakes formation and GLOFs trigger. In addition, occurrences of WPOFs might often be misclassified due to their hidden nature. For instance, \cite{Rabot1905} mentions "glacier-pocket pool" to describe the origin of an outburst flood at Glacier de l'A Neuve in June 1898 and Festigletscher in August 1899 (both in Switzerland), and "pool of water in the interior of the glacier" for the origin of a flood at Hobärggletscher in August 1898 (Switzerland), although there is virtually no evidences of the so-called glacier-pocket pool or evidences for discarding the presence of lake at the glacier surface. Another example of miss-classification includes the outburst flood of 2.7 million cubic meters from Glacier d'Albigna (Switzerland) in 1927, which is likely to have originated from a glacier-dammed lake given the glacier geometry (Matthias Huss, personal communication) rather than an englacial water pocket, as wrongly reported in \cite{Lutzow&al2023}. An observed outburst flood on Lhotse Glacier (Everest area, Nepal) has been reported in \cite{Rounce&al2017}, where most of the flood water was stored englacially and the flood was triggered by dam failure but the term "water pocket" was not used. \cite{Byers&al2022} note that "less attention has been given to other cryospheric flood phenomena, which include floods sourced primarily from englacial conduits." They refer to these glacier outbursts as "englacial conduit floods," without using the term "water pocket." This indicates that even in recent studies on GLOFs, there is no clear consensus on the definition and understanding of outburst floods from water pockets. \cite{Emmer&al2022} claim that proper terminology should be maintained among researchers, disaster risk reduction practitioners, and authorities to avoid misinterpretation of individual events. 
 % Worldwide, Flood damage is mentioned for 404 GLOFs. Among this, water pockets account for 17\% \cite{Lutzow&al2023}, highlighting the destruction potential of such outburst that have invisible water reservoir. 
 
 
-%\cite{Rabot1905} also mention "glacier-pocket reservoir" (literally translated from the french wording "Pôche d'eau") for an outburst flood at Jostedalsbrae in 1904 (Norway), again without clear evidence of the so-called reservoir. \cite{Forel&al1899} used the term water pocket for the outburst at Glacier de l'A Neuve because it is a common term according to the authors, but they claim that this term makes little sense because the water should be trapped in already existing voids (crevasses, fractures, channels, etc...) and not in a pocket created by the water itself, as the name would suggest. Note that this is the earliest mention of "water pocket" we found in the literature.
+\subsection{Detecting and mapping glacial lakes}
 
-%Floods caused by rapidly draining englacial lakes have also occasionally been reported in New Zealand, western Canada and the United States [104–106 in Zhang et al 2024]
+%Potentially dangerous glacial lakes have been identified using a range of assessment approaches, ranging from large-scale automated methods considering key determinants such as lake size, catchment area, ice/rock avalanche potential and dam steepness [ref 110,111], through to detailed catchment or lake-specific assessments including field investigations [ref 112–114]. 
 
-
-\subsection{Detecting and mapping glacial lakes before the outburst}% that is where geophyiscal investigations and in particular GPR fits in
-\todo{The aim of this section is to introduce the challenges in detection of water pockets, and ultimately to the limitation of the GPR, whi is the third chapter if the thesis. That said, I admit that this section looks a bit orphan as it is}
-
-%In Zhang 2024: Potentially dangerous glacial lakes have been identified using a range of assessment approaches, ranging from large-scale automated methods considering key determinants such as lake size, catchment area, ice/rock avalanche potential and dam steepness [110,111], through to detailed catchment or lake-specific assessments including field investigations [112–114]. 
-
-\subsubsection{From space}
-
-As a starting point for GLOFs research, homogeneous multi-temporal glacial lake inventories are essential, yet they are currently limited by mapping efficiency \citep{Zhang&al2024}. In most cases, mapping relies on the use of the normalized difference water index \citep{McFeeters1996}, a satellite image-derived calculation combining green and near-infrared wavelength bands to differentiate water bodies from other land cover. To map lake outlines allow estimation on lake volume through empirical relationship, in turns allowing flood peak discharge estimation (see subsection~\ref{subsection:glofs_ice-dammed_lakes}). In addition, it has become possible to quantify various physical characteristics of the dam and catchment area remotely over large spatial scales with high-resolution optical imagery and high-quality digital terrain models \citep[e.g.][]{Dubey&al2020,Rounce&al2016}. However, these technique are inadequate for detecting water bodies that are hidden under the glacier surface such as subglacial lake (see subsection~\ref{subsection:glofs_subglacial_lakes}) and water pockets (see subsection~\ref{subsection:glofs_water_pockets}).
-
-\subsubsection{From the ground}
+Homogeneous multi-temporal inventories of glacial lakes are crucial for GLOFs research, yet their development is currently constrained by mapping efficiency \citep{Zhang&al2024}. In most cases, mapping relies on the use of the normalized difference water index \citep{McFeeters1996}, a satellite image-derived calculation combining green and near-infrared wavelength bands to differentiate water bodies from other land cover. To map lake outlines allow estimation on lake volume through empirical relationship, in turns allowing rough estimation of the flood peak discharge (see subsection~\ref{subsection:glofs_ice-dammed_lakes}). In addition, it has become possible to quantify various physical characteristics such as the slope of the watershed catchment (for assessing landslide and rockfall risks) and the presence of ice cores in moraines (for assessing the moraine stability), over large spatial scales using high-resolution optical imagery and high-quality digital terrain models \citep[e.g.][]{Dubey&al2020,Rounce&al2016,Allen&al2019}. Large subglacial lakes can be detected through glacier surface elevation changes (when filling and/or emptying) using optical images \citep[e.g.][]{livingstone&al2019}, interferometric radar \citep[e.g.][]{Capps&al2010} or altimetric laser \citep[e.g][]{Siegfried&al2021}. While most of our knowledge about subglacial lakes in Antarctica and Greenland comes from remote sensing products, these techniques are however inadequate for detecting small water bodies that are hidden under the glacier surface such as water pockets (see subsection~\ref{subsection:glofs_water_pockets}).
 
 
-To detect englacial water, such as subglacial lakes and water pockets, geophysical tools like ground-penetrating radar (GPR) are commonly used. GPR employs electromagnetic fields to infer subsurface physical properties \citep{Davis&Annan1989}. In glaciology, GPR is widely used to characterize englacial structures, glacier thermal regimes, basal topography, ice thickness, and glacier hydrology \citep{Woodward&Burke2007,Plewes&Hubbard2001,Navarro&Eisen2009,Schroeder&al2020}. Detection of englacial water through GPR relies on reflections of the electromagnetic field at the boundaries of the water bodies, due to changes in relative electrical permittivity. In cold ice studies, GPR is particularly effective as the absence of liquid water conserves reflected energy, and has been used to detect water pocket in cold ice \citep{Vincent&al2012}. However, in temperate ice (which is the most common in the European Alps), individual water inclusions can cause energy loss through diffractions \citep{Smith&Evans1972,Murray&al2000}, which would limit detection of englacial and subglacial water reservoir. In particular, no study indicates the specific values of water content and sizes of water inclusions that limit the interpretation of the GPR signal in temperate ice. In addition, recent studies has questioned the relevance of GPR to actively detect cold and temperate ice interface \citep[e.g.][]{Brown&al2009}. Consequently, the relevance of GPR for detecting water pockets in temperate ice remains uncertain and needs more theoretical considerations on its limitation before being deployed in the field.
-\todo{cite some of James Irving's work}
+To detect englacial water, such as subglacial lakes and water pockets, geophysical approach are commonly used, as invasive methods like drilling are logistically complex and provide only point-scale measurements. These geophysical approaches include seismic \citep[e.g.][]{Guillemot&al2024}, surface nuclear magnetic resonance \citep[SNMR, e.g.][]{Legchenko&2014}, and ground penetrating radar \citep[GPR, see][for a review on glaciological applications]{Woodward&Burke2007,Plewes&Hubbard2001,Navarro&Eisen2009,Schroeder&al2020}. GPR employs electromagnetic fields to infer subsurface physical properties and is widely used to characterize englacial structures, glacier thermal regimes, basal topography, ice thickness, and glacier hydrology. Detection of englacial water through GPR relies on reflections of the electromagnetic field at the boundaries of the water bodies, due to changes in relative electrical permittivity. In cold ice studies, GPR is particularly effective as the absence of liquid water conserves reflected energy, and has been used to detect water pocket in cold ice \citep{Vincent&al2012}. However, in temperate ice (which is the most common in the European Alps), individual water inclusions can cause energy loss through diffractions \citep{Smith&Evans1972,Murray&al2000}, which would limit detection of englacial and subglacial water reservoir. There are some study which have detect englacial water bodies in temperate ice \citep[e.g.][]{Egli&al2021b,Church&al2021,Ruols&al2023} but there no study indicating the specific values of water content and sizes of water inclusions that limit the interpretation of the GPR signal. In addition, recent studies has questioned the relevance of GPR to actively detect cold and temperate ice interface \citep[e.g.][]{Brown&al2009}. Consequently, the relevance of GPR for detecting water pockets in temperate ice remains uncertain and needs more theoretical considerations on its limitation before being deployed in the field.
 
-%% MUCH MORE ON GPR NEEDED!
-
-% mention more case study monitoring (check Flowers work) to introduce PM study. 
-
-%Yet such data are extremely difficult to acquire given accessibility and safety that make successful recovery of instrumentation and sensors challenging, especially in ice-proximal locations. Accordingly, local, regional and even global understanding of GLOF flow dynamics is limited, feeding into hazard assessment, early warning systems, infrastructure design and emergency response. 
-%In addition to the use of modern field observation instruments and data transmission, broader international cooperation and the establishment of data opening and sharing are important ways forward. Future research should focus on comparing model results with field observations, historical flood records and other independent data sets to improve model credibility. -> that put very well our PM work into context: we provide a open dataset of a supraglacial lake drainage. This dataset will be used (see discussion on lac des bossons).
 
 \subsection{Future GLOFs}
-% increasde in lake extent and number
-% increase in GLOFs
-% increase in susceptitbility and consequences
-% in the alps: artifical measure
-% model needs to be used for hazard mitigation, but out of reach now, especially because of poor parameters constrain in model
-% unknown in WP object, although responsible to 30-50% in europe
 
-Glacial lakes showed a relatively stable trend from 1850 to 1970, followed by a gradual expansion in most regions of the world from 1970 to 1990 and a robust expansion from 1990 to 2020 \citep{Zhang&al2024}. More precisely, the size and number of glacier lakes has doubled between 1990 and 2017 \citep{Shugar&al2020}. %Of course, much regional and temporal variability is embedded. For instance, overarching changes of <10\% dec–1 from ~1990 to ~2020 were observed in the Southern Andes (from 4,463.9 km2 to 4,789.7 km2), Central Europe (from 30.9 km2 to 31.5 km2) and Svalbard (from 110.0 km2 to 111.0 km2) \citep{Zhang&al2024}. In contrast, much larger changes of >40\% dec–1 were observed in Iceland (from 54.8 km2 to 132.4 km2), Scandinavia (from 258.2 km2 to 596.9 km2) and the Russian Arctic (from 189.9 km2 to 478.4 km2).
-%\cite{Carrivick&Tweed2016}: The number of recorded glacier floods per time period has apparently reduced since the mid-1990s in all major world regions, but the reasons for this apparent trend are unclear.
-%-> check \cite{Veh&al2022} for an explaination
-This increase in number and extent of glacial lakes is caused by the present global deglaciation \citep{Hugonnet&al2021} and is thus anticipated to continue in the near future. Many studies argue that the annual number of GLOFs might increase as a consequence of glacial lakes increase and atmospheric warming \citep{Tweed&Russel1999,Clague&Evans2000,,Harrison&al2018,Richardson&Reynolds2000,Shugar&al2020,Zheng&al2021,Stuart&al2021,Compagno&al2022}. However, observational biases in reporting GLOFs certainly cause an underestimation in GLOFs occurrence until mid-20th century and thus potential errors in trend analysis \citep{Veh&al2022}. In any case, the future changes in GLOFs account for large regional variability. For instance, the number of GLOFs is expected to triple in High mountain Asia by 20100 \cite{Zhang&al2024} and even more (five time fold) in the Karakoram and Pamir regions \citep{Zheng&al2021}, but this increasing rate is anticipated to be less in other regions given local topographic constraints on lake evolution. For example, changes in GLOFs in the Mont Blanc massif (European Alps) are expected to be relatively low because of flat bedrock topography \citep{Magnin&al2020}. The question of whether the increased number and size of glacial lakes will lead to higher-magnitude GLOF discharges and greater GLOF volumes in the future remains controversial \citep{Zhang&al2024}. The risk associated to GLOFs, nevertheless, is anticipated to grow with the increasing development of infrastructure and population in mountain area, in particular in the Himalayas \citep[e.g.][]{Allen&al2022} and in the Alps \citep[e.g.][]{Haeberli&al2016}. For instance, in the upper Rhône catchment of the south-western Swiss Alps alone, 100 sites are projected to have a high potential for future glacial lake formation \citep{Gharehchahi&al2020}. In this regard, research on GLOFs remains crucial and relevant for all glacierized regions of the world.  
+Glaciers have been losing mass since the end of the Little Ice, and at high — and accelerating — rates since the 1960s \citep{Zemp&al2019,Hugonnet&al2021}. \cite{Zhang&al2024} suggests that this mass loss is producing more and larger glacial lakes. According to their study, glacial lakes showed a relatively stable trend from 1850 to 1970, followed by gradual expansion in most regions from 1970 to 1990, and robust expansion from 1990 to 2020. More precisely, the size and number of glacier lakes has doubled between 1990 and 2017 \citep{Shugar&al2020}. However, this trend is not clear globally due to differences in study methodologies, such as the definitions of study areas, the types of lakes considered, minimum lake mapping size, and temporal coverage and resolution. Many studies argue that the annual number of GLOFs might increase as a consequence of glacial lakes increase and atmospheric warming \citep{Tweed&Russel1999,Clague&Evans2000,,Harrison&al2018,Richardson&Reynolds2000,Shugar&al2020,Zheng&al2021,Stuart&al2021,Compagno&al2022}. However, observational biases in reporting GLOFs question this claim. For instance, \cite{Veh&al2022} suggests that establishing a simple linear relationship between GLOFs occurrences and atmospheric warming is elusive, particularly over the last five decades, because GLOFs were under-reported until the mid-20$^{th}$ century. In particular, \cite{Veh&al2022} suggested that on average, two to four out of every five GLOFs events in the early to mid-20$^{th}$ century were unreported worldwide. This under-reporting introduces potential errors in trend analysis. In any case, the future changes in GLOFs account for large regional variability. For instance, the number of GLOFs is expected to triple in High mountain Asia by 2100 \cite{Zhang&al2024} and even more (five time fold) in the Karakoram and Pamir regions \citep{Zheng&al2021}, but this increasing rate is anticipated to be less in other regions given local topographic constraints on lake evolution. For example, changes in GLOFs in the Mont Blanc massif (European Alps) are expected to increase at a slower rate than in the Karakoram or Pamirs. This is because the growth of large lakes is for now limited due to the presence of steep glaciers tongue topography and of steep valley at the glacier outlet \citep{Magnin&al2020}. Consequently, the risk of GLOFs will only increase in the coming decades, when glacial lakes will develop further up in the flatter glacier valley. The question of whether the increased number and size of glacial lakes will lead to increasing risk of GLOFs remains controversial \citep{Zhang&al2024}. The risk associated to GLOFs, nevertheless, is anticipated to grow with the increasing development of infrastructure and population in mountain area, in particular in the Himalayas \citep[e.g.][]{Allen&al2022} and in the Alps \citep[e.g.][]{Haeberli&al2016}. For instance, in the upper Rhône catchment of the south-western Swiss Alps alone, 100 sites are projected to have a high potential for future glacial lake formation \citep{Gharehchahi&al2020}. Over the entire Swiss Alps, \cite{Steffen&al2022} estimated that up to 683 potential lakes with an area greater than 5000\,m$^2$ and a depth greater than 5\,m could emerge if glaciers were to disappear completely (for a total corresponding volume of water up to 1.16\,km$^3$). In this regard, research on GLOFs remains crucial and relevant for all glacierized regions of the world.  
 
 % trend in the Swiss ALps
 %Zhang 2024: In the Swiss Alps, the number and area of lakes are 987 and 6.22 ± 0.25 km2 in 2016, respectively (ref. 59). If all glaciers were to disappear, ~500 new glacial lakes (of at least 0.01 km2) could form, with a total area of about 50 km2 and volume of 1.6 km3 (ref. 129)
 
-
 %However, there might be some local hotspot to form, like Lac des faverges, Bossons, Lac de Tignes. SInce the Alps is densely populated (much more than any other mountain range), each single case of hazardous lake is likely to represent a threat for downstream (Maybe Haeberli 2017 to cite?)
 
-%The increase in GLOFs frequency is true for GLOF from moraine-dam, but not for the other type (at least no conclusive from my understanding)
 
-%Veh 2022:
-%Temperature influence on GLOFs:
-%Rising air temperatures could change the meltwater input to lakes, and thus may increase glacier lake volume, given a suitable geometry of the newly exposed basin (Richardson & Reynolds, 2000). In the Himalayas, for example, only 10\% of all glaciers terminate in proglacial lakes; yet some of those lakes may accelerate ice melt and generate more meltwater (King et al., 2019). Warmer air and lake temperatures may thin ice dams and thus lower the threshold to open subglacial drainage channels, likely initiating more GLOFs from glacier-dammed lakes (Clarke, 2003; Kingslake & Ng, 2013; Ng & Liu, 2009). Atmospheric warming might also increase the frequency of moraine-dam failures. Buried ice within a moraine dam can melt, thus reducing cohesion and promoting dam collapse. Gradual settlement of the dam can reduce the lake freeboard and increase the chance for overtopping (Richardson & Reynolds, 2000). Thawing ice and permafrost could also destabilize adjacent glaciers and rockfalls (Haeberli et al., 2017) such that avalanches of ice and rock enter glacier lakes, leading to overtopping and dam breaks (Emmer & Vilímek, 2013; Harrison et al., 2018; Richardson & Reynolds, 2000).
-%\cite{Veh&al2022}: We find that the positive trend in the number of reported GLOFs has decayed distinctly after a break in the 1970s, coinciding with independently detected trend changes in annual air temperatures and in the annual number of field-based glacier surveys (a proxy of scientific reporting).
-
-
-
-
-%\subsection{Modelling of GLOFs}% Or GLOFs hazard assessment
-% here we go from coarse and large scale modellingn(empirical relation between lake area (volume/peak discharge, to watershed scale modelling (topography, sediement, ect), then highlight the need to model the lake hydrograph at the lake lake exit. We then higlight case studies and this is how PM will be introduced
-
-%In \cite{Emmer&al2022}: Numerous studies not only describe, analyse and model the hydrodynamics and geomorphological imprints of GLOFs (e.g. Clague and Evans, 2000; Emmer, 2017; Jacquet et al., 2017) but also assess pre-GLOF conditions and hazard drivers (climatological, glaciological, geological) and eluci date plausible GLOF scenarios (e.g. Carrivick et al., 2017; Haeberli et al., 2017; Mergili et al., 2020; Klimeš et al., 2021; Zheng et al., 2021b; Emmer et al., 2020, 2022).
+%Of course, much regional and temporal variability is embedded. For instance, overarching changes of <10\% dec–1 from ~1990 to ~2020 were observed in the Southern Andes (from 4,463.9 km2 to 4,789.7 km2), Central Europe (from 30.9 km2 to 31.5 km2) and Svalbard (from 110.0 km2 to 111.0 km2) \citep{Zhang&al2024}. In contrast, much larger changes of >40\% dec–1 were observed in Iceland (from 54.8 km2 to 132.4 km2), Scandinavia (from 258.2 km2 to 596.9 km2) and the Russian Arctic (from 189.9 km2 to 478.4 km2).
+%\cite{Carrivick&Tweed2016}: The number of recorded glacier floods per time period has apparently reduced since the mid-1990s in all major world regions, but the reasons for this apparent trend are unclear.
+%-> check \cite{Veh&al2022} for an explaination
 
 % In \cite{Emmer&al2022}: Simulations of GLOF process chains have been performed since the early 2000s, and at least three stages of research evolution can be distinguished:
 % % empirical mass point models
@@ -373,28 +150,103 @@ This increase in number and extent of glacial lakes is caused by the present glo
 % % three phases mass flow model
 % 3. the emergence of two-phase (Pudasaini, 2012) and later three-phase (Pudasaini and Mergili, 2019) mass flow models and related simulation tools (Mergili et al., 2017; Mergili and Pudasaini, 2021) and the trend moving towards integrated simulations, considering the entire GLOF process chain in one single simulation step.
 
-% For the latter stage: one need to define the GLOFs scenario, and exploring the field of tension between the physical details and practical applicability of the available simulation tools(i.e. -> often need parametrisation (link to PM chapter :)
-
-%Required but hard-to-obtain modelling parameters for erosion and deposit summarized in Emmer 2022 (see Table 3)
-
-% the below goes to modelling I presume, or in the introduction of the GLOFs understanding section. We could move the empirical relation bwteen volume and dischaarge, since this is common to several type of GLOFs!
-
-% In Emmer 2022: With the growing need for hazard assessments in areas with limited access, where potential GLOF exposure in the downstream regions is high (Allen et al., 2016, 2019; Schwanghart et al., 2016), predictive GLOF modelling serves a purpose (e.g. Sattar et al., 2019a, b, 2021). However, such modelling demands prior evaluation of the breach parameters such as breach depth, breach width and the breach formation time. These parameters are difficult to estimate and depend on multiple factors such as the nature of the
-% damming material, the trigger event (e.g. avalanche, land slide, internal moraine failures), the nature of the impact wave, freeboard of the lake and lake bathymetry. There fore, one must rely on empirical methods or scenario definition as alternatives to determine these parameters exactly.
-
-% Table 3 in Emmer 2022 show a: "Summary of the key topics, observed trends, identified challenges and proposed ways forward in the thematic area modelling GLOFs and GLOF process chains.". In "identified challenges" there is "Obtaining (in situ) parameters required by the model (e.g. breach parameters, lake bathymetry) and addressing their uncertainties (e.g. Schaub et al., 2016; Mergili et al., 2018b, 2020; Sattar et al., 2020; see Sect. 4.4)" and: "Defining realistic GLOF scenarios in predictive GLOF modelling". That makes another link to our thesis (especially to our PM chapter: which parameters for supra drainage? Which mode: stable or unstable?). 
-% This table also propose ways forward such as: "Extending a set of detail-modelled events in order to obtain a plausible range of parameters for predictive modelling (e.g. Mergili et al., 2018a, b, 2020). That is also what ou PM study does.
-% IMPORTANT: I think here the author refer to "moraine breaching" parameter, but I assume you also want to know how the ice dam breach, right? Costa 1985 mention breaching of ice dam at least
-
-
 
 \section{Research questions and thesis structure}
 
-% message: while global studies increase thanks to increase in temporal and spatial observational means (e.g. remote sensing, global inventories, see subsection before on global inventory), physical uinderstanding still need to be improved for accurate GLOFs modelling.
 
-In Table~\ref{table_GLOFs_research_gaps}, I summarize the research gaps on GLOFs identified in the previous sections and their corresponding research questions that will be evaluated in this thesis. The strategies to address these questions are presented as "ways forward" and refer to the thesis chapters where they are developed.
+In Table~\ref{table_GLOFs_research_gaps}, I summarize the research gaps on GLOFs identified in the previous sections and the selected questions that will be evaluated in this thesis. The strategies to address these questions are presented as "ways forward" and refer to the thesis chapters where they are developed.
 
-% observed trend and progress % for now not implemented
+
+\begin{longtable}{ |p{1\textwidth}| } 
+%\begin{longtable}[h]
+%\centering
+\caption{Summary of the research gaps on GLOFs identified in this Introduction (with key supporting references) and proposed ways forward assessed in this thesis.}\\
+%\begin{tabular}{l}
+\hline
+\textbf{Identified research gaps in GLOFs research}  \\
+\hline
+\textit{GLOFs observation and monitoring} \\
+\hline
+- Deficiencies in GLOFs understanding due to lack of high-quality observational data, including bathymetry, water temperature and lake outflow peak discharge {\citep{Roberts2005,Huss&al2007}} \\
+- Need for datasets on parameters required by GLOFs models (e.g. breach parameters, lake bathymetry, lake outflow discharge) and their uncertainties {\citep{Emmer&al2022,Zhang&al2024}} \\
+- Numerical modeling challenged by absent parameter values like lake water temperature or time-varying lake level {\citep{Carrivick&al2020,Zhang&al2024}} \\
+%- Even with detailed input data, models of basal drainage suffer from lack of independent and applicable data for calibration {\citep{Flowers2015}}
+%- Understanding of GLOFs is limited by inadequate data. Triggers are often unknown or speculated due to absent field data, relying on climatic or geological–geomorphological evidence {\citep{Zhang&al2024}}
+%- Field data of lake properties and GLOF mechanisms are needed in different environments to refine and test model parameters and parametrize dam breach models {\citep{Zhang&al2024}}
+%- Several hydrodynamic models have been used to propagate flood waves downstream, modeling entire process chains. However, in the absence of robust field data, modeling is often done with poorly constrained conditions and parameters {\citep{Zhang&al2024}}
+\\
+\textit{Englacial and subglacial outburst floods}   \\
+\hline
+- Lack of consensus on water pocket definition, even in recent studies {\citep{Lutzow&al2023,Zhang&al2024}} \\
+- Proper terminology should be maintained to avoid misinterpretation of events {\citep{Emmer&al2022}} \\
+- More comprehensive GLOFs inventories are essential for understanding GLOFs frequency and revealing frequency–magnitude relationships {\citep{Veh&al2022,Emmer&al2022}} \\
+- Defining realistic GLOFs scenarios is crucial in predictive modeling {\citep{Emmer&al2022,Zhang&al2024}}, but knowledge on water pocket rupture scenarios is limited {\citep{Haeberli1983}} \\
+- Need for more observation of englacial water reservoirs {\citep{Haeberli1983}} \\
+- The interpretation of ground penetrating radar signals for detecting englacial water bodies in temperate ice is controversial and requires more theoretical consideration {\citep{Murray&al2000,Brown&al2009}} \\
+\\
+\textit{Hydraulics and thermodynamics}\\
+\hline
+%- Empirical parametrization of heat transfer from water to ice from engineering literature is inappropriate for jökulhlaups {\citep{Roberts2005,Sommers&Rajaram2020}} \\
+- Need for quantitative analysis of heat transfer between water and ice (in particular Nusselt number, Reynolds number, Prandtl number) {\citep{Clarke2003,Roberts2005,Bjornsson2010,Sommers&Rajaram2020}} \\
+%- Lack of independent parameterization for heat transfer {\citep{Vincent&al2010}} and friction factor {\citep{Werder&al2010}}, preventing independent modeling \\
+- Lack of in situ measurements on flow resistance at the ice interface during ice-dammed lake drainage {\citep{Clarke2003,Werder&al2010,Vincent&al2010,Kingslake&al2015,Gleason&al2016}} \\
+- Poorly constrained flow resistance from field observations leads to large uncertainties in modeled GLOFs peak discharge {\citep{Werder&al2010}} \\
+\\
+\hline
+\textbf{Research questions and ways forward of the thesis}  \\
+\hline
+%- What determines the stability of a supraglacial lake drainage?\\
+-\textbf{How can in situ measurements be used to constrain the empirical parameters for flow resistance and heat transfer in the drainage of ice-dammed lakes?}\\
+$\rightarrow$\ Provide an extensive dataset of an ice-dammed lake drainage for further validation of GLOFs modeling studies (Chapter~\ref{ch:chapter_plainemorte})\\
+$\rightarrow$\ Provide values on stream resistance in ice channels and their uncertainties (Chapter~\ref{ch:chapter_plainemorte}) \\
+$\rightarrow$\ Provide an empirical parametrization for the heat transfer at the water/ice interface based on field experiments (Chapter~\ref{ch:chapter_plainemorte}) \\
+\\
+
+-\textbf{What is the spatial and temporal distribution of outburst floods from water pocket in the Swiss Alps?}\\
+$\rightarrow$\ Provide an up-to-date and comprehensive inventory of water pocket outburst floods (WPOFs) in the Swiss Alps (Chapter~\ref{ch:chapter_WPOFs}) \\
+\\
+
+-\textbf{What are the drivers and mechanism for the formation and the rupture of water pockets?}\\
+$\rightarrow$\ Characterize the drivers for the formation and rupture of water pockets based on the WPOFs inventory (Chapter~\ref{ch:chapter_WPOFs}) \\
+$\rightarrow$\ Propose mechanisms of formation and rupture of water pockets based on a literature review and the WPOFs inventory (Chapter~\ref{ch:chapter_WPOFs}) \\
+\\
+
+-\textbf{What are the limitation of ground penetrating radar on the detection of englacial water bodies in temperate ice?}\\
+$\rightarrow$\ Establish a model framework to investigate the limitations of ground-penetrating radar in temperate ice for detecting englacial water bodies (Chapter~\ref{ch:chapter_gprmax})\\
+$\rightarrow$\ Explore the effect of water inclusions of different sizes and spatial distributions on the retrieved GPR signal (Chapter~\ref{ch:chapter_gprmax})\\
+$\rightarrow$\ Evaluate the limitations these effects have on the detectability of englacial water bodies (Chapter~\ref{ch:chapter_gprmax})\\
+
+\hline
+%\end{tabular}
+\label{table_GLOFs_research_gaps}
+\end{longtable}
+
+
+
+This thesis aims at improving the physical understanding of GLOFs stemming from supraglacial lakes and water pockets, and to provide a better knowledge for interpreting the GPR signal of englacial water bodies in alpine glaciers. To do so, the thesis is structured around three chapters that correspond to a peer-reviewed publication each.
+
+
+The first chapter \citep{Ogier&al2021} addresses the following research question: \textit{How can in situ measurements be used to constrain the empirical parameters for flow resistance and heat transfer in the drainage of ice-dammed lakes?} It does so by presenting an extensive dataset of an ice-dammed lake drainage through a supraglacial channel, providing insights into the processes controlling the stability of the supraglacial lakes drainage. Additionally, the chapter critically assess the empirical parameters used in current modeling studies of ice-dammed lake drainage such as the friction factor and the Nusselt number, as well as their uncertainties. It also proposes a new empirical parametrization for heat transfer at the water/ice interface. These results are expected to feed future modelling studies of GLOFs in order to improve the physical understanding of these events.
+
+The second chapter addresses the following research questions: \textit{What is the spatial and temporal distribution of outburst floods from water pocket in the Swiss Alps?} and \textit{What are the drivers and mechanism for the formation and the rupture of water pockets?} To answer these questions we investigate the spatial and temporal distribution of water pocket outburst floods (WPOFs) in the Swiss Alp from an up-to-date and comprehensive inventory of WPOFs, with an analysis on the geomorphic and meteorological drivers of the formation and rupture of water pockets. In addition, we proposes four mechanisms for the formation and rupture of water pockets by analyzing the WPOFs inventory and conducting a literature review. This chapter contributes to improve the understanding of water pocket outburst floods, so far really limited. This chapter was submitted to the Journal of Glaciology in June 2024 and is currently under review at the time of this thesis submission.
+
+The third chapter \citep{Ogier&al2023} addresses the following research question \textit{What are the limitation of ground penetrating radar on the detection of englacial water bodies in temperate ice?} The chapter focuses on evaluating the relevance of GPR in imaging englacial water bodies within temperate ice by using forward modelling. This assessment is particularly relevant given the subglacial nature of water pockets in temperate ice and the lack in their observations.
+
+Finally, the thesis concludes with a Discussion and Conclusion chapter, where the outcomes are discussed, an outlook on future research is presented, and the main results are summarized.
+
+%%Extra
+
+
+%Fun note: a positive aspect of glofs: for example tens of glacier floods in Norway were noted to have contributed additional water into hydropower reservoirs (Jackson and Ragulina, 2014).
+
+%\cite{Emmer&al2022}: Hence, the geographical focus of research appears to be driven by potential societal impacts and relevance of GLOFs and the size of these mountain regions, rather than by the physical GLOF processes themselves.
+
+%Veh 2022:
+%Temperature influence on GLOFs:
+%Rising air temperatures could change the meltwater input to lakes, and thus may increase glacier lake volume, given a suitable geometry of the newly exposed basin (Richardson & Reynolds, 2000). In the Himalayas, for example, only 10\% of all glaciers terminate in proglacial lakes; yet some of those lakes may accelerate ice melt and generate more meltwater (King et al., 2019). Warmer air and lake temperatures may thin ice dams and thus lower the threshold to open subglacial drainage channels, likely initiating more GLOFs from glacier-dammed lakes (Clarke, 2003; Kingslake & Ng, 2013; Ng & Liu, 2009). Atmospheric warming might also increase the frequency of moraine-dam failures. Buried ice within a moraine dam can melt, thus reducing cohesion and promoting dam collapse. Gradual settlement of the dam can reduce the lake freeboard and increase the chance for overtopping (Richardson & Reynolds, 2000). Thawing ice and permafrost could also destabilize adjacent glaciers and rockfalls (Haeberli et al., 2017) such that avalanches of ice and rock enter glacier lakes, leading to overtopping and dam breaks (Emmer & Vilímek, 2013; Harrison et al., 2018; Richardson & Reynolds, 2000).
+%\cite{Veh&al2022}: We find that the positive trend in the number of reported GLOFs has decayed distinctly after a break in the 1970s, coinciding with independently detected trend changes in annual air temperatures and in the annual number of field-based glacier surveys (a proxy of scientific reporting).
+
+%\cite{Emmer&al2022} identifies 4 theme in GLOFs research: (i) understanding GLOFs, including their timing and processes; (ii) modeling GLOFs and their process chains; (iii) managing GLOF risks, including prevention and warning systems; and (iv) examining the human dimensions of GLOFs and attributing them to climate change \citep{Emmer&al2022}. Recent studies, in particular, suggested that future research should focus on acquiring detailed field data on lake and dam properties to then develop robust models for GLOFs hazard assessment, as well as providing extensive GLOFs inventories for global a understanding  \citep{Zhang&al2024, Carrivick&Tweed2016, Veh&al2022}. This highlights the importance of the first theme (i) as the start point for GLOFs research.
 
 % -In Emmer et al 2022: This trend is associated with increasing availability and resolution of satellite images (Kirschbaum et al., 2019; Taylor et al., 2021), allowing detailed analysis of persistent geomorphic GLOF diagnostic features, both in a manual and in a semi-automatic way (Veh et al., 2018).
 % -Recent studies resulted in a step-bystep splitting of the complex puzzle of varying jo¨kulhlaup patterns into sub-problems which were distinct enough to be tackled apart from each other (Bjornsson 2010),
@@ -402,130 +254,3 @@ In Table~\ref{table_GLOFs_research_gaps}, I summarize the research gaps on GLOFs
 % - "internationalisation" of GLOFs work
 % - quantifying biases (Veh 2022)
 % - modelling (kingslake, Flowers's work!)
-
-
-\begin{table}[h]
-\centering
-\caption{Summary of the research gaps on GLOFs identified in this Introduction and proposed ways forward assessed in this thesis.}
-\begin{tabular}{l}
-\hline
-\textbf{Identified research gaps in GLOFs research}  \\
-\hline
-\textit{GLOFs observation and monitoring} \\
-\hline
-- Deficiencies in GLOFs understanding due to lack of high-quality observational data\\ {\citep{Roberts2005,Huss&al2007}} \\
-- Need for datasets on parameters required by GLOFs models (e.g. breach parameters, lake bathymetry,\\ lake outflow discharge) and their uncertainties {\citep{Emmer&al2022,Zhang&al2024}} \\
-- Numerical modeling challenged by absent parameter values like lake water temperature or time-varying\\ lake level {\citep{Carrivick&al2020,Zhang&al2024}} \\
-
-%- This study highlights the need for an integrative assessment of glacier-dammed lake floods to better understand these events {\citep{Huss&al2007}}
-%- Even with detailed input data, models of basal drainage suffer from lack of independent and applicable data for calibration {\citep{Flowers2015}}
-%- Understanding of GLOFs is limited by inadequate data. Triggers are often unknown or speculated due to absent field data, relying on climatic or geological–geomorphological evidence {\citep{Zhang&al2024}}
-%- Field data of lake properties and GLOF mechanisms are needed in different environments to refine and test model parameters and parametrize dam breach models {\citep{Zhang&al2024}}
-%- Several hydrodynamic models have been used to propagate flood waves downstream, modeling entire process chains. However, in the absence of robust field data, modeling is often done with poorly constrained conditions and parameters {\citep{Zhang&al2024}}
-%- GPR:
-
-\textit{Englacial and subglacial outburst floods}   \\
-\hline
-- Lack of consensus on water pocket definition, even in recent studies {\citep{Lutzow&al2023,Zhang&al2024}} \\
-- Proper terminology should be maintained to avoid misinterpretation of events {\citep{Emmer&al2022}} \\
-- More comprehensive GLOFs inventories are essential for understanding GLOFs frequency and revealing\\ frequency–magnitude relationships {\citep{Veh&al2022,Emmer&al2022}} \\
-- Defining realistic GLOFs scenarios is crucial in predictive modeling {\citep{Emmer&al2022,Zhang&al2024}},\\ but knowledge on water pocket rupture scenarios is limited {\citep{Haeberli1983}} \\
-- Need for more observation of englacial water reservoirs {\citep{Haeberli1983}} \\
-- Use of ground-penetrating radar for detecting englacial water bodies in temperate ice is controversial and\\ requires more theoretical consideration {\citep{Murray&al2000,Brown&al2009}} \\
-
-\textit{Hydraulics and thermodynamics}\\
-\hline
-%- Empirical parametrization of heat transfer from water to ice from engineering literature is inappropriate for jökulhlaups {\citep{Roberts2005,Sommers&Rajaram2020}} \\
-- Need for quantitative analysis of heat transfer between water and ice (in particular Nusselt number,\\ Reynolds number, Prandtl number) {\citep{Clarke2003,Roberts2005,Bjornsson2010,Sommers&Rajaram2020}} \\
-%- Lack of independent parameterization for heat transfer {\citep{Vincent&al2010}} and friction factor {\citep{Werder&al2010}}, preventing independent modeling \\
-- Lack of in situ measurements on flow resistance at the ice interface during ice-dammed lake drainage\\ {\citep{Clarke2003,Werder&al2010,Vincent&al2010,Kingslake&al2015,Gleason&al2016}} \\
-- Poorly constrained flow resistance from field observations leads to large uncertainties in modeled GLOFs\\ peak discharge {\citep{Werder&al2010}} \\
-
-\hline
-\textbf{Research questions of the thesis}  \\
-\hline
-%- What determines the stability of a supraglacial lake drainage?\\
-- How do the empirical parameters for the flow resistance and the heat transfer used in current modelling\\ compare to in situ measurements of an ice-dammed lakes drainage?\\
-- What is the spatial and temporal distribution of outburst floods from water pocket in the Swiss Alps?\\
-- What are the drivers and mechanism for the formation and the rupture of water pockets?\\
-- What are the limitation of ground penetrating radar on the detection of englacial water bodies in temperate ice?\\
-
-
-\hline
-\textbf{Ways forward (this thesis)}  \\
-\hline
-- Provide an extensive dataset of an ice-dammed lake drainage for further validation of GLOFs modeling studies\\ (Section~\ref{ch:chapter_plainemorte}) \\
-- Provide values on stream flow resistance in ice channels and their uncertainties (Section~\ref{ch:chapter_plainemorte}) \\
-- Provide an empirical parametrization for the heat transfer at the water/ice interface based on field experiments\\  (Section~\ref{ch:chapter_plainemorte}) \\
-- Provide an up-to-date and comprehensive inventory of water pocket outburst floods (WPOFs) in the\\ Swiss Alps\\ (Section~\ref{ch:chapter_WPOFs}) \\
-- Characterize the drivers for the formation and rupture of water pockets based on the\\ WPOFs inventory (Section~\ref{ch:chapter_WPOFs}) \\
-- Propose mechanisms of formation and rupture of water pockets based on a literature review\\ and the WPOFs inventory (Section~\ref{ch:chapter_WPOFs}) \\
-- Evaluate the limitations of ground-penetrating radar in temperate ice for detecting englacial water bodies using\\ forward modelling (Section~\ref{ch:chapter_gprmax}) \\
-
-\hline
-\end{tabular}
-\label{table_GLOFs_research_gaps}
-\end{table}
-
-
-
-% \begin{table}[h]
-% \centering
-% \caption{Summary of the research gaps on GLOFs and proposed ways forward identified in this Introduction.}
-% \begin{tabular}{l}
-% \hline
-% \textbf{Identified research gaps in GLOFs research}  \\
-% \hline
-% \textit{GLOFs observation and monitoring} \\
-% \hline
-% - Deficiencies in GLOFs understanding due to lack of pertinent, high-quality observational data of GLOFs \\{\citep{Roberts2005,Huss&al2007}} \\
-% - Need for dataset on relevant parameters required by GLOFs model (e.g. breach parameters, lake bathymetry,\\ lake outflow discharge), as well as quantifying their uncertainties {\citep{Emmer&al2022,Zhang&al2024}}\\
-% - Numerical modelling of GLOFs is challenged by absent knowledge of parameter values such as\\ lake water temperature or time-varying lake level, limiting insight {\citep{Carrivick&al2020}}\\
-% - Hydrodynamic modelling and reconstruction of GLOFs is hindered by absent data {\citep{Zhang&al2024}}\\
-% %-  This study highlights the need for an integrative assessment of glacier-dammed lake floods to better understand these events \citep{Huss&al2007}
-% %- \cite{Flowers2015}: Even with detailed input data, models of basal drainage will continue to suffer from a lack of direct, independent and applicable data for calibration.
-% %- Understanding of GLOFs is severely limited by inadequate data. Triggers are often unknown or speculated owing to absent field data, necessitating reliance on climatic or geological–geomorphological evidence [35,76–78] \citep{Zhang&al2024}
-% %-Field data of lake properties (including bathymetry, temperature and lake outflow peak discharge) and GLOF mechanisms are desperately needed in different glaciated environments and for different lake types to refine and test model parameters, as well as parametrize dam breach models \cite{Zhang&al2024} -> we do both ;)
-% %-\cite{Zhang&al2024}Several hydrodynamic numerical models [80,120–123] have been used to numerically propagate flood waves downstream, modelling not only a GLOF but also entire process chains (see Supplementary Table 3). However,in the absence of robust field data from past events, modelling is often undertaken with poorly constrained conditions and parameters.
-% %GPR:
-
-
-% \textit{Englacial and sublgacial outburst floods}   \\
-% \hline
-% - lack of consensus on water pocket definition even in most recent studies\\  {\citep[e.g. in][]{Lutzow&al2023,Zhang&al2024}}\\
-% - Proper terminology should be maintained among researchers, disaster risk reduction practitioners,\\ and authorities to avoid misinterpretation of individual events {\citep{Emmer&al2022}}\\
-% - More comprehensive glacial outburst floods inventories are essential for better understanding frequency of\\ GLOFs occurrence in changing mountain environments and for revealing frequency–magnitude relationships {\citep{Veh&al2022,Emmer&al2022}}\\
-% - Defining realistic GLOFs scenarios is crucial in predictive GLOFs modelling {\citep{Emmer&al2022,Zhang&al2024}},\\ but there is for now too little knowledge on water pocket rupture scenario to do so {\citep{Haeberli1983}}\\
-% - Need more observation of englacial water reservoir {\citep{Haeberli1983}}\\
-% - The use of ground penetrating radar for detecting englacial water bodies in temperate ice \\is controversial and requires more theoretical considerations \\
-
-% \textit{Hydraulics and thermodynamics}\\
-% \hline
-% - A viable description of jökulhlaup mechanisms demands more research into the rate of heat transfer from flood water to the surrounding ice {\citep{Bjornsson2010}}\\
-% %- Empirical parametrization of heat transfer from water to ice from engineering literature are inadequate for the problems posed by jökulhlaups {\citep{Roberts2005}} \\
-% - Need for quantitative analysis of heat transfer between water and ice, i.e. the relationship between Nusselt number, Reynolds number and Prandtl number {\citep{Clarke2003,Roberts2005}} \\
-% %- Lack of independent parameterization for heat transfer \cite{Vincent&al2010} and friction factor \cite{Werder&al2010}, preventing independent modeling \\
-% -Lack of in situ measurements on the flow resistance at the ice interface during ice-dammed lake drainage {\citep{Clarke2003,Werder&al2010,Kingslake&al2015,Gleason&al2016}}\\
-% - The flow resistance is poorly constrained from field observations and lead to large uncertainties in modelled GLOFs peak discharge {\citep{Werder&al2010}}\\
-
-% \hline
-% \textbf{Ways forward (this thesis)}  \\
-% \hline
-% - To provide an extensive data set of an ice-dammed lake drainage for further validation of GLOFs modelling studies (Section~\ref{ch:chapter_plainemorte})\\
-% - To provide value on stream flow resistance in ice channels (and their uncertainties)(Section~\ref{ch:chapter_plainemorte})\\
-% - To provide a relationship between Nusselt number, Reynolds number and Prandtl number on field experiment to quantify the heat transfer at the water/ice interface (Section~\ref{ch:chapter_plainemorte})\\
-% - To provide an up-to-date and comprehensive inventory of water pocket outburst flood in the Swiss Alps (Section~\ref{ch:chapter_WPOFs})\\
-% - To characterize the drivers for the formation and the rupture of water pockets (Section~\ref{ch:chapter_WPOFs})\\
-% - To propose mechanisms of formation and rupture of water pockets (Section~\ref{ch:chapter_WPOFs})\\
-% - To evaluate the limitations of ground penetrating radar in temperate ice for the detection of englacial water bodies (Section~\ref{ch:chapter_gprmax})\\
-
-% \hline
-% \end{tabular}
-% \label{table_GLOFs_research_gaps}
-% \end{table}
-
-This thesis aims at improving the physical understanding of GLOFs stemming from supraglacial lakes and water pockets, and to provide a better knowledge for detecting englacial water bodies in alpine glaciers. To do so, the thesis is articulated around three chapters that correspond to a peer-reviewed publication.
-The first chapter \cite{Ogier&al2021} presents an extensive dataset of an ice-dammed lake drainage through a supraglacial channel, providing valuable insights into the processes controlling the stability of the supraglacial lakes drainage. Additionally, the chapter explores the empirical parameters used in current modeling studies of ice-dammed lake drainage such as the friction factor and the Nusselt number, as well as their uncertainties. It also proposes a new empirical parametrization for heat transfer at the water/ice interface. These results are expected to feed future modelling studies of GLOFs in order to improve the physical understanding of these events.
-The second chapter \todo{REF of the submitted paper} investigates the spatial and temporal distribution of water pocket outburst floods (WPOFs) from water pockets in the Swiss Alps. It provides an up-to-date and comprehensive inventory of WPOFs, with an analysis on the geomorphic and meteorological drivers of the formation and rupture of water pockets. In addition, we proposes four mechanisms for the formation and rupture of water pockets by analyzing the WPOFs inventory and conducting a literature review. This chapter contributes to improve the global understanding of water pocket outburst floods, so far really limited.
-In the third chapter \citep{Ogier&al2023}, the focus of the thesis shifts to evaluating the relevance of ground-penetrating radar (GPR) in imaging englacial water bodies within temperate ice by using forward modelling. This assessment is particularly relevant given the subglacial nature of water pockets in temperate ice and the lack in their observations.
-Finally, the thesis concludes with a Discussion and Conclusion chapter, where the outcomes are discussed, an outlook on future research is presented, and the main results are summarized.
