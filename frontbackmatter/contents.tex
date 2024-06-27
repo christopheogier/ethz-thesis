@@ -1,6 +1,7 @@
 %*******************************************************
 % Table of Contents
 %*******************************************************
+
 %\phantomsection
 \refstepcounter{dummy}
 \pdfbookmark[1]{\contentsname}{tableofcontents}
@@ -9,18 +10,31 @@
 \manualmark%
 \markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
 \tableofcontents
-\automark[section]{chapter}
-\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+%% 
+% 
+% \renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+% \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+
+%from chris to only display chapter in headers, and not section as above
+\clearpairofpagestyles % Clear all headers and footers
+\automark[chapter]{chapter} 
+\ihead{\parbox[t]{\textwidth}{\raggedright \spacedlowsmallcaps{\leftmark}}} % Inner header (left page in two-sided documents)
+\ohead{\parbox[t]{\textwidth}{\raggedleft \spacedlowsmallcaps{\rightmark}}} % Outer header (right page in two-sided documents)
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{}
+
+
+
+
 %*******************************************************
 % List of Figures and of the Tables
 %*******************************************************
-\clearpage
+%\clearpage
 
-\begingroup
-    \let\clearpage\relax
-    \let\cleardoublepage\relax
-    \let\cleardoublepage\relax
+% \begingroup
+%     \let\clearpage\relax
+%     \let\cleardoublepage\relax
+%     \let\cleardoublepage\relax
     %*******************************************************
     % List of Figures
     %*******************************************************
@@ -84,4 +98,4 @@
 %     \end{flushright}
 %     \sisetup{separate-uncertainty=true}
     
-\endgroup
+%\endgroup

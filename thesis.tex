@@ -13,7 +13,8 @@
 
 \input{preamble/general}
 \usepackage[final]{pdfpages}
-\newcommand{\todo}[1]{\textcolor{red}{[ToDo: #1]}}
+
+
 
 % Bibliography
 % \addbibresource[label=ownpubs]{ownpubs.bib}
@@ -43,11 +44,11 @@
 \include{frontbackmatter/dirtytitlepage}
 \include{frontbackmatter/titlepage}
 \include{frontbackmatter/titleback}
-\cleardoublepage\include{frontbackmatter/dedication}
-\cleardoublepage\include{frontbackmatter/abstract}
-\cleardoublepage\include{frontbackmatter/acknowledgments}
+\include{frontbackmatter/dedication}
+\include{frontbackmatter/abstract}
+\include{frontbackmatter/acknowledgments}
 \pagestyle{scrheadings}
-\cleardoublepage\include{frontbackmatter/contents}
+\clearpage\include{frontbackmatter/contents}
 
 %
 % Mainmatter
@@ -88,7 +89,7 @@
 
 \bookmarksetup{startatroot}
 %\pagenumbering{gobble}
-\cleardoublepage\include{frontbackmatter/cv}
-\cleardoublepage\include{frontbackmatter/publications}
+%\cleardoublepage\include{frontbackmatter/cv}
+%\cleardoublepage\include{frontbackmatter/publications}
 
 \end{document}
