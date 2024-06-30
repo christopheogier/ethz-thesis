@@ -54,7 +54,8 @@
 \usepackage{placeins}
 \usepackage{longtable}
 \usepackage{amssymb}
-\usepackage[automark,headsepline]{scrlayer-scrpage} 
+\usepackage[automark]{scrlayer-scrpage} %headsepline for a line below header
+
 
 
 
@@ -173,10 +174,11 @@
 \areaset[current]{\textwidth}{1.618034\textwidth}
 
 % Page numbers in plain style (chapter titles)
-\clearscrplain
+%\clearpairofpagestyles
 \ofoot[\pagemark]{}
 % Adjust distance to footer (default is too large)
 \setlength{\footskip}{19pt}
+
 
 %
 % Font setup

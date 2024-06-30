@@ -8,20 +8,28 @@
 \setcounter{tocdepth}{2} % <-- 2 includes up to subsections in the ToC
 \setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
 \manualmark%
-\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+%\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
 \tableofcontents
 %% 
 % 
-% \renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
-% \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+ % \renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+ % \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
 
-%from chris to only display chapter in headers, and not section as above
-\clearpairofpagestyles % Clear all headers and footers
+%from chris to only display chapter in headers, plus ta line, and not section as above
+\pagestyle{scrheadings} % diplay headers
+%\clearpairofpagestyles % Clear all headers and footers
+% Define header with wrapped text for long chapter titles
 \automark[chapter]{chapter} 
 \ihead{\parbox[t]{\textwidth}{\raggedright \spacedlowsmallcaps{\leftmark}}} % Inner header (left page in two-sided documents)
-\ohead{\parbox[t]{\textwidth}{\raggedleft \spacedlowsmallcaps{\rightmark}}} % Outer header (right page in two-sided documents)
-\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+
+% Adjust the \chaptermark to handle long titles
+\renewcommand{\chaptermark}[1]{\markboth{\parbox[t]{\textwidth}{\spacedlowsmallcaps{\thechapter.\ #1}}}{}}
 \renewcommand{\sectionmark}[1]{}
+
+% %\ohead{\parbox[t]{\textwidth}{\raggedleft \spacedlowsmallcaps{\rightmark}}} % Outer header (right page in two-sided documents)
+
+
+
 
 
 

@@ -26,7 +26,8 @@
 \raggedbottom%
 \selectlanguage{english}
 \pagenumbering{roman}
-\pagestyle{scrplain}
+\pagestyle{scrplain} 
+
 
 %
 % Cover
@@ -47,8 +48,9 @@
 \include{frontbackmatter/dedication}
 \include{frontbackmatter/abstract}
 \include{frontbackmatter/acknowledgments}
-\pagestyle{scrheadings}
-\clearpage\include{frontbackmatter/contents}
+\clearpage\include{frontbackmatter/contents} %acthung! this refefines some page style for the headers
+%\pagestyle{scrplain}
+
 
 %
 % Mainmatter
@@ -84,6 +86,7 @@
 \include{\dir/main}
 
 %\cleardoublepage\include{frontbackmatter/bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{abbrvnat} % Specify the bibliography style
 \bibliography{bibliography.bib} % Specify the name of your .bib file
 
