@@ -11,7 +11,6 @@ This chapter is published by the Journal of Glaciology (Cambridge university pre
 group) as:\\
 Ogier C, van Manen D-J, Maurer H, Räss L, Hertrich M, Bauder A ,Farinotti, D. \textit{Ground penetrating radar in temperate ice: englacial water inclusions as limiting factor for data interpretation}. Journal of Glaciology,p1-12, doi:10.1017/jog.2023.68.\\
 
-
 %\todo{picture of the dom tent and lines in Trift and Trient (3 subpannels?)}
 
 \clearpage
@@ -87,7 +86,7 @@ Wet snow & 2.3 & 10$^{-4}$\\
     \label{tab_material_properties}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{chapters/chapter_gprmax/Fig01.pdf}
     \caption{2D geometry of the investigated glacier models and relative permittivity ($\epsilon_r$) for (a) the reference model, (b) the additional wet snowpack, here 10\,m thick, (c) the additional stochastic variation of ice permittivity (note the different color scale), and (d) the additional water inclusions (here $LWC$\,=\,0.2\,\% and $r$\,=\,0.1\,m). The position of the bedrock (labeled "b") and the subglacial channel (labeled "c") are indicated by arrows for each model.}
@@ -125,7 +124,7 @@ The wet snow conductivity $\sigma$ ($\mu$S\,m$^{-1}$) is calculated following \c
     \label{eq:sigma_wet_snow}
 \end{equation}
 
-With the above equations, a typical spring snowpack over glaciers with $\rho_{snow}/\rho_w$\,=\,0.5 and $LWC$\,=\,3\,\% \citep{Griessinger&al2018}, results in $\epsilon_s$\,=\,2.3 and $\sigma$\,=\,10$^{-4}$ S\,m$^{-1}$. These values are in good agreement with field observations (see e.g. Fig.~5 in \cite{Evans1965}). Note that the value for $\epsilon_s$ is close to the permittivity of ice (see Table~\ref{tab_material_properties}), and that we consider a bulk permittivity for the snowpack, i.e. we do not explicitly account for the snowpack's water inclusions. Our argument for doing so is that these water inclusions are expected to be very small when compared to the wavelength of the GPR signal in snow: at 25\,MHz, the latter is in the order of 1\,m, while the diameter of the water inclusions in snow are expected to be <\,1\,mm \citep[e.g.][]{Coleou&al2001}.  
+With the above equations, a typical spring snowpack over glaciers with $\rho_{snow}/\rho_w$\,=\,0.5 and $LWC$\,=\,3\,\% \citep{Griessinger&al2018}, results in $\epsilon_s$\,=\,2.3 and $\sigma$\,=\,10$^{-4}$ S\,m$^{-1}$. These values are in good agreement with field observations \citep[see e.g. Fig.~5 in][]{Evans1965}. Note that the value for $\epsilon_s$ is close to the permittivity of ice (see Table~\ref{tab_material_properties}), and that we consider a bulk permittivity for the snowpack, i.e. we do not explicitly account for the snowpack's water inclusions. Our argument for doing so is that these water inclusions are expected to be very small when compared to the wavelength of the GPR signal in snow: at 25\,MHz, the latter is in the order of 1\,m, while the diameter of the water inclusions in snow are expected to be <\,1\,mm \citep[e.g.][]{Coleou&al2001}.  
 
 \subsubsection{Model addition 2: heterogeneous ice permittivity}
 \label{sec:stoch_mod}
@@ -241,37 +240,36 @@ The impact of water inclusions on the GPR signal is shown in Figure~\ref{fig:mod
 To further investigate the effects of water inclusions, the simulations are repeated with different LWCs and different sizes of the water inclusions. Figure~\ref{fig:gprmax_results} presents a selection of simulation for three values of each LWC and maximum scatterer radius. In all cases, the GPR signal is strongly attenuated with increasing depth because of the energy lost through scattering. For $LWC$\,=\,0.1\,\% and $r$\,=\,0.1\,m, the bedrock and the subglacial channel are well visible. For higher LWC (e.g. 0.5\,\% and 1\,\%), the bedrock and the subglacial channel are no longer visible, regardless of the radius of the water inclusions. This indicates that bulk LWC values in the range of 0.1\,\%\,-\,0.5\,\%, associated to water inclusions with radii in the order of several decimeters, already constitute a limit beyond which a bedrock at 100\,m depth becomes impossible to detect with a frequency of 25\,MHz. When the scatterer size increases for a constant LWC (i.e. when the number of scatterers decreases), more sections of water-free ice appear between the surface and the bedrock. In these sections, the bedrock is better visible, as see when comparing the results with $r$\,=\,1\,m and $r$\,=\,0.5\,m in Figure~\ref{fig:gprmax_results}.
 Also note that the bedrock depth tends to be slightly overestimated with increasing LWC. This is because our Kirchhoff migration ignores the presence of water, i.e. it applies the same velocity of propagation for the electromagnetic field for all materials.
 
-While the results presented so far refer to GPR data collected with 25\,MHz antennas, we note that using different frequencies would qualitatively lead to the same results as long as the size of the scatterers are scaled with the dominant wavelength. For example, using 50\,MHz and scatterers with a radius of 0.5\,m would give the same results as for 25\,MHz and a radius of 1.0\,m. At most, a difference is expected to emerge in the achievable penetration depth and the size of the identifiable features, with higher frequencies having stronger attenuation but better spatial resolution than lower frequencies. One would also expect the appearance of multiple internal reflection when the wavelength of the electromagnetic field in water is significantly smaller than the scatterer radius. For 25\,MHz and 50\,MHz, this is the case for scatterers with $r$\,$>$\,1\,m and $r$\,$>$\,0.5\,m, respectively.
-
-
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{chapters/chapter_gprmax/Fig04.pdf}
     \caption{Results from gprMax simulations for nine combination of LWC and maximal radius of the water inclusions. The number of individual scatterers $n$ is indicated on the bottom right of each panel. The bedrock (label "b") and the subglacial channel (label "c") are indicated by arrows. Results refer to 25\,MHz and are presented after Kirchhoff migration.}
     \label{fig:gprmax_results}
 \end{figure}
 
+While the results presented so far refer to GPR data collected with 25\,MHz antennas, we note that using different frequencies would qualitatively lead to the same results as long as the size of the scatterers are scaled with the dominant wavelength. For example, using 50\,MHz and scatterers with a radius of 0.5\,m would give the same results as for 25\,MHz and a radius of 1.0\,m. At most, a difference is expected to emerge in the achievable penetration depth and the size of the identifiable features, with higher frequencies having stronger attenuation but better spatial resolution than lower frequencies. One would also expect the appearance of multiple internal reflection when the wavelength of the electromagnetic field in water is significantly smaller than the scatterer radius. For 25\,MHz and 50\,MHz, this is the case for scatterers with $r$\,$>$\,1\,m and $r$\,$>$\,0.5\,m, respectively.
+
 
 \section{Discussion}
 
 \subsection{Similarities of synthetic and field-data}
 
-Limited bedrock detectability has often been reported \citep[e.g.][]{langhammer&al2017,Grab&al2021,Rutishauser&al2016,Bradford&al2009}. Figure~\ref{fig:field_vs_gprmax}a and \ref{fig:field_vs_gprmax}b present two GPR sections acquired in August 2021 on Glacier du Trient (Switzerland), and in July 2021 on Triftglestcher (Switzerland's Mattertal), respectively. Both glaciers are temperate, and the surveys were carried out with 25\,MHz antennas. The GPR data were processed with GPRglaz using the same steps as described for the gprMax simulations.
-
-For both the mentioned GPR sections, signal scattering is particularly pronounced at depths between 20\,m and 60\,m. The strong bedrock is well visible at depths between 110\,m and 130\,m for Triftgletscher and between 70\,m and 100\,m for Glacier du Trient, but the signal is not continuous across the profiles. Figure~\ref{fig:field_vs_gprmax}c presents one of the synthetic GPR sections, generated with gprMax with $LWC$\,=\,0.1\,\% and $r$\,=\,0.1\,m (same configuration as in Figure~\ref{fig:gprmax_results} and same geometry as in Figure~\ref{fig:model_geometry}d). The spatial pattern of the scatterers and the strength of the reflected energy are very similar to the real-world data shown in Figure~\ref{fig:field_vs_gprmax}a and \ref{fig:field_vs_gprmax}b. This similarity is only achieved when water inclusions are included in our numerical simulations, meaning that the variations in ice permittivity and the presence of a snowpack are not sufficient to reproduce the signal characteristics observed in actual field data. 
-
+Limited bedrock detectability has often been reported \citep[e.g.][]{Bradford&al2009,Rutishauser&al2016,langhammer&al2017,Grab&al2021}. Figure~\ref{fig:field_vs_gprmax}a and \ref{fig:field_vs_gprmax}b present two GPR sections acquired in August 2021 on Glacier du Trient (Switzerland), and in July 2021 on Triftglestcher (Switzerland's Mattertal), respectively. Both glaciers are temperate, and the surveys were carried out with 25\,MHz antennas. The GPR data were processed with GPRglaz using the same steps as described for the gprMax simulations.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{chapters/chapter_gprmax/Fig05.pdf}
+    \includegraphics[width=1\textwidth]{chapters/chapter_gprmax/Fig05.pdf}
     \caption{Comparison between real-world GPR data and data simulated through numerical modeling. Field data are shown for (a) Glacier du Trient and (b) Triftgletscher (Mattertal), two temperate glaciers in Switzerland. The data simulated with gprMax (c) are obtained with $LWC$\,=\,0.1\,\% and $r$\,=\,0.1\,m, resulting in $n$\,=\,1047 individual scatterers. The bedrock is indicated by black arrows. All three example refer to 25\,MHz antennas and are presented after Kirchhoff migration.}
     \label{fig:field_vs_gprmax}
 \end{figure}
 
+For both the mentioned GPR sections, signal scattering is particularly pronounced at depths between 20\,m and 60\,m. The strong bedrock is well visible at depths between 110\,m and 130\,m for Triftgletscher and between 70\,m and 100\,m for Glacier du Trient, but the signal is not continuous across the profiles. Figure~\ref{fig:field_vs_gprmax}c presents one of the synthetic GPR sections, generated with gprMax with $LWC$\,=\,0.1\,\% and $r$\,=\,0.1\,m (same configuration as in Figure~\ref{fig:gprmax_results} and same geometry as in Figure~\ref{fig:model_geometry}d). The spatial pattern of the scatterers and the strength of the reflected energy are very similar to the real-world data shown in Figure~\ref{fig:field_vs_gprmax}a and \ref{fig:field_vs_gprmax}b. This similarity is only achieved when water inclusions are included in our numerical simulations, meaning that the variations in ice permittivity and the presence of a snowpack are not sufficient to reproduce the signal characteristics observed in actual field data. 
+
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{chapters/chapter_gprmax/Fig06.pdf}
+    \includegraphics[width=1\textwidth]{chapters/chapter_gprmax/Fig06.pdf}
     \caption{GPR field data after Kirchhoff migration on Triftglestcher (July 2021). The depth of the interpreted water table is marked by the horizontal dotted line above the scatterers.}
     \label{fig:trift}
 \end{figure}
@@ -286,7 +284,15 @@ We speculate that high amounts of scattering occur for ice sections with high LW
 
 For this two-layer configuration, the reflections stemming from both the bedrock and the subglacial channel are qualitatively similar to the one-layer case. We suggest that the reflected signal attenuation is more sensitive to LWC and scatterer-size than to the distribution of the layering. This supports the interpretation that the noisy patches often observed in field data correspond to regions with dense scatterers, the latter being in turn an expression for locally high LWC values. 
 
-The change between regions of weak and strong scattering has been often interpreted as a transition between cold and temperate ice \citep[e.g.][]{Moore&al1999,Blatter&Hutter1991,Bjornsson&el1996}. This is consistent with the interpretation provided above, as cold ice is expected to have only very low LWC and thus only very few and small water inclusions that could produce scattering. However, we note that scatter-free ice section found for Triftgletscher (Fig.~\ref{fig:trift}) is temperate, not cold (this information is derived from in-situ temperature measurement (not shown) that we conducted in the middle of the shown profile at 15\,m depth during August to September 2021). We therefore suggest that temperate ice with very low LWC can have a similar GPR-signature than cold ice. In turn, this indicates that the precise characterization of the thermal regime of a glacier from GPR data alone could be more challenging than assumed so far.  
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{chapters/chapter_gprmax/Fig07.pdf}
+    \caption{gprMax results for scatterers distributed (a) along the entire ice column (labeled "single layer") and (b) only in the lower half of the ice column (labeled "two layers"). $LWC$\,=\,0.2\,\% for all simulations. The number of scatterers $n$ is indicated at the bottom right of each panel. The bedrock and the subglacial channel are indicated by the arrows with labels "b" and "c", respectively.}
+    \label{fig:sensitivity_bilayer}
+\end{figure}
+
+
+The change between regions of weak and strong scattering has been often interpreted as a transition between cold and temperate ice \citep[e.g.][]{Blatter&Hutter1991,Bjornsson&el1996,Moore&al1999}. This is consistent with the interpretation provided above, as cold ice is expected to have only very low LWC and thus only very few and small water inclusions that could produce scattering. However, we note that scatter-free ice section found for Triftgletscher (Fig.~\ref{fig:trift}) is temperate, not cold (this information is derived from in-situ temperature measurement (not shown) that we conducted in the middle of the shown profile at 15\,m depth during August to September 2021). We therefore suggest that temperate ice with very low LWC can have a similar GPR-signature than cold ice. In turn, this indicates that the precise characterization of the thermal regime of a glacier from GPR data alone could be more challenging than assumed so far.  
 
 \subsection{Interpretation of the LWC variations with depth}
 \label{sec:LWC_GPR}
@@ -300,13 +306,6 @@ A qualitatively similar LWC-profile was found by \cite{Bradford&al2009} for a te
 Also \cite{Murray&al2000} found a layered LWC structure for a temperate Icelandic glacier. Their Figure~8 shows LWC\,$\sim$\,0.2\,\% at the surface and a sharp increase to $\sim$\,3.5\,\% at 28\,m depth. Conversely to our Rhone data, however, \cite{Murray&al2000} found that the LWC decreases again with increasing depth, until reaching $\sim$\,0.1\,\% at the bedrock.
 
 While the field methodologies mentioned above do not allow identifying  sharp transitions in LWC, we suggest that these marked LWC changes can be interpreted as indicative for the presence of a "water table", i.e. a feature similar to what is found for aquifers. In this scenario, ice fractures and other voids that are present below a certain depth would be water filled, while similar features above that level would be filled with air. This interpretation is broadly consistent with observations performed during drilling campaigns on temperate glaciers: boreholes drilled in temperate glaciers generally fill with water up to a certain level, that level being in hydrostatic equilibrium with the subglacial drainage system \citep[e.g][]{Iken&al1996,pohle&&2022}. With this interpretation, the finding by \cite{Murray&al2000} (i.e. the fact that LWC decreases again close to the bedrock) could be explained by the fact that the ice overburden pressure increases with depth, thus tending to re-close any voids that might emerge.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{chapters/chapter_gprmax/Fig07.pdf}
-    \caption{gprMax results for scatterers distributed (a) along the entire ice column (labeled "single layer") and (b) only in the lower half of the ice column (labeled "two layers"). $LWC$\,=\,0.2\,\% for all simulations. The number of scatterers $n$ is indicated at the bottom right of each panel. The bedrock and the subglacial channel are indicated by the arrows with labels "b" and "c", respectively.}
-    \label{fig:sensitivity_bilayer}
-\end{figure}
 
 
 \subsection{Plausibility of the size of the water inclusions}
@@ -327,7 +326,7 @@ So far, the spatial distribution of the scatterers was kept unaltered. This allo
 
 Figure~\ref{fig:sensitivity_rng}a suggests that for a large number of scatterers, the spatial distribution has little impact on the signal. This is because the scattering is strong everywhere. When the LWC is small and/or scatterers are large (i.e. when scatterers are sparse), we observe a higher sensitivity of the distribution on the signal noise (Fig.~\ref{fig:sensitivity_rng}b). Strong and uniform noise in the GPR signal is thus most likely due to a large number of relatively small scatterers. 
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{chapters/chapter_gprmax/Fig08.pdf}
     \caption{Sensitivity test for four different distribution of scatterers (s1 to s4). All panels have $LWC$\,=\,0.2\,\% while the radius of the scatterers is either (a) $r$\,=\,0.1\,m  or (b) $r$\,=\,1.0\,m. The number of scatterers $n$ is approximately the same for all cases (indicated at the bottom right of each panel) while the location of the scatterers is randomly varied. The bedrock and the subglacial channel are indicated by the arrows with labels "b" and "c", respectively.}

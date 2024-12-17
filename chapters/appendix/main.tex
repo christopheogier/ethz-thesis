@@ -70,7 +70,9 @@ Table~\ref{table salt dilution} presents the salt dilution experiments conducted
 \label{table salt dilution}
 \end{table}
 
-\chapter{Supplementary material for Chapter~\ref{ch:chapter_WPOFs}: theoretical subglacial water pocket volumes for all Swiss glaciers}
+\chapter{Supplementary material for Chapter~\ref{ch:chapter_WPOFs}}
+
+\section{Theoretical subglacial water pocket volumes for all Swiss glaciers}
 \label{Appendix:subglacialWP}
 
 \setcounter{equation}{0}
@@ -108,13 +110,65 @@ Subglacial water pockets caused by hydraulic barrier develop in areas having a l
      h_{wp} = \frac{\psi_{f} - \psi_{S}}{g\,\rho_w},
 \end{equation}
 %
-where $\psi_{f}$ is the filled Shreve potential $\psi_S$ and $\rho_w$ the water density. The volume of the water pocket is then obtained by integrating the water pocket depth over its area with a spatial discretisation of 10\,m due to the DEMs used (see subsection above). Note that in this simplistic treatment we assume that the water pocket fills slowly enough that the ice roof can uplift and is in hydrostatic equilibrium with the water in the reservoir.
+where $\psi_{f}$ is the filled Shreve potential and $\psi_S$ the Shreve potential. Note that $\psi_{f}\,=\,\psi_S (seal)$ in Figure~\ref{fig:plainemorteWP}b. The volume of the water pocket is then obtained by integrating the water pocket depth over its area with a spatial discretisation of 10\,m due to the DEMs used (see subsection above). Note that in this simplistic treatment we assume that the water pocket fills slowly enough that the ice roof can uplift and is in hydrostatic equilibrium with the water in the reservoir.
 %
 
 \subsection{ Limitations}
 
-The applied approach to calculate the theoretical subglacial water pocket volumes for all Swiss glaciers contains important uncertainties in the water pocket volumes themselves as well as their location. First, the algorithm was run using the glacier outlines from the SGI2016, which may not reflect the glacier surface topography at the time of older WPOF events (acquisition dates of source data used for glacier outlines in the SGI2016 vary from 2013 to 2018 \citep{Linsbauer&al2021}). The spatiotemporal resolution of existing DEMs reflecting the glacier surface topography for the entire Swiss Alps during the late 20th century or earlier \citep[e.g. in][]{Fischer&al2015} is not sufficient for a reasonable application of the WWF tool. Second, we still observed artefacts of hydraulic potential values for some areas after application of the moving average filter because of the uncertainties in inferred bedrock. Third, flow routing in general is very sensitive to the spatial resolution of DEMs used and can show large uncertainties, especially for DEMs derived from Kriging methods or mass conservation \citep{Mackie&al2021}. 
+The applied approach to calculate the theoretical subglacial water pocket volumes for all Swiss glaciers contains important uncertainties in the water pocket volumes themselves as well as their location. First, the algorithm was run using the glacier outlines from the SGI2016, which may not reflect the glacier surface topography at the time of older WPOF events (acquisition dates of source data used for glacier outlines in the SGI2016 vary from 2013 to 2018 \citep{Linsbauer&al2021}). The spatiotemporal resolution of existing DEMs reflecting the glacier surface topography for the entire Swiss Alps during the late 20th century or earlier \citep[e.g. in][]{Fischer&al2015} is not sufficient for a reasonable application of the WWF tool. Second, we still observed artefacts of hydraulic potential values for some areas after application of the moving average filter because of the uncertainties in inferred bedrock. Third, flow routing in general is very sensitive to the spatial resolution of DEMs used and can show large uncertainties, especially for DEMs derived from Kriging methods or mass conservation \citep{Mackie&al2021}.
 
+\section{Evidence from observed water pocket outburst floods supporting the hypotheses for water pocket formation and rupture}
+\label{Appendix:tableWPOFs}
+
+Table~\ref{tab:wpofs_mechanism} lists the qualitative and quantitative observations supporting the proposed mechanisms for the formation and rupture of water pockets (see Section~\ref{sec:mechanisms}). It includes 17 WPOFs for which mechanisms could be suggested, selected from the 91 events documented in the Swiss-wide WPOFs inventory (see the Code and Data Availability section to access the inventory). The thermal barrier mechanism is absent from both the inventory and Table~\ref{tab:wpofs_mechanism}.
+
+\begin{sidewaystable}
+    \centering
+    \caption{List of 17 water pocket outburst floods (WPOFs) that can be assigned to one of the mechanisms proposed in Section~\ref{sec:mechanisms}. The remaining 74 events of the WPOFs inventory lack sufficient evidence to be assigned into any of the proposed mechanisms. The abbreviations "temp. bloc", "hydraulic bar." and "w.-f. crevasse" refer to temporary blockage of subglacial channels, hydraulic barriers and water-filled crevasses, respectively. Qualitative observations are marked with a "*", and quantitative observations (i.e. from measurements) are marked with a "+". "obs" refers to visual observation. All glaciers are assumed to be temperate.}
+    \label{tab:wpofs_mechanism}
+    \begin{tabular}{l l l c c c l r}
+        \hline
+        \textbf{Glacier} & \makecell{\textbf{WPOF date} \\ (yyyy-mm-dd)} & \makecell{\textbf{Mechanism} \\ (see Section~\ref{sec:mechanisms})} & \textbf{Hydrograph} & \makecell{\textbf{Circular} \\ \textbf{crevasses}} & \makecell{\textbf{Ice} \\ \textbf{blocks}} & \textbf{Cavity obs.} & \textbf{References} \\
+        \hline
+        
+        Rhonegletscher & 1900-12-?? & temp. bloc. & - & - & - & no & {\cite{Forel&al1901}} \\
+        \hline
+        Rhonegletscher & 1934-07-17 & temp. bloc. & - & - & yes$^*$ & no & {\cite{Mercanton1935}} \\
+        \hline
+        Findelgletscher & 1943-07-23 & temp. bloc. & - & - & yes$^*$  & no & {\cite{Mercanton1944}} \\
+        \hline
+        Findelgletscher & 2017-07-04 & temp. bloc. & \makecell{cut-off$^{+,*}$ \\ see Fig.~\ref{fig:IceBlockage}b} & \makecell{before$^+$ \\ after$^+$} & - & no & cantonal report (Wallis) \\
+        \hline
+        Rhonegletscher & 1947-08-09 & temp. bloc. & cut-off$^*$ & - & yes$^*$ & no & {\cite{Raymond&al2003}} \\
+        \hline
+        Glacier du Mont-Miné & 1952-08-04 & temp. bloc. & - & - & yes$^*$ & no & {\cite{Raymond&al2003}} \\
+        \hline
+        Bas d'Arolla & 1974-06-10 & temp. bloc. & sharp rise$^+$ & - & - & no & {\cite{Haeberli1983}} \\
+        \hline
+        Hubelgletscher & 2004-08-04 & temp. bloc. &  \makecell{sharp rise$^+$ \\ see Fig.~\ref{fig:IceBlockage}d} & after$^*$ & -  & photograph & {\cite{fink2004}} \\
+        \hline
+        \makecell[l]{Oberer \\Grindelwaldgletscher} & 2011-06-29 & temp. bloc. & sharp rise$^+$ & - & -  & no & {\cite{Hahlen2011}} \\
+        \hline
+        \makecell[l]{Oberer \\Grindelwaldgletscher} & 2011-08-25 & temp. bloc. & \makecell{cut-off$^+$ \\ see Fig.~\ref{fig:IceBlockage}c} & - & -  & no & {\cite{Hahlen2011}} \\
+        \hline
+        Griesgletscher & 2023-07-31 & temp. bloc. & sharp rise$^*$ & - & yes$^*$ & no & personal communication \\
+        \hline
+        Glacier d' Orny & 1920-06-24 & hydraulic bar. & - & - & -  & no & {\cite{Mercanton1921}} \\
+        \hline
+        Glacier d' Orny & 1920-06-30 & hydraulic bar. & - & - & -  & no & {\cite{Mercanton1921}} \\
+        \hline
+        Glacier d' Orny & 1920-07-04 & hydraulic bar. & - & - & - & no & {\cite{Mercanton1921}} \\
+        \hline
+        Glacier du Mont-Miné & 1943-08-23 & hydraulic. bar. & modelled & - & -  & sketch & {\cite{Bohorquez&Darby2008}} \\
+        \hline
+         Minstigergletscher & 2008-08-21 & hydraulic. bar. & - & - & - &  photograph & cantonal report (Wallis) \\
+        \hline
+        Mellichgletscher & 1920-??-?? & w.-f. crevasses & - & - & - &  description & {\cite{Mercanton1921}} \\
+        \hline
+        
+        
+    \end{tabular}
+\end{sidewaystable}
 
 
 \chapter{Supplementary materiel for Chapter~\ref{ch:chapter_gprmax}: the ice thickness of Chüebodengletscher using ground penetrating radar}

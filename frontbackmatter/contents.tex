@@ -16,11 +16,11 @@
  % \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
 
 %from chris to only display chapter in headers, plus ta line, and not section as above
-\pagestyle{scrheadings} % diplay headers
+\pagestyle{scrheadings} % display headers
 %\clearpairofpagestyles % Clear all headers and footers
 % Define header with wrapped text for long chapter titles
 \automark[chapter]{chapter} 
-\ihead{\parbox[t]{\textwidth}{\raggedright \spacedlowsmallcaps{\leftmark}}} % Inner header (left page in two-sided documents)
+%\ihead{\parbox[t]{\textwidth}{\raggedright \spacedlowsmallcaps{\leftmark}}} % Inner header (left page in two-sided documents)
 
 % Adjust the \chaptermark to handle long titles
 \renewcommand{\chaptermark}[1]{\markboth{\parbox[t]{\textwidth}{\spacedlowsmallcaps{\thechapter.\ #1}}}{}}

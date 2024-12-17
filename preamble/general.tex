@@ -55,6 +55,9 @@
 \usepackage{longtable}
 \usepackage{amssymb}
 \usepackage[automark]{scrlayer-scrpage} %headsepline for a line below header
+\usepackage{rotating}
+\usepackage{makecell} % For multi-line table headers
+\usepackage[none]{hyphenat} % prevent hyphenation
 
 
 
@@ -67,7 +70,7 @@
 
 % Biblatex
 % \input{preamble/biblatex} % do not use this
-\usepackage[sort]{natbib} %[sort] sort some citations but no some others :|
+\usepackage{natbib} 
 \setcitestyle{year}
 %\bibliographystyle{plainnat}
 
@@ -175,7 +178,7 @@
 
 % Page numbers in plain style (chapter titles)
 %\clearpairofpagestyles
-\ofoot[\pagemark]{}
+\ofoot[\pagemark]{} % number for chapter page
 % Adjust distance to footer (default is too large)
 \setlength{\footskip}{19pt}
 
